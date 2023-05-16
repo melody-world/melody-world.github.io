@@ -1,0 +1,5002 @@
+[
+	{
+		"WORD_SEQ" : 1,
+		"WORD_NAME" : "moves",
+		"WORD_MEAN" : "움직인다"
+	},
+	{
+		"WORD_SEQ" : 2,
+		"WORD_NAME" : "opera",
+		"WORD_MEAN" : "오페라를 공연하다"
+	},
+	{
+		"WORD_SEQ" : 3,
+		"WORD_NAME" : "Williams",
+		"WORD_MEAN" : "윌리엄스"
+	},
+	{
+		"WORD_SEQ" : 4,
+		"WORD_NAME" : "progress",
+		"WORD_MEAN" : "진보."
+	},
+	{
+		"WORD_SEQ" : 5,
+		"WORD_NAME" : "logic",
+		"WORD_MEAN" : "논리"
+	},
+	{
+		"WORD_SEQ" : 6,
+		"WORD_NAME" : "massive",
+		"WORD_MEAN" : "육중한"
+	},
+	{
+		"WORD_SEQ" : 7,
+		"WORD_NAME" : "root",
+		"WORD_MEAN" : "뿌리"
+	},
+	{
+		"WORD_SEQ" : 8,
+		"WORD_NAME" : "assumed",
+		"WORD_MEAN" : "가정한"
+	},
+	{
+		"WORD_SEQ" : 9,
+		"WORD_NAME" : "writer",
+		"WORD_MEAN" : "작가."
+	},
+	{
+		"WORD_SEQ" : 10,
+		"WORD_NAME" : "post",
+		"WORD_MEAN" : "포스트."
+	},
+	{
+		"WORD_SEQ" : 11,
+		"WORD_NAME" : "beable",
+		"WORD_MEAN" : "능력이 있다"
+	},
+	{
+		"WORD_SEQ" : 12,
+		"WORD_NAME" : "domain",
+		"WORD_MEAN" : "영역"
+	},
+	{
+		"WORD_SEQ" : 13,
+		"WORD_NAME" : "foot",
+		"WORD_MEAN" : "발"
+	},
+	{
+		"WORD_SEQ" : 14,
+		"WORD_NAME" : "link",
+		"WORD_MEAN" : "연결시키다"
+	},
+	{
+		"WORD_SEQ" : 15,
+		"WORD_NAME" : "bank",
+		"WORD_MEAN" : "은행."
+	},
+	{
+		"WORD_SEQ" : 16,
+		"WORD_NAME" : "library",
+		"WORD_MEAN" : "도서관"
+	},
+	{
+		"WORD_SEQ" : 17,
+		"WORD_NAME" : "document",
+		"WORD_MEAN" : "문서"
+	},
+	{
+		"WORD_SEQ" : 18,
+		"WORD_NAME" : "someone",
+		"WORD_MEAN" : "누구"
+	},
+	{
+		"WORD_SEQ" : 19,
+		"WORD_NAME" : "criticism",
+		"WORD_MEAN" : "비평"
+	},
+	{
+		"WORD_SEQ" : 20,
+		"WORD_NAME" : "everything",
+		"WORD_MEAN" : "전부다."
+	},
+	{
+		"WORD_SEQ" : 21,
+		"WORD_NAME" : "huge",
+		"WORD_MEAN" : "커다란"
+	},
+	{
+		"WORD_SEQ" : 22,
+		"WORD_NAME" : "linked",
+		"WORD_MEAN" : "연결된"
+	},
+	{
+		"WORD_SEQ" : 23,
+		"WORD_NAME" : "performances",
+		"WORD_MEAN" : "공연"
+	},
+	{
+		"WORD_SEQ" : 24,
+		"WORD_NAME" : "represents",
+		"WORD_MEAN" : "나타내다"
+	},
+	{
+		"WORD_SEQ" : 25,
+		"WORD_NAME" : "seats",
+		"WORD_MEAN" : "좌석들"
+	},
+	{
+		"WORD_SEQ" : 26,
+		"WORD_NAME" : "thousand",
+		"WORD_MEAN" : "천"
+	},
+	{
+		"WORD_SEQ" : 27,
+		"WORD_NAME" : "obtain",
+		"WORD_MEAN" : "얻다"
+	},
+	{
+		"WORD_SEQ" : 28,
+		"WORD_NAME" : "bad",
+		"WORD_MEAN" : "나빠"
+	},
+	{
+		"WORD_SEQ" : 29,
+		"WORD_NAME" : "mechanical",
+		"WORD_MEAN" : "기계적"
+	},
+	{
+		"WORD_SEQ" : 30,
+		"WORD_NAME" : "Martin",
+		"WORD_MEAN" : "마틴"
+	},
+	{
+		"WORD_SEQ" : 31,
+		"WORD_NAME" : "cometo",
+		"WORD_MEAN" : "에 도달하다"
+	},
+	{
+		"WORD_SEQ" : 32,
+		"WORD_NAME" : "crisis",
+		"WORD_MEAN" : "위기"
+	},
+	{
+		"WORD_SEQ" : 33,
+		"WORD_NAME" : "andothers",
+		"WORD_MEAN" : "기타"
+	},
+	{
+		"WORD_SEQ" : 34,
+		"WORD_NAME" : "clearly",
+		"WORD_MEAN" : "확실히."
+	},
+	{
+		"WORD_SEQ" : 35,
+		"WORD_NAME" : "colors",
+		"WORD_MEAN" : "색깔들"
+	},
+	{
+		"WORD_SEQ" : 36,
+		"WORD_NAME" : "sample",
+		"WORD_MEAN" : "견본을 만들다"
+	},
+	{
+		"WORD_SEQ" : 37,
+		"WORD_NAME" : "instructions",
+		"WORD_MEAN" : "지침들"
+	},
+	{
+		"WORD_SEQ" : 38,
+		"WORD_NAME" : "theair",
+		"WORD_MEAN" : "공기"
+	},
+	{
+		"WORD_SEQ" : 39,
+		"WORD_NAME" : "circumstances",
+		"WORD_MEAN" : "사정"
+	},
+	{
+		"WORD_SEQ" : 40,
+		"WORD_NAME" : "electrical",
+		"WORD_MEAN" : "전기의"
+	},
+	{
+		"WORD_SEQ" : 41,
+		"WORD_NAME" : "inner",
+		"WORD_MEAN" : "내면의"
+	},
+	{
+		"WORD_SEQ" : 42,
+		"WORD_NAME" : "madeof",
+		"WORD_MEAN" : "로 만든"
+	},
+	{
+		"WORD_SEQ" : 43,
+		"WORD_NAME" : "scenes",
+		"WORD_MEAN" : "장면들"
+	},
+	{
+		"WORD_SEQ" : 44,
+		"WORD_NAME" : "copies",
+		"WORD_MEAN" : "사본"
+	},
+	{
+		"WORD_SEQ" : 45,
+		"WORD_NAME" : "eg",
+		"WORD_MEAN" : "예를 들면"
+	},
+	{
+		"WORD_SEQ" : 46,
+		"WORD_NAME" : "funds",
+		"WORD_MEAN" : "자금"
+	},
+	{
+		"WORD_SEQ" : 47,
+		"WORD_NAME" : "prominent",
+		"WORD_MEAN" : "저명한"
+	},
+	{
+		"WORD_SEQ" : 48,
+		"WORD_NAME" : "straight",
+		"WORD_MEAN" : "똑바로"
+	},
+	{
+		"WORD_SEQ" : 49,
+		"WORD_NAME" : "personnel",
+		"WORD_MEAN" : "인사부"
+	},
+	{
+		"WORD_SEQ" : 50,
+		"WORD_NAME" : "rank",
+		"WORD_MEAN" : "순위"
+	},
+	{
+		"WORD_SEQ" : 51,
+		"WORD_NAME" : "adult",
+		"WORD_MEAN" : "성인의"
+	},
+	{
+		"WORD_SEQ" : 52,
+		"WORD_NAME" : "stand",
+		"WORD_MEAN" : "서다"
+	},
+	{
+		"WORD_SEQ" : 53,
+		"WORD_NAME" : "losses",
+		"WORD_MEAN" : "손실"
+	},
+	{
+		"WORD_SEQ" : 54,
+		"WORD_NAME" : "speaking",
+		"WORD_MEAN" : "접니다."
+	},
+	{
+		"WORD_SEQ" : 55,
+		"WORD_NAME" : "ago",
+		"WORD_MEAN" : "전에"
+	},
+	{
+		"WORD_SEQ" : 56,
+		"WORD_NAME" : "m",
+		"WORD_MEAN" : "m"
+	},
+	{
+		"WORD_SEQ" : 57,
+		"WORD_NAME" : "exact",
+		"WORD_MEAN" : "정확한"
+	},
+	{
+		"WORD_SEQ" : 58,
+		"WORD_NAME" : "supportfor",
+		"WORD_MEAN" : "에 대한 지원"
+	},
+	{
+		"WORD_SEQ" : 59,
+		"WORD_NAME" : "category",
+		"WORD_MEAN" : "카테고리"
+	},
+	{
+		"WORD_SEQ" : 60,
+		"WORD_NAME" : "fit",
+		"WORD_MEAN" : "맞다"
+	},
+	{
+		"WORD_SEQ" : 61,
+		"WORD_NAME" : "housing",
+		"WORD_MEAN" : "주택"
+	},
+	{
+		"WORD_SEQ" : 62,
+		"WORD_NAME" : "necessarily",
+		"WORD_MEAN" : "필연적으로"
+	},
+	{
+		"WORD_SEQ" : 63,
+		"WORD_NAME" : "attended",
+		"WORD_MEAN" : "참석한"
+	},
+	{
+		"WORD_SEQ" : 64,
+		"WORD_NAME" : "limits",
+		"WORD_MEAN" : "한도를 정하다"
+	},
+	{
+		"WORD_SEQ" : 65,
+		"WORD_NAME" : "mark",
+		"WORD_MEAN" : "마크."
+	},
+	{
+		"WORD_SEQ" : 66,
+		"WORD_NAME" : "couple",
+		"WORD_MEAN" : "부부가 되다"
+	},
+	{
+		"WORD_SEQ" : 67,
+		"WORD_NAME" : "roughly",
+		"WORD_MEAN" : "대략"
+	},
+	{
+		"WORD_SEQ" : 68,
+		"WORD_NAME" : "seasons",
+		"WORD_MEAN" : "계절들"
+	},
+	{
+		"WORD_SEQ" : 69,
+		"WORD_NAME" : "widespread",
+		"WORD_MEAN" : "널리 퍼진"
+	},
+	{
+		"WORD_SEQ" : 70,
+		"WORD_NAME" : "remove",
+		"WORD_MEAN" : "제거한다."
+	},
+	{
+		"WORD_SEQ" : 71,
+		"WORD_NAME" : "acertain",
+		"WORD_MEAN" : "확실한"
+	},
+	{
+		"WORD_SEQ" : 72,
+		"WORD_NAME" : "street",
+		"WORD_MEAN" : "거리"
+	},
+	{
+		"WORD_SEQ" : 73,
+		"WORD_NAME" : "opinion",
+		"WORD_MEAN" : "의견."
+	},
+	{
+		"WORD_SEQ" : 74,
+		"WORD_NAME" : "review",
+		"WORD_MEAN" : "검토"
+	},
+	{
+		"WORD_SEQ" : 75,
+		"WORD_NAME" : "concern",
+		"WORD_MEAN" : "고민"
+	},
+	{
+		"WORD_SEQ" : 76,
+		"WORD_NAME" : "entry",
+		"WORD_MEAN" : "엔트리"
+	},
+	{
+		"WORD_SEQ" : 77,
+		"WORD_NAME" : "wear",
+		"WORD_MEAN" : "입다"
+	},
+	{
+		"WORD_SEQ" : 78,
+		"WORD_NAME" : "decisions",
+		"WORD_MEAN" : "결정."
+	},
+	{
+		"WORD_SEQ" : 79,
+		"WORD_NAME" : "exception",
+		"WORD_MEAN" : "예외."
+	},
+	{
+		"WORD_SEQ" : 80,
+		"WORD_NAME" : "identify",
+		"WORD_MEAN" : "확인하다"
+	},
+	{
+		"WORD_SEQ" : 81,
+		"WORD_NAME" : "categories",
+		"WORD_MEAN" : "분류"
+	},
+	{
+		"WORD_SEQ" : 82,
+		"WORD_NAME" : "compounds",
+		"WORD_MEAN" : "화합물"
+	},
+	{
+		"WORD_SEQ" : 83,
+		"WORD_NAME" : "council",
+		"WORD_MEAN" : "평의회"
+	},
+	{
+		"WORD_SEQ" : 84,
+		"WORD_NAME" : "efficient",
+		"WORD_MEAN" : "능률적인"
+	},
+	{
+		"WORD_SEQ" : 85,
+		"WORD_NAME" : "algorithm",
+		"WORD_MEAN" : "알고리즘."
+	},
+	{
+		"WORD_SEQ" : 86,
+		"WORD_NAME" : "markets",
+		"WORD_MEAN" : "시장"
+	},
+	{
+		"WORD_SEQ" : 87,
+		"WORD_NAME" : "performing",
+		"WORD_MEAN" : "공연하는 것"
+	},
+	{
+		"WORD_SEQ" : 88,
+		"WORD_NAME" : "suitable",
+		"WORD_MEAN" : "적절한"
+	},
+	{
+		"WORD_SEQ" : 89,
+		"WORD_NAME" : "themajority",
+		"WORD_MEAN" : "대다수"
+	},
+	{
+		"WORD_SEQ" : 90,
+		"WORD_NAME" : "electron",
+		"WORD_MEAN" : "전자의"
+	},
+	{
+		"WORD_SEQ" : 91,
+		"WORD_NAME" : "inturn",
+		"WORD_MEAN" : "결국."
+	},
+	{
+		"WORD_SEQ" : 92,
+		"WORD_NAME" : "males",
+		"WORD_MEAN" : "남자들"
+	},
+	{
+		"WORD_SEQ" : 93,
+		"WORD_NAME" : "reaching",
+		"WORD_MEAN" : "도달하는"
+	},
+	{
+		"WORD_SEQ" : 94,
+		"WORD_NAME" : "serving",
+		"WORD_MEAN" : "제공하는"
+	},
+	{
+		"WORD_SEQ" : 95,
+		"WORD_NAME" : "slowly",
+		"WORD_MEAN" : "느리게."
+	},
+	{
+		"WORD_SEQ" : 96,
+		"WORD_NAME" : "possibility",
+		"WORD_MEAN" : "가능"
+	},
+	{
+		"WORD_SEQ" : 97,
+		"WORD_NAME" : "stages",
+		"WORD_MEAN" : "단계들"
+	},
+	{
+		"WORD_SEQ" : 98,
+		"WORD_NAME" : "horse",
+		"WORD_MEAN" : "말."
+	},
+	{
+		"WORD_SEQ" : 99,
+		"WORD_NAME" : "skills",
+		"WORD_MEAN" : "기술들"
+	},
+	{
+		"WORD_SEQ" : 100,
+		"WORD_NAME" : "concerns",
+		"WORD_MEAN" : "걱정"
+	},
+	{
+		"WORD_SEQ" : 101,
+		"WORD_NAME" : "collected",
+		"WORD_MEAN" : "수집된"
+	},
+	{
+		"WORD_SEQ" : 102,
+		"WORD_NAME" : "mental",
+		"WORD_MEAN" : "정신의"
+	},
+	{
+		"WORD_SEQ" : 103,
+		"WORD_NAME" : "moment",
+		"WORD_MEAN" : "순간."
+	},
+	{
+		"WORD_SEQ" : 104,
+		"WORD_NAME" : "younger",
+		"WORD_MEAN" : "연하의"
+	},
+	{
+		"WORD_SEQ" : 105,
+		"WORD_NAME" : "let",
+		"WORD_MEAN" : "허락하다"
+	},
+	{
+		"WORD_SEQ" : 106,
+		"WORD_NAME" : "manufacturing",
+		"WORD_MEAN" : "제조업"
+	},
+	{
+		"WORD_SEQ" : 107,
+		"WORD_NAME" : "suggest",
+		"WORD_MEAN" : "제안하다"
+	},
+	{
+		"WORD_SEQ" : 108,
+		"WORD_NAME" : "recognition",
+		"WORD_MEAN" : "인정"
+	},
+	{
+		"WORD_SEQ" : 109,
+		"WORD_NAME" : "variable",
+		"WORD_MEAN" : "변수"
+	},
+	{
+		"WORD_SEQ" : 110,
+		"WORD_NAME" : "village",
+		"WORD_MEAN" : "마을"
+	},
+	{
+		"WORD_SEQ" : 111,
+		"WORD_NAME" : "add",
+		"WORD_MEAN" : "더하다"
+	},
+	{
+		"WORD_SEQ" : 112,
+		"WORD_NAME" : "substantial",
+		"WORD_MEAN" : "실속 있는"
+	},
+	{
+		"WORD_SEQ" : 113,
+		"WORD_NAME" : "styles",
+		"WORD_MEAN" : "스타일"
+	},
+	{
+		"WORD_SEQ" : 114,
+		"WORD_NAME" : "detailed",
+		"WORD_MEAN" : "세부적"
+	},
+	{
+		"WORD_SEQ" : 115,
+		"WORD_NAME" : "visual",
+		"WORD_MEAN" : "시각."
+	},
+	{
+		"WORD_SEQ" : 116,
+		"WORD_NAME" : "learn",
+		"WORD_MEAN" : "배우다."
+	},
+	{
+		"WORD_SEQ" : 117,
+		"WORD_NAME" : "Angeles",
+		"WORD_MEAN" : "앙헬레스"
+	},
+	{
+		"WORD_SEQ" : 118,
+		"WORD_NAME" : "tells",
+		"WORD_MEAN" : "말한다"
+	},
+	{
+		"WORD_SEQ" : 119,
+		"WORD_NAME" : "weak",
+		"WORD_MEAN" : "약한"
+	},
+	{
+		"WORD_SEQ" : 120,
+		"WORD_NAME" : "guitar",
+		"WORD_MEAN" : "기타를"
+	},
+	{
+		"WORD_SEQ" : 121,
+		"WORD_NAME" : "defeat",
+		"WORD_MEAN" : "패배."
+	},
+	{
+		"WORD_SEQ" : 122,
+		"WORD_NAME" : "delivered",
+		"WORD_MEAN" : "배달했다"
+	},
+	{
+		"WORD_SEQ" : 123,
+		"WORD_NAME" : "ending",
+		"WORD_MEAN" : "끝맺음"
+	},
+	{
+		"WORD_SEQ" : 124,
+		"WORD_NAME" : "feel",
+		"WORD_MEAN" : "느끼다"
+	},
+	{
+		"WORD_SEQ" : 125,
+		"WORD_NAME" : "inparticular",
+		"WORD_MEAN" : "특히"
+	},
+	{
+		"WORD_SEQ" : 126,
+		"WORD_NAME" : "passing",
+		"WORD_MEAN" : "지나가는"
+	},
+	{
+		"WORD_SEQ" : 127,
+		"WORD_NAME" : "abandoned",
+		"WORD_MEAN" : "버림받은"
+	},
+	{
+		"WORD_SEQ" : 128,
+		"WORD_NAME" : "discovery",
+		"WORD_MEAN" : "발견"
+	},
+	{
+		"WORD_SEQ" : 129,
+		"WORD_NAME" : "poetry",
+		"WORD_MEAN" : "시"
+	},
+	{
+		"WORD_SEQ" : 130,
+		"WORD_NAME" : "lowest",
+		"WORD_MEAN" : "최저의"
+	},
+	{
+		"WORD_SEQ" : 131,
+		"WORD_NAME" : "mathematical",
+		"WORD_MEAN" : "수학의"
+	},
+	{
+		"WORD_SEQ" : 132,
+		"WORD_NAME" : "apparent",
+		"WORD_MEAN" : "겉보기의"
+	},
+	{
+		"WORD_SEQ" : 133,
+		"WORD_NAME" : "designated",
+		"WORD_MEAN" : "지정된"
+	},
+	{
+		"WORD_SEQ" : 134,
+		"WORD_NAME" : "gun",
+		"WORD_MEAN" : "총을 쏘다"
+	},
+	{
+		"WORD_SEQ" : 135,
+		"WORD_NAME" : "varies",
+		"WORD_MEAN" : "다르다"
+	},
+	{
+		"WORD_SEQ" : 136,
+		"WORD_NAME" : "seem",
+		"WORD_MEAN" : "보인다"
+	},
+	{
+		"WORD_SEQ" : 137,
+		"WORD_NAME" : "thechurch",
+		"WORD_MEAN" : "교회"
+	},
+	{
+		"WORD_SEQ" : 138,
+		"WORD_NAME" : "ethnic",
+		"WORD_MEAN" : "민족의"
+	},
+	{
+		"WORD_SEQ" : 139,
+		"WORD_NAME" : "gradually",
+		"WORD_MEAN" : "점차적으로"
+	},
+	{
+		"WORD_SEQ" : 140,
+		"WORD_NAME" : "newly",
+		"WORD_MEAN" : "새로"
+	},
+	{
+		"WORD_SEQ" : 141,
+		"WORD_NAME" : "p",
+		"WORD_MEAN" : "p"
+	},
+	{
+		"WORD_SEQ" : 142,
+		"WORD_NAME" : "plot",
+		"WORD_MEAN" : "줄거리."
+	},
+	{
+		"WORD_SEQ" : 143,
+		"WORD_NAME" : "supporting",
+		"WORD_MEAN" : "지지하는"
+	},
+	{
+		"WORD_SEQ" : 144,
+		"WORD_NAME" : "andor",
+		"WORD_MEAN" : "안도의"
+	},
+	{
+		"WORD_SEQ" : 145,
+		"WORD_NAME" : "reducing",
+		"WORD_MEAN" : "축소의"
+	},
+	{
+		"WORD_SEQ" : 146,
+		"WORD_NAME" : "LosAngeles",
+		"WORD_MEAN" : "로스앤젤레스"
+	},
+	{
+		"WORD_SEQ" : 147,
+		"WORD_NAME" : "confirmed",
+		"WORD_MEAN" : "공정."
+	},
+	{
+		"WORD_SEQ" : 148,
+		"WORD_NAME" : "hair",
+		"WORD_MEAN" : "머리"
+	},
+	{
+		"WORD_SEQ" : 149,
+		"WORD_NAME" : "supplies",
+		"WORD_MEAN" : "저장품"
+	},
+	{
+		"WORD_SEQ" : 150,
+		"WORD_NAME" : "zone",
+		"WORD_MEAN" : "구역을 정하다"
+	},
+	{
+		"WORD_SEQ" : 151,
+		"WORD_NAME" : "W",
+		"WORD_MEAN" : "w"
+	},
+	{
+		"WORD_SEQ" : 152,
+		"WORD_NAME" : "looking",
+		"WORD_MEAN" : "보기"
+	},
+	{
+		"WORD_SEQ" : 153,
+		"WORD_NAME" : "drug",
+		"WORD_MEAN" : "약물"
+	},
+	{
+		"WORD_SEQ" : 154,
+		"WORD_NAME" : "involving",
+		"WORD_MEAN" : "포함하는"
+	},
+	{
+		"WORD_SEQ" : 155,
+		"WORD_NAME" : "pain",
+		"WORD_MEAN" : "고통을"
+	},
+	{
+		"WORD_SEQ" : 156,
+		"WORD_NAME" : "sell",
+		"WORD_MEAN" : "팔기"
+	},
+	{
+		"WORD_SEQ" : 157,
+		"WORD_NAME" : "brief",
+		"WORD_MEAN" : "짧은."
+	},
+	{
+		"WORD_SEQ" : 158,
+		"WORD_NAME" : "constitution",
+		"WORD_MEAN" : "체질"
+	},
+	{
+		"WORD_SEQ" : 159,
+		"WORD_NAME" : "benefits",
+		"WORD_MEAN" : "혜택들"
+	},
+	{
+		"WORD_SEQ" : 160,
+		"WORD_NAME" : "declined",
+		"WORD_MEAN" : "사양했다"
+	},
+	{
+		"WORD_SEQ" : 161,
+		"WORD_NAME" : "efficiency",
+		"WORD_MEAN" : "효율성."
+	},
+	{
+		"WORD_SEQ" : 162,
+		"WORD_NAME" : "spiritual",
+		"WORD_MEAN" : "정신적인"
+	},
+	{
+		"WORD_SEQ" : 163,
+		"WORD_NAME" : "titles",
+		"WORD_MEAN" : "직함"
+	},
+	{
+		"WORD_SEQ" : 164,
+		"WORD_NAME" : "channels",
+		"WORD_MEAN" : "채널"
+	},
+	{
+		"WORD_SEQ" : 165,
+		"WORD_NAME" : "explain",
+		"WORD_MEAN" : "설명하라."
+	},
+	{
+		"WORD_SEQ" : 166,
+		"WORD_NAME" : "fear",
+		"WORD_MEAN" : "두려움은."
+	},
+	{
+		"WORD_SEQ" : 167,
+		"WORD_NAME" : "merely",
+		"WORD_MEAN" : "단지"
+	},
+	{
+		"WORD_SEQ" : 168,
+		"WORD_NAME" : "representation",
+		"WORD_MEAN" : "표상"
+	},
+	{
+		"WORD_SEQ" : 169,
+		"WORD_NAME" : "filled",
+		"WORD_MEAN" : "가득 찬"
+	},
+	{
+		"WORD_SEQ" : 170,
+		"WORD_NAME" : "instruction",
+		"WORD_MEAN" : "설명"
+	},
+	{
+		"WORD_SEQ" : 171,
+		"WORD_NAME" : "perfect",
+		"WORD_MEAN" : "완벽하네요."
+	},
+	{
+		"WORD_SEQ" : 172,
+		"WORD_NAME" : "orbit",
+		"WORD_MEAN" : "궤도를 돌다"
+	},
+	{
+		"WORD_SEQ" : 173,
+		"WORD_NAME" : "replace",
+		"WORD_MEAN" : "교체하다"
+	},
+	{
+		"WORD_SEQ" : 174,
+		"WORD_NAME" : "guns",
+		"WORD_MEAN" : "총"
+	},
+	{
+		"WORD_SEQ" : 175,
+		"WORD_NAME" : "tracks",
+		"WORD_MEAN" : "발자국"
+	},
+	{
+		"WORD_SEQ" : 176,
+		"WORD_NAME" : "goals",
+		"WORD_MEAN" : "목표들"
+	},
+	{
+		"WORD_SEQ" : 177,
+		"WORD_NAME" : "UniversityPress",
+		"WORD_MEAN" : "유니버시티 프레스"
+	},
+	{
+		"WORD_SEQ" : 178,
+		"WORD_NAME" : "articles",
+		"WORD_MEAN" : "기사들"
+	},
+	{
+		"WORD_SEQ" : 179,
+		"WORD_NAME" : "lands",
+		"WORD_MEAN" : "토지"
+	},
+	{
+		"WORD_SEQ" : 180,
+		"WORD_NAME" : "matters",
+		"WORD_MEAN" : "문제들"
+	},
+	{
+		"WORD_SEQ" : 181,
+		"WORD_NAME" : "conventional",
+		"WORD_MEAN" : "상투적인"
+	},
+	{
+		"WORD_SEQ" : 182,
+		"WORD_NAME" : "apart",
+		"WORD_MEAN" : "떨어져"
+	},
+	{
+		"WORD_SEQ" : 183,
+		"WORD_NAME" : "encouraged",
+		"WORD_MEAN" : "고무된"
+	},
+	{
+		"WORD_SEQ" : 184,
+		"WORD_NAME" : "newspaper",
+		"WORD_MEAN" : "신문의"
+	},
+	{
+		"WORD_SEQ" : 185,
+		"WORD_NAME" : "probability",
+		"WORD_MEAN" : "개연성"
+	},
+	{
+		"WORD_SEQ" : 186,
+		"WORD_NAME" : "settlement",
+		"WORD_MEAN" : "합의"
+	},
+	{
+		"WORD_SEQ" : 187,
+		"WORD_NAME" : "silver",
+		"WORD_MEAN" : "실버"
+	},
+	{
+		"WORD_SEQ" : 188,
+		"WORD_NAME" : "succeeded",
+		"WORD_MEAN" : "성공했다"
+	},
+	{
+		"WORD_SEQ" : 189,
+		"WORD_NAME" : "symptoms",
+		"WORD_MEAN" : "증상"
+	},
+	{
+		"WORD_SEQ" : 190,
+		"WORD_NAME" : "aman",
+		"WORD_MEAN" : "남자다"
+	},
+	{
+		"WORD_SEQ" : 191,
+		"WORD_NAME" : "ingeneral",
+		"WORD_MEAN" : "대체적으로"
+	},
+	{
+		"WORD_SEQ" : 192,
+		"WORD_NAME" : "intwo",
+		"WORD_MEAN" : "두 동강으로"
+	},
+	{
+		"WORD_SEQ" : 193,
+		"WORD_NAME" : "joint",
+		"WORD_MEAN" : "공동의"
+	},
+	{
+		"WORD_SEQ" : 194,
+		"WORD_NAME" : "populations",
+		"WORD_MEAN" : "인구"
+	},
+	{
+		"WORD_SEQ" : 195,
+		"WORD_NAME" : "transition",
+		"WORD_MEAN" : "전이"
+	},
+	{
+		"WORD_SEQ" : 196,
+		"WORD_NAME" : "vast",
+		"WORD_MEAN" : "방대한"
+	},
+	{
+		"WORD_SEQ" : 197,
+		"WORD_NAME" : "legislation",
+		"WORD_MEAN" : "법률 제정"
+	},
+	{
+		"WORD_SEQ" : 198,
+		"WORD_NAME" : "theorem",
+		"WORD_MEAN" : "정리"
+	},
+	{
+		"WORD_SEQ" : 199,
+		"WORD_NAME" : "votes",
+		"WORD_MEAN" : "표"
+	},
+	{
+		"WORD_SEQ" : 200,
+		"WORD_NAME" : "immediate",
+		"WORD_MEAN" : "즉각적인"
+	},
+	{
+		"WORD_SEQ" : 201,
+		"WORD_NAME" : "mountains",
+		"WORD_MEAN" : "산들"
+	},
+	{
+		"WORD_SEQ" : 202,
+		"WORD_NAME" : "adapted",
+		"WORD_MEAN" : "적응한"
+	},
+	{
+		"WORD_SEQ" : 203,
+		"WORD_NAME" : "fifth",
+		"WORD_MEAN" : "다섯 번째의"
+	},
+	{
+		"WORD_SEQ" : 204,
+		"WORD_NAME" : "fine",
+		"WORD_MEAN" : "좋아."
+	},
+	{
+		"WORD_SEQ" : 205,
+		"WORD_NAME" : "genetic",
+		"WORD_MEAN" : "유전의"
+	},
+	{
+		"WORD_SEQ" : 206,
+		"WORD_NAME" : "signs",
+		"WORD_MEAN" : "징후"
+	},
+	{
+		"WORD_SEQ" : 207,
+		"WORD_NAME" : "assistance",
+		"WORD_MEAN" : "도움"
+	},
+	{
+		"WORD_SEQ" : 208,
+		"WORD_NAME" : "consumption",
+		"WORD_MEAN" : "소비."
+	},
+	{
+		"WORD_SEQ" : 209,
+		"WORD_NAME" : "existed",
+		"WORD_MEAN" : "존재했다"
+	},
+	{
+		"WORD_SEQ" : 210,
+		"WORD_NAME" : "indicated",
+		"WORD_MEAN" : "표시된"
+	},
+	{
+		"WORD_SEQ" : 211,
+		"WORD_NAME" : "symbols",
+		"WORD_MEAN" : "기호"
+	},
+	{
+		"WORD_SEQ" : 212,
+		"WORD_NAME" : "traditions",
+		"WORD_MEAN" : "전통"
+	},
+	{
+		"WORD_SEQ" : 213,
+		"WORD_NAME" : "settled",
+		"WORD_MEAN" : "확정된"
+	},
+	{
+		"WORD_SEQ" : 214,
+		"WORD_NAME" : "prison",
+		"WORD_MEAN" : "교도소"
+	},
+	{
+		"WORD_SEQ" : 215,
+		"WORD_NAME" : "spaces",
+		"WORD_MEAN" : "공간"
+	},
+	{
+		"WORD_SEQ" : 216,
+		"WORD_NAME" : "bass",
+		"WORD_MEAN" : "저음의"
+	},
+	{
+		"WORD_SEQ" : 217,
+		"WORD_NAME" : "formula",
+		"WORD_MEAN" : "공식"
+	},
+	{
+		"WORD_SEQ" : 218,
+		"WORD_NAME" : "scientists",
+		"WORD_MEAN" : "과학자들"
+	},
+	{
+		"WORD_SEQ" : 219,
+		"WORD_NAME" : "thefront",
+		"WORD_MEAN" : "정면의"
+	},
+	{
+		"WORD_SEQ" : 220,
+		"WORD_NAME" : "transferred",
+		"WORD_MEAN" : "전근의"
+	},
+	{
+		"WORD_SEQ" : 221,
+		"WORD_NAME" : "shift",
+		"WORD_MEAN" : "교대하다"
+	},
+	{
+		"WORD_SEQ" : 222,
+		"WORD_NAME" : "chose",
+		"WORD_MEAN" : "골랐다."
+	},
+	{
+		"WORD_SEQ" : 223,
+		"WORD_NAME" : "entitled",
+		"WORD_MEAN" : "자격이 있는"
+	},
+	{
+		"WORD_SEQ" : 224,
+		"WORD_NAME" : "kingdom",
+		"WORD_MEAN" : "왕국"
+	},
+	{
+		"WORD_SEQ" : 225,
+		"WORD_NAME" : "save",
+		"WORD_MEAN" : "절약하다"
+	},
+	{
+		"WORD_SEQ" : 226,
+		"WORD_NAME" : "shortly",
+		"WORD_MEAN" : "곧"
+	},
+	{
+		"WORD_SEQ" : 227,
+		"WORD_NAME" : "candidates",
+		"WORD_MEAN" : "후보자들"
+	},
+	{
+		"WORD_SEQ" : 228,
+		"WORD_NAME" : "mountain",
+		"WORD_MEAN" : "산"
+	},
+	{
+		"WORD_SEQ" : 229,
+		"WORD_NAME" : "ones",
+		"WORD_MEAN" : "하나"
+	},
+	{
+		"WORD_SEQ" : 230,
+		"WORD_NAME" : "desire",
+		"WORD_MEAN" : "열망"
+	},
+	{
+		"WORD_SEQ" : 231,
+		"WORD_NAME" : "mobile",
+		"WORD_MEAN" : "모바일."
+	},
+	{
+		"WORD_SEQ" : 232,
+		"WORD_NAME" : "send",
+		"WORD_MEAN" : "보내세요"
+	},
+	{
+		"WORD_SEQ" : 233,
+		"WORD_NAME" : "lot",
+		"WORD_MEAN" : "장소"
+	},
+	{
+		"WORD_SEQ" : 234,
+		"WORD_NAME" : "sugar",
+		"WORD_MEAN" : "설탕을 넣다"
+	},
+	{
+		"WORD_SEQ" : 235,
+		"WORD_NAME" : "taxes",
+		"WORD_MEAN" : "세금"
+	},
+	{
+		"WORD_SEQ" : 236,
+		"WORD_NAME" : "trading",
+		"WORD_MEAN" : "무역"
+	},
+	{
+		"WORD_SEQ" : 237,
+		"WORD_NAME" : "interpretation",
+		"WORD_MEAN" : "해석"
+	},
+	{
+		"WORD_SEQ" : 238,
+		"WORD_NAME" : "else",
+		"WORD_MEAN" : "또 다른"
+	},
+	{
+		"WORD_SEQ" : 239,
+		"WORD_NAME" : "proof",
+		"WORD_MEAN" : "증거의"
+	},
+	{
+		"WORD_SEQ" : 240,
+		"WORD_NAME" : "reform",
+		"WORD_MEAN" : "개혁하다"
+	},
+	{
+		"WORD_SEQ" : 241,
+		"WORD_NAME" : "serves",
+		"WORD_MEAN" : "서브를 넣다"
+	},
+	{
+		"WORD_SEQ" : 242,
+		"WORD_NAME" : "charges",
+		"WORD_MEAN" : "요금"
+	},
+	{
+		"WORD_SEQ" : 243,
+		"WORD_NAME" : "bits",
+		"WORD_MEAN" : "작은 조각들"
+	},
+	{
+		"WORD_SEQ" : 244,
+		"WORD_NAME" : "committed",
+		"WORD_MEAN" : "헌신적인"
+	},
+	{
+		"WORD_SEQ" : 245,
+		"WORD_NAME" : "BBC",
+		"WORD_MEAN" : "BBC"
+	},
+	{
+		"WORD_SEQ" : 246,
+		"WORD_NAME" : "secure",
+		"WORD_MEAN" : "확보하다"
+	},
+	{
+		"WORD_SEQ" : 247,
+		"WORD_NAME" : "steps",
+		"WORD_MEAN" : "계단"
+	},
+	{
+		"WORD_SEQ" : 248,
+		"WORD_NAME" : "theline",
+		"WORD_MEAN" : "선"
+	},
+	{
+		"WORD_SEQ" : 249,
+		"WORD_NAME" : "thepoint",
+		"WORD_MEAN" : "요점"
+	},
+	{
+		"WORD_SEQ" : 250,
+		"WORD_NAME" : "Arab",
+		"WORD_MEAN" : "아랍어"
+	},
+	{
+		"WORD_SEQ" : 251,
+		"WORD_NAME" : "fewer",
+		"WORD_MEAN" : "더 적은"
+	},
+	{
+		"WORD_SEQ" : 252,
+		"WORD_NAME" : "infrastructure",
+		"WORD_MEAN" : "사회 기반 시설"
+	},
+	{
+		"WORD_SEQ" : 253,
+		"WORD_NAME" : "seek",
+		"WORD_MEAN" : "추구한다."
+	},
+	{
+		"WORD_SEQ" : 254,
+		"WORD_NAME" : "outer",
+		"WORD_MEAN" : "바깥쪽의"
+	},
+	{
+		"WORD_SEQ" : 255,
+		"WORD_NAME" : "relation",
+		"WORD_MEAN" : "관계."
+	},
+	{
+		"WORD_SEQ" : 256,
+		"WORD_NAME" : "sort",
+		"WORD_MEAN" : "종류"
+	},
+	{
+		"WORD_SEQ" : 257,
+		"WORD_NAME" : "absolute",
+		"WORD_MEAN" : "절대의"
+	},
+	{
+		"WORD_SEQ" : 258,
+		"WORD_NAME" : "drop",
+		"WORD_MEAN" : "떨어지다"
+	},
+	{
+		"WORD_SEQ" : 259,
+		"WORD_NAME" : "files",
+		"WORD_MEAN" : "서류철"
+	},
+	{
+		"WORD_SEQ" : 260,
+		"WORD_NAME" : "interface",
+		"WORD_MEAN" : "인터페이스"
+	},
+	{
+		"WORD_SEQ" : 261,
+		"WORD_NAME" : "net",
+		"WORD_MEAN" : "그물"
+	},
+	{
+		"WORD_SEQ" : 262,
+		"WORD_NAME" : "implementation",
+		"WORD_MEAN" : "실행"
+	},
+	{
+		"WORD_SEQ" : 263,
+		"WORD_NAME" : "returning",
+		"WORD_MEAN" : "돌아오는"
+	},
+	{
+		"WORD_SEQ" : 264,
+		"WORD_NAME" : "NewYorkCity",
+		"WORD_MEAN" : "뉴욕 시"
+	},
+	{
+		"WORD_SEQ" : 265,
+		"WORD_NAME" : "bound",
+		"WORD_MEAN" : "속박된"
+	},
+	{
+		"WORD_SEQ" : 266,
+		"WORD_NAME" : "decline",
+		"WORD_MEAN" : "사양하다"
+	},
+	{
+		"WORD_SEQ" : 267,
+		"WORD_NAME" : "morning",
+		"WORD_MEAN" : "좋은 아침."
+	},
+	{
+		"WORD_SEQ" : 268,
+		"WORD_NAME" : "variations",
+		"WORD_MEAN" : "변주곡"
+	},
+	{
+		"WORD_SEQ" : 269,
+		"WORD_NAME" : "vector",
+		"WORD_MEAN" : "벡터"
+	},
+	{
+		"WORD_SEQ" : 270,
+		"WORD_NAME" : "absence",
+		"WORD_MEAN" : "결근"
+	},
+	{
+		"WORD_SEQ" : 271,
+		"WORD_NAME" : "attributed",
+		"WORD_MEAN" : "귀인의"
+	},
+	{
+		"WORD_SEQ" : 272,
+		"WORD_NAME" : "cancer",
+		"WORD_MEAN" : "암의"
+	},
+	{
+		"WORD_SEQ" : 273,
+		"WORD_NAME" : "membership",
+		"WORD_MEAN" : "회원가입"
+	},
+	{
+		"WORD_SEQ" : 274,
+		"WORD_NAME" : "responsibility",
+		"WORD_MEAN" : "책임."
+	},
+	{
+		"WORD_SEQ" : 275,
+		"WORD_NAME" : "spirit",
+		"WORD_MEAN" : "정신"
+	},
+	{
+		"WORD_SEQ" : 276,
+		"WORD_NAME" : "chief",
+		"WORD_MEAN" : "서장님"
+	},
+	{
+		"WORD_SEQ" : 277,
+		"WORD_NAME" : "classified",
+		"WORD_MEAN" : "기밀의"
+	},
+	{
+		"WORD_SEQ" : 278,
+		"WORD_NAME" : "discussed",
+		"WORD_MEAN" : "논의된"
+	},
+	{
+		"WORD_SEQ" : 279,
+		"WORD_NAME" : "Zealand",
+		"WORD_MEAN" : "뉴질랜드"
+	},
+	{
+		"WORD_SEQ" : 280,
+		"WORD_NAME" : "discussion",
+		"WORD_MEAN" : "논의"
+	},
+	{
+		"WORD_SEQ" : 281,
+		"WORD_NAME" : "landing",
+		"WORD_MEAN" : "착륙"
+	},
+	{
+		"WORD_SEQ" : 282,
+		"WORD_NAME" : "principal",
+		"WORD_MEAN" : "주요한"
+	},
+	{
+		"WORD_SEQ" : 283,
+		"WORD_NAME" : "historians",
+		"WORD_MEAN" : "역사학자들"
+	},
+	{
+		"WORD_SEQ" : 284,
+		"WORD_NAME" : "camera",
+		"WORD_MEAN" : "카메라"
+	},
+	{
+		"WORD_SEQ" : 285,
+		"WORD_NAME" : "opposedto",
+		"WORD_MEAN" : "에 반대되는"
+	},
+	{
+		"WORD_SEQ" : 286,
+		"WORD_NAME" : "branch",
+		"WORD_MEAN" : "분점"
+	},
+	{
+		"WORD_SEQ" : 287,
+		"WORD_NAME" : "needfor",
+		"WORD_MEAN" : "의 필요성"
+	},
+	{
+		"WORD_SEQ" : 288,
+		"WORD_NAME" : "ordinary",
+		"WORD_MEAN" : "보통의"
+	},
+	{
+		"WORD_SEQ" : 289,
+		"WORD_NAME" : "regularly",
+		"WORD_MEAN" : "정기적으로."
+	},
+	{
+		"WORD_SEQ" : 290,
+		"WORD_NAME" : "eg",
+		"WORD_MEAN" : "예를 들면"
+	},
+	{
+		"WORD_SEQ" : 291,
+		"WORD_NAME" : "survive",
+		"WORD_MEAN" : "살아남다."
+	},
+	{
+		"WORD_SEQ" : 292,
+		"WORD_NAME" : "agents",
+		"WORD_MEAN" : "대리인"
+	},
+	{
+		"WORD_SEQ" : 293,
+		"WORD_NAME" : "proteins",
+		"WORD_MEAN" : "단백질"
+	},
+	{
+		"WORD_SEQ" : 294,
+		"WORD_NAME" : "seconds",
+		"WORD_MEAN" : "초"
+	},
+	{
+		"WORD_SEQ" : 295,
+		"WORD_NAME" : "universal",
+		"WORD_MEAN" : "보편적인"
+	},
+	{
+		"WORD_SEQ" : 296,
+		"WORD_NAME" : "interview",
+		"WORD_MEAN" : "면접을 보다"
+	},
+	{
+		"WORD_SEQ" : 297,
+		"WORD_NAME" : "accompanied",
+		"WORD_MEAN" : "동반된"
+	},
+	{
+		"WORD_SEQ" : 298,
+		"WORD_NAME" : "arrested",
+		"WORD_MEAN" : "체포된"
+	},
+	{
+		"WORD_SEQ" : 299,
+		"WORD_NAME" : "distinction",
+		"WORD_MEAN" : "특출세"
+	},
+	{
+		"WORD_SEQ" : 300,
+		"WORD_NAME" : "reign",
+		"WORD_MEAN" : "군림하다"
+	},
+	{
+		"WORD_SEQ" : 301,
+		"WORD_NAME" : "specified",
+		"WORD_MEAN" : "명시된"
+	},
+	{
+		"WORD_SEQ" : 302,
+		"WORD_NAME" : "repeated",
+		"WORD_MEAN" : "반복된"
+	},
+	{
+		"WORD_SEQ" : 303,
+		"WORD_NAME" : "NewZealand",
+		"WORD_MEAN" : "뉴질랜드"
+	},
+	{
+		"WORD_SEQ" : 304,
+		"WORD_NAME" : "accurate",
+		"WORD_MEAN" : "정확한."
+	},
+	{
+		"WORD_SEQ" : 305,
+		"WORD_NAME" : "agricultural",
+		"WORD_MEAN" : "농업의"
+	},
+	{
+		"WORD_SEQ" : 306,
+		"WORD_NAME" : "jobs",
+		"WORD_MEAN" : "직업들"
+	},
+	{
+		"WORD_SEQ" : 307,
+		"WORD_NAME" : "unusual",
+		"WORD_MEAN" : "비일상적인."
+	},
+	{
+		"WORD_SEQ" : 308,
+		"WORD_NAME" : "carrying",
+		"WORD_MEAN" : "적재"
+	},
+	{
+		"WORD_SEQ" : 309,
+		"WORD_NAME" : "mounted",
+		"WORD_MEAN" : "기마의"
+	},
+	{
+		"WORD_SEQ" : 310,
+		"WORD_NAME" : "Oxford",
+		"WORD_MEAN" : "옥스퍼드 대학교"
+	},
+	{
+		"WORD_SEQ" : 311,
+		"WORD_NAME" : "executed",
+		"WORD_MEAN" : "실행된"
+	},
+	{
+		"WORD_SEQ" : 312,
+		"WORD_NAME" : "vessels",
+		"WORD_MEAN" : "그릇들"
+	},
+	{
+		"WORD_SEQ" : 313,
+		"WORD_NAME" : "workin",
+		"WORD_MEAN" : "일한다."
+	},
+	{
+		"WORD_SEQ" : 314,
+		"WORD_NAME" : "yellow",
+		"WORD_MEAN" : "노란 색"
+	},
+	{
+		"WORD_SEQ" : 315,
+		"WORD_NAME" : "easier",
+		"WORD_MEAN" : "더 쉬운"
+	},
+	{
+		"WORD_SEQ" : 316,
+		"WORD_NAME" : "evolved",
+		"WORD_MEAN" : "진화된"
+	},
+	{
+		"WORD_SEQ" : 317,
+		"WORD_NAME" : "peak",
+		"WORD_MEAN" : "절정"
+	},
+	{
+		"WORD_SEQ" : 318,
+		"WORD_NAME" : "permitted",
+		"WORD_MEAN" : "허용되는."
+	},
+	{
+		"WORD_SEQ" : 319,
+		"WORD_NAME" : "promote",
+		"WORD_MEAN" : "촉진하다"
+	},
+	{
+		"WORD_SEQ" : 320,
+		"WORD_NAME" : "seat",
+		"WORD_MEAN" : "좌석."
+	},
+	{
+		"WORD_SEQ" : 321,
+		"WORD_NAME" : "suit",
+		"WORD_MEAN" : "어울리다"
+	},
+	{
+		"WORD_SEQ" : 322,
+		"WORD_NAME" : "arranged",
+		"WORD_MEAN" : "정리된"
+	},
+	{
+		"WORD_SEQ" : 323,
+		"WORD_NAME" : "tube",
+		"WORD_MEAN" : "튜브"
+	},
+	{
+		"WORD_SEQ" : 324,
+		"WORD_NAME" : "unlike",
+		"WORD_MEAN" : "와는 달리"
+	},
+	{
+		"WORD_SEQ" : 325,
+		"WORD_NAME" : "evolution",
+		"WORD_MEAN" : "진화론"
+	},
+	{
+		"WORD_SEQ" : 326,
+		"WORD_NAME" : "reduction",
+		"WORD_MEAN" : "축소"
+	},
+	{
+		"WORD_SEQ" : 327,
+		"WORD_NAME" : "union",
+		"WORD_MEAN" : "조합"
+	},
+	{
+		"WORD_SEQ" : 328,
+		"WORD_NAME" : "writings",
+		"WORD_MEAN" : "글"
+	},
+	{
+		"WORD_SEQ" : 329,
+		"WORD_NAME" : "dangerous",
+		"WORD_MEAN" : "위험해"
+	},
+	{
+		"WORD_SEQ" : 330,
+		"WORD_NAME" : "wild",
+		"WORD_MEAN" : "야생의"
+	},
+	{
+		"WORD_SEQ" : 331,
+		"WORD_NAME" : "dependent",
+		"WORD_MEAN" : "의존하는"
+	},
+	{
+		"WORD_SEQ" : 332,
+		"WORD_NAME" : "diameter",
+		"WORD_MEAN" : "지름"
+	},
+	{
+		"WORD_SEQ" : 333,
+		"WORD_NAME" : "pilot",
+		"WORD_MEAN" : "조종사"
+	},
+	{
+		"WORD_SEQ" : 334,
+		"WORD_NAME" : "survived",
+		"WORD_MEAN" : "생존한"
+	},
+	{
+		"WORD_SEQ" : 335,
+		"WORD_NAME" : "usual",
+		"WORD_MEAN" : "흔히 하는"
+	},
+	{
+		"WORD_SEQ" : 336,
+		"WORD_NAME" : "define",
+		"WORD_MEAN" : "정의를 내리다"
+	},
+	{
+		"WORD_SEQ" : 337,
+		"WORD_NAME" : "equation",
+		"WORD_MEAN" : "등식"
+	},
+	{
+		"WORD_SEQ" : 338,
+		"WORD_NAME" : "noise",
+		"WORD_MEAN" : "소음을"
+	},
+	{
+		"WORD_SEQ" : 339,
+		"WORD_NAME" : "particle",
+		"WORD_MEAN" : "소립자"
+	},
+	{
+		"WORD_SEQ" : 340,
+		"WORD_NAME" : "rail",
+		"WORD_MEAN" : "난간을 치다"
+	},
+	{
+		"WORD_SEQ" : 341,
+		"WORD_NAME" : "togetherwith",
+		"WORD_MEAN" : "와 함께"
+	},
+	{
+		"WORD_SEQ" : 342,
+		"WORD_NAME" : "circle",
+		"WORD_MEAN" : "원형"
+	},
+	{
+		"WORD_SEQ" : 343,
+		"WORD_NAME" : "installed",
+		"WORD_MEAN" : "설치된."
+	},
+	{
+		"WORD_SEQ" : 344,
+		"WORD_NAME" : "interior",
+		"WORD_MEAN" : "내부"
+	},
+	{
+		"WORD_SEQ" : 345,
+		"WORD_NAME" : "none",
+		"WORD_MEAN" : "없음."
+	},
+	{
+		"WORD_SEQ" : 346,
+		"WORD_NAME" : "sounds",
+		"WORD_MEAN" : "소리."
+	},
+	{
+		"WORD_SEQ" : 347,
+		"WORD_NAME" : "streets",
+		"WORD_MEAN" : "거리."
+	},
+	{
+		"WORD_SEQ" : 348,
+		"WORD_NAME" : "variation",
+		"WORD_MEAN" : "변화"
+	},
+	{
+		"WORD_SEQ" : 349,
+		"WORD_NAME" : "wealth",
+		"WORD_MEAN" : "재산"
+	},
+	{
+		"WORD_SEQ" : 350,
+		"WORD_NAME" : "consistent",
+		"WORD_MEAN" : "일관된"
+	},
+	{
+		"WORD_SEQ" : 351,
+		"WORD_NAME" : "finding",
+		"WORD_MEAN" : "찾기"
+	},
+	{
+		"WORD_SEQ" : 352,
+		"WORD_NAME" : "inuse",
+		"WORD_MEAN" : "사용 중인"
+	},
+	{
+		"WORD_SEQ" : 353,
+		"WORD_NAME" : "novels",
+		"WORD_MEAN" : "소설"
+	},
+	{
+		"WORD_SEQ" : 354,
+		"WORD_NAME" : "passes",
+		"WORD_MEAN" : "통과하다"
+	},
+	{
+		"WORD_SEQ" : 355,
+		"WORD_NAME" : "weapon",
+		"WORD_MEAN" : "무기"
+	},
+	{
+		"WORD_SEQ" : 356,
+		"WORD_NAME" : "executive",
+		"WORD_MEAN" : "경영진"
+	},
+	{
+		"WORD_SEQ" : 357,
+		"WORD_NAME" : "experiment",
+		"WORD_MEAN" : "실험."
+	},
+	{
+		"WORD_SEQ" : 358,
+		"WORD_NAME" : "exposure",
+		"WORD_MEAN" : "노출"
+	},
+	{
+		"WORD_SEQ" : 359,
+		"WORD_NAME" : "forest",
+		"WORD_MEAN" : "숲"
+	},
+	{
+		"WORD_SEQ" : 360,
+		"WORD_NAME" : "hunting",
+		"WORD_MEAN" : "헌팅"
+	},
+	{
+		"WORD_SEQ" : 361,
+		"WORD_NAME" : "integrated",
+		"WORD_MEAN" : "통합된"
+	},
+	{
+		"WORD_SEQ" : 362,
+		"WORD_NAME" : "vertical",
+		"WORD_MEAN" : "수직의"
+	},
+	{
+		"WORD_SEQ" : 363,
+		"WORD_NAME" : "hour",
+		"WORD_MEAN" : "시간"
+	},
+	{
+		"WORD_SEQ" : 364,
+		"WORD_NAME" : "protected",
+		"WORD_MEAN" : "보호된"
+	},
+	{
+		"WORD_SEQ" : 365,
+		"WORD_NAME" : "restricted",
+		"WORD_MEAN" : "제한된"
+	},
+	{
+		"WORD_SEQ" : 366,
+		"WORD_NAME" : "Egypt",
+		"WORD_MEAN" : "이집트"
+	},
+	{
+		"WORD_SEQ" : 367,
+		"WORD_NAME" : "exposed",
+		"WORD_MEAN" : "노출된"
+	},
+	{
+		"WORD_SEQ" : 368,
+		"WORD_NAME" : "partly",
+		"WORD_MEAN" : "부분적으로"
+	},
+	{
+		"WORD_SEQ" : 369,
+		"WORD_NAME" : "boat",
+		"WORD_MEAN" : "배를"
+	},
+	{
+		"WORD_SEQ" : 370,
+		"WORD_NAME" : "fashion",
+		"WORD_MEAN" : "유행시키다"
+	},
+	{
+		"WORD_SEQ" : 371,
+		"WORD_NAME" : "situations",
+		"WORD_MEAN" : "상황들"
+	},
+	{
+		"WORD_SEQ" : 372,
+		"WORD_NAME" : "Virginia",
+		"WORD_MEAN" : "버지니아 주"
+	},
+	{
+		"WORD_SEQ" : 373,
+		"WORD_NAME" : "conference",
+		"WORD_MEAN" : "회의."
+	},
+	{
+		"WORD_SEQ" : 374,
+		"WORD_NAME" : "draw",
+		"WORD_MEAN" : "그리다"
+	},
+	{
+		"WORD_SEQ" : 375,
+		"WORD_NAME" : "planet",
+		"WORD_MEAN" : "행성"
+	},
+	{
+		"WORD_SEQ" : 376,
+		"WORD_NAME" : "links",
+		"WORD_MEAN" : "링크"
+	},
+	{
+		"WORD_SEQ" : 377,
+		"WORD_NAME" : "strike",
+		"WORD_MEAN" : "파업을 하다"
+	},
+	{
+		"WORD_SEQ" : 378,
+		"WORD_NAME" : "tell",
+		"WORD_MEAN" : "말하다"
+	},
+	{
+		"WORD_SEQ" : 379,
+		"WORD_NAME" : "outsideof",
+		"WORD_MEAN" : "이외에"
+	},
+	{
+		"WORD_SEQ" : 380,
+		"WORD_NAME" : "printing",
+		"WORD_MEAN" : "인쇄"
+	},
+	{
+		"WORD_SEQ" : 381,
+		"WORD_NAME" : "sentence",
+		"WORD_MEAN" : "문장."
+	},
+	{
+		"WORD_SEQ" : 382,
+		"WORD_NAME" : "depth",
+		"WORD_MEAN" : "깊이"
+	},
+	{
+		"WORD_SEQ" : 383,
+		"WORD_NAME" : "Jackson",
+		"WORD_MEAN" : "잭슨"
+	},
+	{
+		"WORD_SEQ" : 384,
+		"WORD_NAME" : "atthat",
+		"WORD_MEAN" : "그 때에"
+	},
+	{
+		"WORD_SEQ" : 385,
+		"WORD_NAME" : "criminal",
+		"WORD_MEAN" : "범죄자의"
+	},
+	{
+		"WORD_SEQ" : 386,
+		"WORD_NAME" : "identical",
+		"WORD_MEAN" : "동일한"
+	},
+	{
+		"WORD_SEQ" : 387,
+		"WORD_NAME" : "otherthan",
+		"WORD_MEAN" : "이외에"
+	},
+	{
+		"WORD_SEQ" : 388,
+		"WORD_NAME" : "returns",
+		"WORD_MEAN" : "돌아온다"
+	},
+	{
+		"WORD_SEQ" : 389,
+		"WORD_NAME" : "roots",
+		"WORD_MEAN" : "뿌리."
+	},
+	{
+		"WORD_SEQ" : 390,
+		"WORD_NAME" : "telephone",
+		"WORD_MEAN" : "전화를 걸다"
+	},
+	{
+		"WORD_SEQ" : 391,
+		"WORD_NAME" : "agent",
+		"WORD_MEAN" : "대리인"
+	},
+	{
+		"WORD_SEQ" : 392,
+		"WORD_NAME" : "argues",
+		"WORD_MEAN" : "주장하다"
+	},
+	{
+		"WORD_SEQ" : 393,
+		"WORD_NAME" : "Dr",
+		"WORD_MEAN" : "박사"
+	},
+	{
+		"WORD_SEQ" : 394,
+		"WORD_NAME" : "communications",
+		"WORD_MEAN" : "통신"
+	},
+	{
+		"WORD_SEQ" : 395,
+		"WORD_NAME" : "engaged",
+		"WORD_MEAN" : "약혼한"
+	},
+	{
+		"WORD_SEQ" : 396,
+		"WORD_NAME" : "females",
+		"WORD_MEAN" : "여자들"
+	},
+	{
+		"WORD_SEQ" : 397,
+		"WORD_NAME" : "convention",
+		"WORD_MEAN" : "관습"
+	},
+	{
+		"WORD_SEQ" : 398,
+		"WORD_NAME" : "frequent",
+		"WORD_MEAN" : "빈번히 일어나다"
+	},
+	{
+		"WORD_SEQ" : 399,
+		"WORD_NAME" : "print",
+		"WORD_MEAN" : "인쇄하다"
+	},
+	{
+		"WORD_SEQ" : 400,
+		"WORD_NAME" : "ie",
+		"WORD_MEAN" : "ie"
+	},
+	{
+		"WORD_SEQ" : 401,
+		"WORD_NAME" : "uniform",
+		"WORD_MEAN" : "획일적인"
+	},
+	{
+		"WORD_SEQ" : 402,
+		"WORD_NAME" : "bean",
+		"WORD_MEAN" : "콩이 되다"
+	},
+	{
+		"WORD_SEQ" : 403,
+		"WORD_NAME" : "texts",
+		"WORD_MEAN" : "텍스트"
+	},
+	{
+		"WORD_SEQ" : 404,
+		"WORD_NAME" : "velocity",
+		"WORD_MEAN" : "속도"
+	},
+	{
+		"WORD_SEQ" : 405,
+		"WORD_NAME" : "transportation",
+		"WORD_MEAN" : "교통."
+	},
+	{
+		"WORD_SEQ" : 406,
+		"WORD_NAME" : "yearsold",
+		"WORD_MEAN" : "년 된"
+	},
+	{
+		"WORD_SEQ" : 407,
+		"WORD_NAME" : "Hitler",
+		"WORD_MEAN" : "히틀러"
+	},
+	{
+		"WORD_SEQ" : 408,
+		"WORD_NAME" : "falls",
+		"WORD_MEAN" : "낙하하다"
+	},
+	{
+		"WORD_SEQ" : 409,
+		"WORD_NAME" : "seemed",
+		"WORD_MEAN" : "보였다"
+	},
+	{
+		"WORD_SEQ" : 410,
+		"WORD_NAME" : "Elizabeth",
+		"WORD_MEAN" : "엘리자베스."
+	},
+	{
+		"WORD_SEQ" : 411,
+		"WORD_NAME" : "administrative",
+		"WORD_MEAN" : "행정상의"
+	},
+	{
+		"WORD_SEQ" : 412,
+		"WORD_NAME" : "closer",
+		"WORD_MEAN" : "가까이."
+	},
+	{
+		"WORD_SEQ" : 413,
+		"WORD_NAME" : "anyone",
+		"WORD_MEAN" : "아무도"
+	},
+	{
+		"WORD_SEQ" : 414,
+		"WORD_NAME" : "debt",
+		"WORD_MEAN" : "빚을 지다"
+	},
+	{
+		"WORD_SEQ" : 415,
+		"WORD_NAME" : "references",
+		"WORD_MEAN" : "참고 문헌"
+	},
+	{
+		"WORD_SEQ" : 416,
+		"WORD_NAME" : "representing",
+		"WORD_MEAN" : "을 대표하여"
+	},
+	{
+		"WORD_SEQ" : 417,
+		"WORD_NAME" : "agriculture",
+		"WORD_MEAN" : "농업"
+	},
+	{
+		"WORD_SEQ" : 418,
+		"WORD_NAME" : "laid",
+		"WORD_MEAN" : "가로놓인"
+	},
+	{
+		"WORD_SEQ" : 419,
+		"WORD_NAME" : "interested",
+		"WORD_MEAN" : "관심 있는"
+	},
+	{
+		"WORD_SEQ" : 420,
+		"WORD_NAME" : "duties",
+		"WORD_MEAN" : "의무"
+	},
+	{
+		"WORD_SEQ" : 421,
+		"WORD_NAME" : "Wilson",
+		"WORD_MEAN" : "윌슨"
+	},
+	{
+		"WORD_SEQ" : 422,
+		"WORD_NAME" : "bear",
+		"WORD_MEAN" : "견디다"
+	},
+	{
+		"WORD_SEQ" : 423,
+		"WORD_NAME" : "broad",
+		"WORD_MEAN" : "광범한"
+	},
+	{
+		"WORD_SEQ" : 424,
+		"WORD_NAME" : "didnt",
+		"WORD_MEAN" : "하지 않았다"
+	},
+	{
+		"WORD_SEQ" : 425,
+		"WORD_NAME" : "physics",
+		"WORD_MEAN" : "물리학"
+	},
+	{
+		"WORD_SEQ" : 426,
+		"WORD_NAME" : "finite",
+		"WORD_MEAN" : "유한한"
+	},
+	{
+		"WORD_SEQ" : 427,
+		"WORD_NAME" : "server",
+		"WORD_MEAN" : "서버"
+	},
+	{
+		"WORD_SEQ" : 428,
+		"WORD_NAME" : "throne",
+		"WORD_MEAN" : "왕좌에 앉다"
+	},
+	{
+		"WORD_SEQ" : 429,
+		"WORD_NAME" : "attachedto",
+		"WORD_MEAN" : "에 애착이 있는"
+	},
+	{
+		"WORD_SEQ" : 430,
+		"WORD_NAME" : "award",
+		"WORD_MEAN" : "상을 주다"
+	},
+	{
+		"WORD_SEQ" : 431,
+		"WORD_NAME" : "copy",
+		"WORD_MEAN" : "알았다."
+	},
+	{
+		"WORD_SEQ" : 432,
+		"WORD_NAME" : "inaddition",
+		"WORD_MEAN" : "게다가."
+	},
+	{
+		"WORD_SEQ" : 433,
+		"WORD_NAME" : "meat",
+		"WORD_MEAN" : "고기"
+	},
+	{
+		"WORD_SEQ" : 434,
+		"WORD_NAME" : "fluid",
+		"WORD_MEAN" : "유동적인"
+	},
+	{
+		"WORD_SEQ" : 435,
+		"WORD_NAME" : "invasion",
+		"WORD_MEAN" : "침략"
+	},
+	{
+		"WORD_SEQ" : 436,
+		"WORD_NAME" : "affairs",
+		"WORD_MEAN" : "사무"
+	},
+	{
+		"WORD_SEQ" : 437,
+		"WORD_NAME" : "experiences",
+		"WORD_MEAN" : "경험"
+	},
+	{
+		"WORD_SEQ" : 438,
+		"WORD_NAME" : "median",
+		"WORD_MEAN" : "중앙값"
+	},
+	{
+		"WORD_SEQ" : 439,
+		"WORD_NAME" : "ceremony",
+		"WORD_MEAN" : "의식"
+	},
+	{
+		"WORD_SEQ" : 440,
+		"WORD_NAME" : "paintings",
+		"WORD_MEAN" : "그림들"
+	},
+	{
+		"WORD_SEQ" : 441,
+		"WORD_NAME" : "vision",
+		"WORD_MEAN" : "비전."
+	},
+	{
+		"WORD_SEQ" : 442,
+		"WORD_NAME" : "IBM",
+		"WORD_MEAN" : "IBM"
+	},
+	{
+		"WORD_SEQ" : 443,
+		"WORD_NAME" : "credit",
+		"WORD_MEAN" : "신용 거래"
+	},
+	{
+		"WORD_SEQ" : 444,
+		"WORD_NAME" : "disk",
+		"WORD_MEAN" : "디스크"
+	},
+	{
+		"WORD_SEQ" : 445,
+		"WORD_NAME" : "infront",
+		"WORD_MEAN" : "앞에"
+	},
+	{
+		"WORD_SEQ" : 446,
+		"WORD_NAME" : "killing",
+		"WORD_MEAN" : "살인의"
+	},
+	{
+		"WORD_SEQ" : 447,
+		"WORD_NAME" : "km",
+		"WORD_MEAN" : "km"
+	},
+	{
+		"WORD_SEQ" : 448,
+		"WORD_NAME" : "losing",
+		"WORD_MEAN" : "잃기"
+	},
+	{
+		"WORD_SEQ" : 449,
+		"WORD_NAME" : "demonstrated",
+		"WORD_MEAN" : "실증된"
+	},
+	{
+		"WORD_SEQ" : 450,
+		"WORD_NAME" : "faced",
+		"WORD_MEAN" : "얼굴을 한"
+	},
+	{
+		"WORD_SEQ" : 451,
+		"WORD_NAME" : "apparently",
+		"WORD_MEAN" : "겉보기에는"
+	},
+	{
+		"WORD_SEQ" : 452,
+		"WORD_NAME" : "composedof",
+		"WORD_MEAN" : "로 구성된"
+	},
+	{
+		"WORD_SEQ" : 453,
+		"WORD_NAME" : "measurement",
+		"WORD_MEAN" : "측정."
+	},
+	{
+		"WORD_SEQ" : 454,
+		"WORD_NAME" : "regard",
+		"WORD_MEAN" : "관심"
+	},
+	{
+		"WORD_SEQ" : 455,
+		"WORD_NAME" : "wine",
+		"WORD_MEAN" : "포도주"
+	},
+	{
+		"WORD_SEQ" : 456,
+		"WORD_NAME" : "writes",
+		"WORD_MEAN" : "글을 쓰다"
+	},
+	{
+		"WORD_SEQ" : 457,
+		"WORD_NAME" : "stopped",
+		"WORD_MEAN" : "멈춘"
+	},
+	{
+		"WORD_SEQ" : 458,
+		"WORD_NAME" : "thepresent",
+		"WORD_MEAN" : "현재의"
+	},
+	{
+		"WORD_SEQ" : 459,
+		"WORD_NAME" : "Sunday",
+		"WORD_MEAN" : "일요일."
+	},
+	{
+		"WORD_SEQ" : 460,
+		"WORD_NAME" : "quarter",
+		"WORD_MEAN" : "4분의 1"
+	},
+	{
+		"WORD_SEQ" : 461,
+		"WORD_NAME" : "tanks",
+		"WORD_MEAN" : "탱크"
+	},
+	{
+		"WORD_SEQ" : 462,
+		"WORD_NAME" : "spoken",
+		"WORD_MEAN" : "구어의"
+	},
+	{
+		"WORD_SEQ" : 463,
+		"WORD_NAME" : "Asian",
+		"WORD_MEAN" : "아시아의"
+	},
+	{
+		"WORD_SEQ" : 464,
+		"WORD_NAME" : "bar",
+		"WORD_MEAN" : "막대 모양의"
+	},
+	{
+		"WORD_SEQ" : 465,
+		"WORD_NAME" : "finds",
+		"WORD_MEAN" : "찾는다"
+	},
+	{
+		"WORD_SEQ" : 466,
+		"WORD_NAME" : "funding",
+		"WORD_MEAN" : "자금 조달"
+	},
+	{
+		"WORD_SEQ" : 467,
+		"WORD_NAME" : "givento",
+		"WORD_MEAN" : "에게 주어진"
+	},
+	{
+		"WORD_SEQ" : 468,
+		"WORD_NAME" : "incident",
+		"WORD_MEAN" : "사건"
+	},
+	{
+		"WORD_SEQ" : 469,
+		"WORD_NAME" : "routes",
+		"WORD_MEAN" : "경로들"
+	},
+	{
+		"WORD_SEQ" : 470,
+		"WORD_NAME" : "comparison",
+		"WORD_MEAN" : "비교"
+	},
+	{
+		"WORD_SEQ" : 471,
+		"WORD_NAME" : "procedure",
+		"WORD_MEAN" : "절차."
+	},
+	{
+		"WORD_SEQ" : 472,
+		"WORD_NAME" : "begun",
+		"WORD_MEAN" : "시작했다."
+	},
+	{
+		"WORD_SEQ" : 473,
+		"WORD_NAME" : "largenumber",
+		"WORD_MEAN" : "많은 수"
+	},
+	{
+		"WORD_SEQ" : 474,
+		"WORD_NAME" : "museum",
+		"WORD_MEAN" : "박물관"
+	},
+	{
+		"WORD_SEQ" : 475,
+		"WORD_NAME" : "Hollywood",
+		"WORD_MEAN" : "할리우드"
+	},
+	{
+		"WORD_SEQ" : 476,
+		"WORD_NAME" : "birds",
+		"WORD_MEAN" : "새들"
+	},
+	{
+		"WORD_SEQ" : 477,
+		"WORD_NAME" : "experimental",
+		"WORD_MEAN" : "실험적"
+	},
+	{
+		"WORD_SEQ" : 478,
+		"WORD_NAME" : "mathematics",
+		"WORD_MEAN" : "수학"
+	},
+	{
+		"WORD_SEQ" : 479,
+		"WORD_NAME" : "raise",
+		"WORD_MEAN" : "올리다"
+	},
+	{
+		"WORD_SEQ" : 480,
+		"WORD_NAME" : "ruled",
+		"WORD_MEAN" : "규칙이 있는"
+	},
+	{
+		"WORD_SEQ" : 481,
+		"WORD_NAME" : "biological",
+		"WORD_MEAN" : "생물학적"
+	},
+	{
+		"WORD_SEQ" : 482,
+		"WORD_NAME" : "consisting",
+		"WORD_MEAN" : "구성하는"
+	},
+	{
+		"WORD_SEQ" : 483,
+		"WORD_NAME" : "solutions",
+		"WORD_MEAN" : "해결책"
+	},
+	{
+		"WORD_SEQ" : 484,
+		"WORD_NAME" : "theatre",
+		"WORD_MEAN" : "극장"
+	},
+	{
+		"WORD_SEQ" : 485,
+		"WORD_NAME" : "twelve",
+		"WORD_MEAN" : "12"
+	},
+	{
+		"WORD_SEQ" : 486,
+		"WORD_NAME" : "drawing",
+		"WORD_MEAN" : "그림그리기"
+	},
+	{
+		"WORD_SEQ" : 487,
+		"WORD_NAME" : "employees",
+		"WORD_MEAN" : "직원들."
+	},
+	{
+		"WORD_SEQ" : 488,
+		"WORD_NAME" : "referenceto",
+		"WORD_MEAN" : "에 대한 언급"
+	},
+	{
+		"WORD_SEQ" : 489,
+		"WORD_NAME" : "spectrum",
+		"WORD_MEAN" : "스펙트럼"
+	},
+	{
+		"WORD_SEQ" : 490,
+		"WORD_NAME" : "banks",
+		"WORD_MEAN" : "은행"
+	},
+	{
+		"WORD_SEQ" : 491,
+		"WORD_NAME" : "damaged",
+		"WORD_MEAN" : "손상된"
+	},
+	{
+		"WORD_SEQ" : 492,
+		"WORD_NAME" : "reactions",
+		"WORD_MEAN" : "반응"
+	},
+	{
+		"WORD_SEQ" : 493,
+		"WORD_NAME" : "stands",
+		"WORD_MEAN" : "스탠드"
+	},
+	{
+		"WORD_SEQ" : 494,
+		"WORD_NAME" : "blocks",
+		"WORD_MEAN" : "블록들"
+	},
+	{
+		"WORD_SEQ" : 495,
+		"WORD_NAME" : "characteristic",
+		"WORD_MEAN" : "특성."
+	},
+	{
+		"WORD_SEQ" : 496,
+		"WORD_NAME" : "firm",
+		"WORD_MEAN" : "회사."
+	},
+	{
+		"WORD_SEQ" : 497,
+		"WORD_NAME" : "homes",
+		"WORD_MEAN" : "집들"
+	},
+	{
+		"WORD_SEQ" : 498,
+		"WORD_NAME" : "ornot",
+		"WORD_MEAN" : "그렇지 않으면."
+	},
+	{
+		"WORD_SEQ" : 499,
+		"WORD_NAME" : "visitors",
+		"WORD_MEAN" : "방문객들"
+	},
+	{
+		"WORD_SEQ" : 500,
+		"WORD_NAME" : "clock",
+		"WORD_MEAN" : "시계를 맞추다"
+	},
+	{
+		"WORD_SEQ" : 501,
+		"WORD_NAME" : "agree",
+		"WORD_MEAN" : "동의하다"
+	},
+	{
+		"WORD_SEQ" : 502,
+		"WORD_NAME" : "favor",
+		"WORD_MEAN" : "친절"
+	},
+	{
+		"WORD_SEQ" : 503,
+		"WORD_NAME" : "ready",
+		"WORD_MEAN" : "준비가 되어 있습니다!"
+	},
+	{
+		"WORD_SEQ" : 504,
+		"WORD_NAME" : "safe",
+		"WORD_MEAN" : "안전한"
+	},
+	{
+		"WORD_SEQ" : 505,
+		"WORD_NAME" : "prove",
+		"WORD_MEAN" : "증명하다"
+	},
+	{
+		"WORD_SEQ" : 506,
+		"WORD_NAME" : "Francisco",
+		"WORD_MEAN" : "프란시스코"
+	},
+	{
+		"WORD_SEQ" : 507,
+		"WORD_NAME" : "accused",
+		"WORD_MEAN" : "고발 당한"
+	},
+	{
+		"WORD_SEQ" : 508,
+		"WORD_NAME" : "flying",
+		"WORD_MEAN" : "하늘을 나는"
+	},
+	{
+		"WORD_SEQ" : 509,
+		"WORD_NAME" : "anaverage",
+		"WORD_MEAN" : "평균치"
+	},
+	{
+		"WORD_SEQ" : 510,
+		"WORD_NAME" : "desired",
+		"WORD_MEAN" : "열망하는"
+	},
+	{
+		"WORD_SEQ" : 511,
+		"WORD_NAME" : "painted",
+		"WORD_MEAN" : "그렸다"
+	},
+	{
+		"WORD_SEQ" : 512,
+		"WORD_NAME" : "varying",
+		"WORD_MEAN" : "다양한"
+	},
+	{
+		"WORD_SEQ" : 513,
+		"WORD_NAME" : "thelaw",
+		"WORD_MEAN" : "법률"
+	},
+	{
+		"WORD_SEQ" : 514,
+		"WORD_NAME" : "Christians",
+		"WORD_MEAN" : "기독교인들"
+	},
+	{
+		"WORD_SEQ" : 515,
+		"WORD_NAME" : "answer",
+		"WORD_MEAN" : "정답."
+	},
+	{
+		"WORD_SEQ" : 516,
+		"WORD_NAME" : "consisted",
+		"WORD_MEAN" : "구성된"
+	},
+	{
+		"WORD_SEQ" : 517,
+		"WORD_NAME" : "evil",
+		"WORD_MEAN" : "사악한"
+	},
+	{
+		"WORD_SEQ" : 518,
+		"WORD_NAME" : "traditionally",
+		"WORD_MEAN" : "전통적으로"
+	},
+	{
+		"WORD_SEQ" : 519,
+		"WORD_NAME" : "brown",
+		"WORD_MEAN" : "갈색"
+	},
+	{
+		"WORD_SEQ" : 520,
+		"WORD_NAME" : "interaction",
+		"WORD_MEAN" : "상호 작용"
+	},
+	{
+		"WORD_SEQ" : 521,
+		"WORD_NAME" : "notably",
+		"WORD_MEAN" : "현저하게"
+	},
+	{
+		"WORD_SEQ" : 522,
+		"WORD_NAME" : "appeal",
+		"WORD_MEAN" : "매력"
+	},
+	{
+		"WORD_SEQ" : 523,
+		"WORD_NAME" : "extension",
+		"WORD_MEAN" : "연장"
+	},
+	{
+		"WORD_SEQ" : 524,
+		"WORD_NAME" : "recommended",
+		"WORD_MEAN" : "권장된"
+	},
+	{
+		"WORD_SEQ" : 525,
+		"WORD_NAME" : "stability",
+		"WORD_MEAN" : "안정성."
+	},
+	{
+		"WORD_SEQ" : 526,
+		"WORD_NAME" : "bein",
+		"WORD_MEAN" : "안에 있다"
+	},
+	{
+		"WORD_SEQ" : 527,
+		"WORD_NAME" : "illegal",
+		"WORD_MEAN" : "위법의"
+	},
+	{
+		"WORD_SEQ" : 528,
+		"WORD_NAME" : "bill",
+		"WORD_MEAN" : "청구서"
+	},
+	{
+		"WORD_SEQ" : 529,
+		"WORD_NAME" : "forming",
+		"WORD_MEAN" : "형성하는"
+	},
+	{
+		"WORD_SEQ" : 530,
+		"WORD_NAME" : "industries",
+		"WORD_MEAN" : "산업"
+	},
+	{
+		"WORD_SEQ" : 531,
+		"WORD_NAME" : "its",
+		"WORD_MEAN" : "그것의."
+	},
+	{
+		"WORD_SEQ" : 532,
+		"WORD_NAME" : "lasted",
+		"WORD_MEAN" : "지속된"
+	},
+	{
+		"WORD_SEQ" : 533,
+		"WORD_NAME" : "trained",
+		"WORD_MEAN" : "훈련된"
+	},
+	{
+		"WORD_SEQ" : 534,
+		"WORD_NAME" : "assembly",
+		"WORD_MEAN" : "집회의"
+	},
+	{
+		"WORD_SEQ" : 535,
+		"WORD_NAME" : "candidate",
+		"WORD_MEAN" : "후보"
+	},
+	{
+		"WORD_SEQ" : 536,
+		"WORD_NAME" : "herself",
+		"WORD_MEAN" : "그녀 자신"
+	},
+	{
+		"WORD_SEQ" : 537,
+		"WORD_NAME" : "option",
+		"WORD_MEAN" : "선택"
+	},
+	{
+		"WORD_SEQ" : 538,
+		"WORD_NAME" : "association",
+		"WORD_MEAN" : "협회."
+	},
+	{
+		"WORD_SEQ" : 539,
+		"WORD_NAME" : "beliefs",
+		"WORD_MEAN" : "신앙"
+	},
+	{
+		"WORD_SEQ" : 540,
+		"WORD_NAME" : "committee",
+		"WORD_MEAN" : "위원회."
+	},
+	{
+		"WORD_SEQ" : 541,
+		"WORD_NAME" : "essentially",
+		"WORD_MEAN" : "본질적으로"
+	},
+	{
+		"WORD_SEQ" : 542,
+		"WORD_NAME" : "percentage",
+		"WORD_MEAN" : "백분율"
+	},
+	{
+		"WORD_SEQ" : 543,
+		"WORD_NAME" : "sons",
+		"WORD_MEAN" : "아들들"
+	},
+	{
+		"WORD_SEQ" : 544,
+		"WORD_NAME" : "sum",
+		"WORD_MEAN" : "합"
+	},
+	{
+		"WORD_SEQ" : 545,
+		"WORD_NAME" : "happened",
+		"WORD_MEAN" : "일어났다"
+	},
+	{
+		"WORD_SEQ" : 546,
+		"WORD_NAME" : "hope",
+		"WORD_MEAN" : "바라다"
+	},
+	{
+		"WORD_SEQ" : 547,
+		"WORD_NAME" : "indicates",
+		"WORD_MEAN" : "지시하다"
+	},
+	{
+		"WORD_SEQ" : 548,
+		"WORD_NAME" : "minister",
+		"WORD_MEAN" : "목사가 되다"
+	},
+	{
+		"WORD_SEQ" : 549,
+		"WORD_NAME" : "von",
+		"WORD_MEAN" : "폰"
+	},
+	{
+		"WORD_SEQ" : 550,
+		"WORD_NAME" : "Germans",
+		"WORD_MEAN" : "독일인들."
+	},
+	{
+		"WORD_SEQ" : 551,
+		"WORD_NAME" : "layers",
+		"WORD_MEAN" : "층층이"
+	},
+	{
+		"WORD_SEQ" : 552,
+		"WORD_NAME" : "SovietUnion",
+		"WORD_MEAN" : "소비에트 연방"
+	},
+	{
+		"WORD_SEQ" : 553,
+		"WORD_NAME" : "purchased",
+		"WORD_MEAN" : "구입된"
+	},
+	{
+		"WORD_SEQ" : 554,
+		"WORD_NAME" : "gender",
+		"WORD_MEAN" : "젠더"
+	},
+	{
+		"WORD_SEQ" : 555,
+		"WORD_NAME" : "perceived",
+		"WORD_MEAN" : "지각된"
+	},
+	{
+		"WORD_SEQ" : 556,
+		"WORD_NAME" : "promoted",
+		"WORD_MEAN" : "승진한"
+	},
+	{
+		"WORD_SEQ" : 557,
+		"WORD_NAME" : "theseason",
+		"WORD_MEAN" : "계절"
+	},
+	{
+		"WORD_SEQ" : 558,
+		"WORD_NAME" : "actors",
+		"WORD_MEAN" : "배우들"
+	},
+	{
+		"WORD_SEQ" : 559,
+		"WORD_NAME" : "aspect",
+		"WORD_MEAN" : "측면"
+	},
+	{
+		"WORD_SEQ" : 560,
+		"WORD_NAME" : "deaths",
+		"WORD_MEAN" : "죽음"
+	},
+	{
+		"WORD_SEQ" : 561,
+		"WORD_NAME" : "driven",
+		"WORD_MEAN" : "추진력이 있는"
+	},
+	{
+		"WORD_SEQ" : 562,
+		"WORD_NAME" : "effectof",
+		"WORD_MEAN" : "의 효과"
+	},
+	{
+		"WORD_SEQ" : 563,
+		"WORD_NAME" : "stores",
+		"WORD_MEAN" : "상점들"
+	},
+	{
+		"WORD_SEQ" : 564,
+		"WORD_NAME" : "SuperBowl",
+		"WORD_MEAN" : "슈퍼볼"
+	},
+	{
+		"WORD_SEQ" : 565,
+		"WORD_NAME" : "clubs",
+		"WORD_MEAN" : "곤봉"
+	},
+	{
+		"WORD_SEQ" : 566,
+		"WORD_NAME" : "concentration",
+		"WORD_MEAN" : "집중"
+	},
+	{
+		"WORD_SEQ" : 567,
+		"WORD_NAME" : "worth",
+		"WORD_MEAN" : "가치가 있는"
+	},
+	{
+		"WORD_SEQ" : 568,
+		"WORD_NAME" : "arrangement",
+		"WORD_MEAN" : "배치."
+	},
+	{
+		"WORD_SEQ" : 569,
+		"WORD_NAME" : "asaresultof",
+		"WORD_MEAN" : "의 결과로"
+	},
+	{
+		"WORD_SEQ" : 570,
+		"WORD_NAME" : "keeping",
+		"WORD_MEAN" : "가지고있는"
+	},
+	{
+		"WORD_SEQ" : 571,
+		"WORD_NAME" : "approaches",
+		"WORD_MEAN" : "접근하다"
+	},
+	{
+		"WORD_SEQ" : 572,
+		"WORD_NAME" : "surrounded",
+		"WORD_MEAN" : "둘러싸인"
+	},
+	{
+		"WORD_SEQ" : 573,
+		"WORD_NAME" : "Sweden",
+		"WORD_MEAN" : "스웨덴"
+	},
+	{
+		"WORD_SEQ" : 574,
+		"WORD_NAME" : "chapter",
+		"WORD_MEAN" : "챕터"
+	},
+	{
+		"WORD_SEQ" : 575,
+		"WORD_NAME" : "mouth",
+		"WORD_MEAN" : "입을 다물다"
+	},
+	{
+		"WORD_SEQ" : 576,
+		"WORD_NAME" : "plate",
+		"WORD_MEAN" : "접시"
+	},
+	{
+		"WORD_SEQ" : 577,
+		"WORD_NAME" : "revenue",
+		"WORD_MEAN" : "수익."
+	},
+	{
+		"WORD_SEQ" : 578,
+		"WORD_NAME" : "league",
+		"WORD_MEAN" : "동맹을 맺다"
+	},
+	{
+		"WORD_SEQ" : 579,
+		"WORD_NAME" : "phrase",
+		"WORD_MEAN" : "문구"
+	},
+	{
+		"WORD_SEQ" : 580,
+		"WORD_NAME" : "classic",
+		"WORD_MEAN" : "고전적인"
+	},
+	{
+		"WORD_SEQ" : 581,
+		"WORD_NAME" : "mixture",
+		"WORD_MEAN" : "혼합물"
+	},
+	{
+		"WORD_SEQ" : 582,
+		"WORD_NAME" : "researchers",
+		"WORD_MEAN" : "연구자들"
+	},
+	{
+		"WORD_SEQ" : 583,
+		"WORD_NAME" : "tool",
+		"WORD_MEAN" : "도구."
+	},
+	{
+		"WORD_SEQ" : 584,
+		"WORD_NAME" : "yearsago",
+		"WORD_MEAN" : "년 전에"
+	},
+	{
+		"WORD_SEQ" : 585,
+		"WORD_NAME" : "calling",
+		"WORD_MEAN" : "부르기"
+	},
+	{
+		"WORD_SEQ" : 586,
+		"WORD_NAME" : "errors",
+		"WORD_MEAN" : "오류들"
+	},
+	{
+		"WORD_SEQ" : 587,
+		"WORD_NAME" : "lay",
+		"WORD_MEAN" : "놓다"
+	},
+	{
+		"WORD_SEQ" : 588,
+		"WORD_NAME" : "reflect",
+		"WORD_MEAN" : "비추다"
+	},
+	{
+		"WORD_SEQ" : 589,
+		"WORD_NAME" : "socalled",
+		"WORD_MEAN" : "소위"
+	},
+	{
+		"WORD_SEQ" : 590,
+		"WORD_NAME" : "statements",
+		"WORD_MEAN" : "진술들"
+	},
+	{
+		"WORD_SEQ" : 591,
+		"WORD_NAME" : "hospital",
+		"WORD_MEAN" : "병원."
+	},
+	{
+		"WORD_SEQ" : 592,
+		"WORD_NAME" : "operational",
+		"WORD_MEAN" : "작전상의"
+	},
+	{
+		"WORD_SEQ" : 593,
+		"WORD_NAME" : "passage",
+		"WORD_MEAN" : "통로"
+	},
+	{
+		"WORD_SEQ" : 594,
+		"WORD_NAME" : "concrete",
+		"WORD_MEAN" : "구체적인"
+	},
+	{
+		"WORD_SEQ" : 595,
+		"WORD_NAME" : "plus",
+		"WORD_MEAN" : "플러스"
+	},
+	{
+		"WORD_SEQ" : 596,
+		"WORD_NAME" : "thin",
+		"WORD_MEAN" : "날씬해요."
+	},
+	{
+		"WORD_SEQ" : 597,
+		"WORD_NAME" : "arrival",
+		"WORD_MEAN" : "도착"
+	},
+	{
+		"WORD_SEQ" : 598,
+		"WORD_NAME" : "concert",
+		"WORD_MEAN" : "콘서트."
+	},
+	{
+		"WORD_SEQ" : 599,
+		"WORD_NAME" : "conduct",
+		"WORD_MEAN" : "실시하다"
+	},
+	{
+		"WORD_SEQ" : 600,
+		"WORD_NAME" : "heads",
+		"WORD_MEAN" : "앞면."
+	},
+	{
+		"WORD_SEQ" : 601,
+		"WORD_NAME" : "offices",
+		"WORD_MEAN" : "사무실"
+	},
+	{
+		"WORD_SEQ" : 602,
+		"WORD_NAME" : "conversion",
+		"WORD_MEAN" : "개종"
+	},
+	{
+		"WORD_SEQ" : 603,
+		"WORD_NAME" : "drugs",
+		"WORD_MEAN" : "마약"
+	},
+	{
+		"WORD_SEQ" : 604,
+		"WORD_NAME" : "forwhich",
+		"WORD_MEAN" : "무엇 때문에"
+	},
+	{
+		"WORD_SEQ" : 605,
+		"WORD_NAME" : "messages",
+		"WORD_MEAN" : "메시지"
+	},
+	{
+		"WORD_SEQ" : 606,
+		"WORD_NAME" : "treaty",
+		"WORD_MEAN" : "조약"
+	},
+	{
+		"WORD_SEQ" : 607,
+		"WORD_NAME" : "brothers",
+		"WORD_MEAN" : "형제들"
+	},
+	{
+		"WORD_SEQ" : 608,
+		"WORD_NAME" : "dealwith",
+		"WORD_MEAN" : "을 처리하다"
+	},
+	{
+		"WORD_SEQ" : 609,
+		"WORD_NAME" : "featuring",
+		"WORD_MEAN" : "피쳐링"
+	},
+	{
+		"WORD_SEQ" : 610,
+		"WORD_NAME" : "themilitary",
+		"WORD_MEAN" : "군대"
+	},
+	{
+		"WORD_SEQ" : 611,
+		"WORD_NAME" : "attacked",
+		"WORD_MEAN" : "공격당한"
+	},
+	{
+		"WORD_SEQ" : 612,
+		"WORD_NAME" : "difficulty",
+		"WORD_MEAN" : "어려움"
+	},
+	{
+		"WORD_SEQ" : 613,
+		"WORD_NAME" : "jazz",
+		"WORD_MEAN" : "재즈를 연주하다"
+	},
+	{
+		"WORD_SEQ" : 614,
+		"WORD_NAME" : "strings",
+		"WORD_MEAN" : "줄들"
+	},
+	{
+		"WORD_SEQ" : 615,
+		"WORD_NAME" : "tryto",
+		"WORD_MEAN" : "노력하다"
+	},
+	{
+		"WORD_SEQ" : 616,
+		"WORD_NAME" : "la",
+		"WORD_MEAN" : "라"
+	},
+	{
+		"WORD_SEQ" : 617,
+		"WORD_NAME" : "infrontof",
+		"WORD_MEAN" : "앞에"
+	},
+	{
+		"WORD_SEQ" : 618,
+		"WORD_NAME" : "pitch",
+		"WORD_MEAN" : "피치를 올리다"
+	},
+	{
+		"WORD_SEQ" : 619,
+		"WORD_NAME" : "rotation",
+		"WORD_MEAN" : "윤번"
+	},
+	{
+		"WORD_SEQ" : 620,
+		"WORD_NAME" : "elsewhere",
+		"WORD_MEAN" : "다른 곳에"
+	},
+	{
+		"WORD_SEQ" : 621,
+		"WORD_NAME" : "medicine",
+		"WORD_MEAN" : "약"
+	},
+	{
+		"WORD_SEQ" : 622,
+		"WORD_NAME" : "miles",
+		"WORD_MEAN" : "마일"
+	},
+	{
+		"WORD_SEQ" : 623,
+		"WORD_NAME" : "comic",
+		"WORD_MEAN" : "희극의"
+	},
+	{
+		"WORD_SEQ" : 624,
+		"WORD_NAME" : "fishing",
+		"WORD_MEAN" : "낚시질"
+	},
+	{
+		"WORD_SEQ" : 625,
+		"WORD_NAME" : "receiver",
+		"WORD_MEAN" : "수신기"
+	},
+	{
+		"WORD_SEQ" : 626,
+		"WORD_NAME" : "column",
+		"WORD_MEAN" : "기둥."
+	},
+	{
+		"WORD_SEQ" : 627,
+		"WORD_NAME" : "covers",
+		"WORD_MEAN" : "커버를 씌우다"
+	},
+	{
+		"WORD_SEQ" : 628,
+		"WORD_NAME" : "duty",
+		"WORD_MEAN" : "의무"
+	},
+	{
+		"WORD_SEQ" : 629,
+		"WORD_NAME" : "demands",
+		"WORD_MEAN" : "요구 사항"
+	},
+	{
+		"WORD_SEQ" : 630,
+		"WORD_NAME" : "earned",
+		"WORD_MEAN" : "벌었다"
+	},
+	{
+		"WORD_SEQ" : 631,
+		"WORD_NAME" : "axis",
+		"WORD_MEAN" : "축."
+	},
+	{
+		"WORD_SEQ" : 632,
+		"WORD_NAME" : "sleep",
+		"WORD_MEAN" : "수면."
+	},
+	{
+		"WORD_SEQ" : 633,
+		"WORD_NAME" : "wantto",
+		"WORD_MEAN" : "하고 싶다"
+	},
+	{
+		"WORD_SEQ" : 634,
+		"WORD_NAME" : "web",
+		"WORD_MEAN" : "웹"
+	},
+	{
+		"WORD_SEQ" : 635,
+		"WORD_NAME" : "hence",
+		"WORD_MEAN" : "이런 이유로"
+	},
+	{
+		"WORD_SEQ" : 636,
+		"WORD_NAME" : "purchase",
+		"WORD_MEAN" : "구매."
+	},
+	{
+		"WORD_SEQ" : 637,
+		"WORD_NAME" : "Davis",
+		"WORD_MEAN" : "데이비스"
+	},
+	{
+		"WORD_SEQ" : 638,
+		"WORD_NAME" : "turns",
+		"WORD_MEAN" : "회전하다"
+	},
+	{
+		"WORD_SEQ" : 639,
+		"WORD_NAME" : "asof",
+		"WORD_MEAN" : "의 시점에서"
+	},
+	{
+		"WORD_SEQ" : 640,
+		"WORD_NAME" : "bought",
+		"WORD_MEAN" : "샀다."
+	},
+	{
+		"WORD_SEQ" : 641,
+		"WORD_NAME" : "criticized",
+		"WORD_MEAN" : "비판을 받은"
+	},
+	{
+		"WORD_SEQ" : 642,
+		"WORD_NAME" : "generate",
+		"WORD_MEAN" : "발생시키다"
+	},
+	{
+		"WORD_SEQ" : 643,
+		"WORD_NAME" : "Christmas",
+		"WORD_MEAN" : "크리스마스"
+	},
+	{
+		"WORD_SEQ" : 644,
+		"WORD_NAME" : "hypothesis",
+		"WORD_MEAN" : "가설"
+	},
+	{
+		"WORD_SEQ" : 645,
+		"WORD_NAME" : "thedata",
+		"WORD_MEAN" : "자료"
+	},
+	{
+		"WORD_SEQ" : 646,
+		"WORD_NAME" : "fired",
+		"WORD_MEAN" : "해고된"
+	},
+	{
+		"WORD_SEQ" : 647,
+		"WORD_NAME" : "lose",
+		"WORD_MEAN" : "잃어버리다"
+	},
+	{
+		"WORD_SEQ" : 648,
+		"WORD_NAME" : "turning",
+		"WORD_MEAN" : "도는"
+	},
+	{
+		"WORD_SEQ" : 649,
+		"WORD_NAME" : "divisions",
+		"WORD_MEAN" : "사단들"
+	},
+	{
+		"WORD_SEQ" : 650,
+		"WORD_NAME" : "inplace",
+		"WORD_MEAN" : "제자리에"
+	},
+	{
+		"WORD_SEQ" : 651,
+		"WORD_NAME" : "atthesametime",
+		"WORD_MEAN" : "동시에"
+	},
+	{
+		"WORD_SEQ" : 652,
+		"WORD_NAME" : "businesses",
+		"WORD_MEAN" : "기업체"
+	},
+	{
+		"WORD_SEQ" : 653,
+		"WORD_NAME" : "emphasis",
+		"WORD_MEAN" : "역점을"
+	},
+	{
+		"WORD_SEQ" : 654,
+		"WORD_NAME" : "farmers",
+		"WORD_MEAN" : "농민들"
+	},
+	{
+		"WORD_SEQ" : 655,
+		"WORD_NAME" : "label",
+		"WORD_MEAN" : "라벨."
+	},
+	{
+		"WORD_SEQ" : 656,
+		"WORD_NAME" : "livingin",
+		"WORD_MEAN" : "에 사는"
+	},
+	{
+		"WORD_SEQ" : 657,
+		"WORD_NAME" : "themes",
+		"WORD_MEAN" : "테마들"
+	},
+	{
+		"WORD_SEQ" : 658,
+		"WORD_NAME" : "offering",
+		"WORD_MEAN" : "제공된 것"
+	},
+	{
+		"WORD_SEQ" : 659,
+		"WORD_NAME" : "caught",
+		"WORD_MEAN" : "잡았다."
+	},
+	{
+		"WORD_SEQ" : 660,
+		"WORD_NAME" : "poem",
+		"WORD_MEAN" : "시."
+	},
+	{
+		"WORD_SEQ" : 661,
+		"WORD_NAME" : "switch",
+		"WORD_MEAN" : "스위치를 넣다"
+	},
+	{
+		"WORD_SEQ" : 662,
+		"WORD_NAME" : "alcohol",
+		"WORD_MEAN" : "술"
+	},
+	{
+		"WORD_SEQ" : 663,
+		"WORD_NAME" : "murder",
+		"WORD_MEAN" : "살인"
+	},
+	{
+		"WORD_SEQ" : 664,
+		"WORD_NAME" : "reflected",
+		"WORD_MEAN" : "반영된"
+	},
+	{
+		"WORD_SEQ" : 665,
+		"WORD_NAME" : "youth",
+		"WORD_MEAN" : "청춘"
+	},
+	{
+		"WORD_SEQ" : 666,
+		"WORD_NAME" : "senior",
+		"WORD_MEAN" : "선배"
+	},
+	{
+		"WORD_SEQ" : 667,
+		"WORD_NAME" : "boundaries",
+		"WORD_MEAN" : "경계"
+	},
+	{
+		"WORD_SEQ" : 668,
+		"WORD_NAME" : "handle",
+		"WORD_MEAN" : "취급하다"
+	},
+	{
+		"WORD_SEQ" : 669,
+		"WORD_NAME" : "historic",
+		"WORD_MEAN" : "역사적인"
+	},
+	{
+		"WORD_SEQ" : 670,
+		"WORD_NAME" : "indeed",
+		"WORD_MEAN" : "실제로."
+	},
+	{
+		"WORD_SEQ" : 671,
+		"WORD_NAME" : "lists",
+		"WORD_MEAN" : "목록들"
+	},
+	{
+		"WORD_SEQ" : 672,
+		"WORD_NAME" : "scheme",
+		"WORD_MEAN" : "계략을 꾸미다"
+	},
+	{
+		"WORD_SEQ" : 673,
+		"WORD_NAME" : "superior",
+		"WORD_MEAN" : "우월한"
+	},
+	{
+		"WORD_SEQ" : 674,
+		"WORD_NAME" : "arm",
+		"WORD_MEAN" : "팔"
+	},
+	{
+		"WORD_SEQ" : 675,
+		"WORD_NAME" : "connections",
+		"WORD_MEAN" : "연줄"
+	},
+	{
+		"WORD_SEQ" : 676,
+		"WORD_NAME" : "dominated",
+		"WORD_MEAN" : "지배적인"
+	},
+	{
+		"WORD_SEQ" : 677,
+		"WORD_NAME" : "sun",
+		"WORD_MEAN" : "태양."
+	},
+	{
+		"WORD_SEQ" : 678,
+		"WORD_NAME" : "thegreatest",
+		"WORD_MEAN" : "최대의"
+	},
+	{
+		"WORD_SEQ" : 679,
+		"WORD_NAME" : "campus",
+		"WORD_MEAN" : "캠퍼스"
+	},
+	{
+		"WORD_SEQ" : 680,
+		"WORD_NAME" : "soul",
+		"WORD_MEAN" : "영혼을"
+	},
+	{
+		"WORD_SEQ" : 681,
+		"WORD_NAME" : "detail",
+		"WORD_MEAN" : "세부 사항"
+	},
+	{
+		"WORD_SEQ" : 682,
+		"WORD_NAME" : "continuing",
+		"WORD_MEAN" : "계속되는"
+	},
+	{
+		"WORD_SEQ" : 683,
+		"WORD_NAME" : "master",
+		"WORD_MEAN" : "마스터."
+	},
+	{
+		"WORD_SEQ" : 684,
+		"WORD_NAME" : "selling",
+		"WORD_MEAN" : "팔다"
+	},
+	{
+		"WORD_SEQ" : 685,
+		"WORD_NAME" : "infantry",
+		"WORD_MEAN" : "보병의"
+	},
+	{
+		"WORD_SEQ" : 686,
+		"WORD_NAME" : "missions",
+		"WORD_MEAN" : "임무들"
+	},
+	{
+		"WORD_SEQ" : 687,
+		"WORD_NAME" : "theindividual",
+		"WORD_MEAN" : "개인"
+	},
+	{
+		"WORD_SEQ" : 688,
+		"WORD_NAME" : "Im",
+		"WORD_MEAN" : "임"
+	},
+	{
+		"WORD_SEQ" : 689,
+		"WORD_NAME" : "random",
+		"WORD_MEAN" : "난수의"
+	},
+	{
+		"WORD_SEQ" : 690,
+		"WORD_NAME" : "rose",
+		"WORD_MEAN" : "로즈."
+	},
+	{
+		"WORD_SEQ" : 691,
+		"WORD_NAME" : "slave",
+		"WORD_MEAN" : "노예의"
+	},
+	{
+		"WORD_SEQ" : 692,
+		"WORD_NAME" : "wrong",
+		"WORD_MEAN" : "틀렸어"
+	},
+	{
+		"WORD_SEQ" : 693,
+		"WORD_NAME" : "destruction",
+		"WORD_MEAN" : "파괴"
+	},
+	{
+		"WORD_SEQ" : 694,
+		"WORD_NAME" : "distinguished",
+		"WORD_MEAN" : "유명한"
+	},
+	{
+		"WORD_SEQ" : 695,
+		"WORD_NAME" : "piano",
+		"WORD_MEAN" : "피아노를"
+	},
+	{
+		"WORD_SEQ" : 696,
+		"WORD_NAME" : "proposal",
+		"WORD_MEAN" : "제안"
+	},
+	{
+		"WORD_SEQ" : 697,
+		"WORD_NAME" : "sport",
+		"WORD_MEAN" : "스포츠"
+	},
+	{
+		"WORD_SEQ" : 698,
+		"WORD_NAME" : "partially",
+		"WORD_MEAN" : "부분적으로"
+	},
+	{
+		"WORD_SEQ" : 699,
+		"WORD_NAME" : "producer",
+		"WORD_MEAN" : "제작자"
+	},
+	{
+		"WORD_SEQ" : 700,
+		"WORD_NAME" : "rising",
+		"WORD_MEAN" : "신진의"
+	},
+	{
+		"WORD_SEQ" : 701,
+		"WORD_NAME" : "suffering",
+		"WORD_MEAN" : "괴로움"
+	},
+	{
+		"WORD_SEQ" : 702,
+		"WORD_NAME" : "waters",
+		"WORD_MEAN" : "물을 주다"
+	},
+	{
+		"WORD_SEQ" : 703,
+		"WORD_NAME" : "foundation",
+		"WORD_MEAN" : "토대"
+	},
+	{
+		"WORD_SEQ" : 704,
+		"WORD_NAME" : "artillery",
+		"WORD_MEAN" : "포병의"
+	},
+	{
+		"WORD_SEQ" : 705,
+		"WORD_NAME" : "doctrine",
+		"WORD_MEAN" : "교의"
+	},
+	{
+		"WORD_SEQ" : 706,
+		"WORD_NAME" : "magnitude",
+		"WORD_MEAN" : "규모의 크기"
+	},
+	{
+		"WORD_SEQ" : 707,
+		"WORD_NAME" : "atomic",
+		"WORD_MEAN" : "원자의"
+	},
+	{
+		"WORD_SEQ" : 708,
+		"WORD_NAME" : "boundary",
+		"WORD_MEAN" : "경계의"
+	},
+	{
+		"WORD_SEQ" : 709,
+		"WORD_NAME" : "speakers",
+		"WORD_MEAN" : "연사들"
+	},
+	{
+		"WORD_SEQ" : 710,
+		"WORD_NAME" : "accuracy",
+		"WORD_MEAN" : "정확성."
+	},
+	{
+		"WORD_SEQ" : 711,
+		"WORD_NAME" : "department",
+		"WORD_MEAN" : "부서"
+	},
+	{
+		"WORD_SEQ" : 712,
+		"WORD_NAME" : "nd",
+		"WORD_MEAN" : "엔도"
+	},
+	{
+		"WORD_SEQ" : 713,
+		"WORD_NAME" : "consistingof",
+		"WORD_MEAN" : "로 구성된"
+	},
+	{
+		"WORD_SEQ" : 714,
+		"WORD_NAME" : "inhabitants",
+		"WORD_MEAN" : "주민들"
+	},
+	{
+		"WORD_SEQ" : 715,
+		"WORD_NAME" : "meetings",
+		"WORD_MEAN" : "회의"
+	},
+	{
+		"WORD_SEQ" : 716,
+		"WORD_NAME" : "platform",
+		"WORD_MEAN" : "연단"
+	},
+	{
+		"WORD_SEQ" : 717,
+		"WORD_NAME" : "railway",
+		"WORD_MEAN" : "철도의"
+	},
+	{
+		"WORD_SEQ" : 718,
+		"WORD_NAME" : "struggle",
+		"WORD_MEAN" : "투쟁하다"
+	},
+	{
+		"WORD_SEQ" : 719,
+		"WORD_NAME" : "thinking",
+		"WORD_MEAN" : "생각중"
+	},
+	{
+		"WORD_SEQ" : 720,
+		"WORD_NAME" : "camp",
+		"WORD_MEAN" : "진을 치다"
+	},
+	{
+		"WORD_SEQ" : 721,
+		"WORD_NAME" : "dominant",
+		"WORD_MEAN" : "우세한"
+	},
+	{
+		"WORD_SEQ" : 722,
+		"WORD_NAME" : "getting",
+		"WORD_MEAN" : "점점 ~하다"
+	},
+	{
+		"WORD_SEQ" : 723,
+		"WORD_NAME" : "inadditionto",
+		"WORD_MEAN" : "에 더하여"
+	},
+	{
+		"WORD_SEQ" : 724,
+		"WORD_NAME" : "ranges",
+		"WORD_MEAN" : "사정거리"
+	},
+	{
+		"WORD_SEQ" : 725,
+		"WORD_NAME" : "supports",
+		"WORD_MEAN" : "지지하다"
+	},
+	{
+		"WORD_SEQ" : 726,
+		"WORD_NAME" : "varied",
+		"WORD_MEAN" : "다양한"
+	},
+	{
+		"WORD_SEQ" : 727,
+		"WORD_NAME" : "calendar",
+		"WORD_MEAN" : "달력을"
+	},
+	{
+		"WORD_SEQ" : 728,
+		"WORD_NAME" : "educational",
+		"WORD_MEAN" : "교육적인"
+	},
+	{
+		"WORD_SEQ" : 729,
+		"WORD_NAME" : "papers",
+		"WORD_MEAN" : "서류"
+	},
+	{
+		"WORD_SEQ" : 730,
+		"WORD_NAME" : "enjoyed",
+		"WORD_MEAN" : "즐겼다"
+	},
+	{
+		"WORD_SEQ" : 731,
+		"WORD_NAME" : "isolated",
+		"WORD_MEAN" : "고립된"
+	},
+	{
+		"WORD_SEQ" : 732,
+		"WORD_NAME" : "tocome",
+		"WORD_MEAN" : "앞으로"
+	},
+	{
+		"WORD_SEQ" : 733,
+		"WORD_NAME" : "boats",
+		"WORD_MEAN" : "배들"
+	},
+	{
+		"WORD_SEQ" : 734,
+		"WORD_NAME" : "sale",
+		"WORD_MEAN" : "매상고"
+	},
+	{
+		"WORD_SEQ" : 735,
+		"WORD_NAME" : "door",
+		"WORD_MEAN" : "문"
+	},
+	{
+		"WORD_SEQ" : 736,
+		"WORD_NAME" : "passengers",
+		"WORD_MEAN" : "승객들"
+	},
+	{
+		"WORD_SEQ" : 737,
+		"WORD_NAME" : "tape",
+		"WORD_MEAN" : "테이프를 붙이다"
+	},
+	{
+		"WORD_SEQ" : 738,
+		"WORD_NAME" : "Mr",
+		"WORD_MEAN" : "미스터"
+	},
+	{
+		"WORD_SEQ" : 739,
+		"WORD_NAME" : "diplomatic",
+		"WORD_MEAN" : "외교의"
+	},
+	{
+		"WORD_SEQ" : 740,
+		"WORD_NAME" : "employment",
+		"WORD_MEAN" : "고용."
+	},
+	{
+		"WORD_SEQ" : 741,
+		"WORD_NAME" : "optical",
+		"WORD_MEAN" : "광학의"
+	},
+	{
+		"WORD_SEQ" : 742,
+		"WORD_NAME" : "branches",
+		"WORD_MEAN" : "나뭇가지"
+	},
+	{
+		"WORD_SEQ" : 743,
+		"WORD_NAME" : "controls",
+		"WORD_MEAN" : "통제"
+	},
+	{
+		"WORD_SEQ" : 744,
+		"WORD_NAME" : "formerly",
+		"WORD_MEAN" : "종전에"
+	},
+	{
+		"WORD_SEQ" : 745,
+		"WORD_NAME" : "milk",
+		"WORD_MEAN" : "우유"
+	},
+	{
+		"WORD_SEQ" : 746,
+		"WORD_NAME" : "x",
+		"WORD_MEAN" : "x"
+	},
+	{
+		"WORD_SEQ" : 747,
+		"WORD_NAME" : "argue",
+		"WORD_MEAN" : "논증하다"
+	},
+	{
+		"WORD_SEQ" : 748,
+		"WORD_NAME" : "colour",
+		"WORD_MEAN" : "색을 칠하다"
+	},
+	{
+		"WORD_SEQ" : 749,
+		"WORD_NAME" : "downtown",
+		"WORD_MEAN" : "시내에"
+	},
+	{
+		"WORD_SEQ" : 750,
+		"WORD_NAME" : "influential",
+		"WORD_MEAN" : "영향력 있는"
+	},
+	{
+		"WORD_SEQ" : 751,
+		"WORD_NAME" : "solo",
+		"WORD_MEAN" : "단독의"
+	},
+	{
+		"WORD_SEQ" : 752,
+		"WORD_NAME" : "Christianity",
+		"WORD_MEAN" : "기독교"
+	},
+	{
+		"WORD_SEQ" : 753,
+		"WORD_NAME" : "editor",
+		"WORD_MEAN" : "편집자"
+	},
+	{
+		"WORD_SEQ" : 754,
+		"WORD_NAME" : "empty",
+		"WORD_MEAN" : "빈"
+	},
+	{
+		"WORD_SEQ" : 755,
+		"WORD_NAME" : "owners",
+		"WORD_MEAN" : "소유자들"
+	},
+	{
+		"WORD_SEQ" : 756,
+		"WORD_NAME" : "rivers",
+		"WORD_MEAN" : "강들"
+	},
+	{
+		"WORD_SEQ" : 757,
+		"WORD_NAME" : "SouthAfrica",
+		"WORD_MEAN" : "남아프리카 공화국"
+	},
+	{
+		"WORD_SEQ" : 758,
+		"WORD_NAME" : "credited",
+		"WORD_MEAN" : "신용이 있는"
+	},
+	{
+		"WORD_SEQ" : 759,
+		"WORD_NAME" : "challenge",
+		"WORD_MEAN" : "도전"
+	},
+	{
+		"WORD_SEQ" : 760,
+		"WORD_NAME" : "classification",
+		"WORD_MEAN" : "분류"
+	},
+	{
+		"WORD_SEQ" : 761,
+		"WORD_NAME" : "controversy",
+		"WORD_MEAN" : "논쟁"
+	},
+	{
+		"WORD_SEQ" : 762,
+		"WORD_NAME" : "count",
+		"WORD_MEAN" : "세어보세요"
+	},
+	{
+		"WORD_SEQ" : 763,
+		"WORD_NAME" : "worn",
+		"WORD_MEAN" : "해진"
+	},
+	{
+		"WORD_SEQ" : 764,
+		"WORD_NAME" : "characterized",
+		"WORD_MEAN" : "특징이 있는"
+	},
+	{
+		"WORD_SEQ" : 765,
+		"WORD_NAME" : "phenomenon",
+		"WORD_MEAN" : "현상"
+	},
+	{
+		"WORD_SEQ" : 766,
+		"WORD_NAME" : "responded",
+		"WORD_MEAN" : "대응했다"
+	},
+	{
+		"WORD_SEQ" : 767,
+		"WORD_NAME" : "retired",
+		"WORD_MEAN" : "은퇴한"
+	},
+	{
+		"WORD_SEQ" : 768,
+		"WORD_NAME" : "fresh",
+		"WORD_MEAN" : "신선한"
+	},
+	{
+		"WORD_SEQ" : 769,
+		"WORD_NAME" : "horses",
+		"WORD_MEAN" : "말들"
+	},
+	{
+		"WORD_SEQ" : 770,
+		"WORD_NAME" : "notion",
+		"WORD_MEAN" : "개념"
+	},
+	{
+		"WORD_SEQ" : 771,
+		"WORD_NAME" : "organic",
+		"WORD_MEAN" : "유기의"
+	},
+	{
+		"WORD_SEQ" : 772,
+		"WORD_NAME" : "musicians",
+		"WORD_MEAN" : "음악가들"
+	},
+	{
+		"WORD_SEQ" : 773,
+		"WORD_NAME" : "snow",
+		"WORD_MEAN" : "눈을 내리다"
+	},
+	{
+		"WORD_SEQ" : 774,
+		"WORD_NAME" : "involve",
+		"WORD_MEAN" : "포함하다"
+	},
+	{
+		"WORD_SEQ" : 775,
+		"WORD_NAME" : "vacuum",
+		"WORD_MEAN" : "진공."
+	},
+	{
+		"WORD_SEQ" : 776,
+		"WORD_NAME" : "attracted",
+		"WORD_MEAN" : "끌었다"
+	},
+	{
+		"WORD_SEQ" : 777,
+		"WORD_NAME" : "narrow",
+		"WORD_MEAN" : "좁은"
+	},
+	{
+		"WORD_SEQ" : 778,
+		"WORD_NAME" : "technologies",
+		"WORD_MEAN" : "기술"
+	},
+	{
+		"WORD_SEQ" : 779,
+		"WORD_NAME" : "Philip",
+		"WORD_MEAN" : "필립"
+	},
+	{
+		"WORD_SEQ" : 780,
+		"WORD_NAME" : "boy",
+		"WORD_MEAN" : "소년"
+	},
+	{
+		"WORD_SEQ" : 781,
+		"WORD_NAME" : "interpreted",
+		"WORD_MEAN" : "통역된"
+	},
+	{
+		"WORD_SEQ" : 782,
+		"WORD_NAME" : "invited",
+		"WORD_MEAN" : "초대된"
+	},
+	{
+		"WORD_SEQ" : 783,
+		"WORD_NAME" : "madeup",
+		"WORD_MEAN" : "만들어냈다"
+	},
+	{
+		"WORD_SEQ" : 784,
+		"WORD_NAME" : "depicted",
+		"WORD_MEAN" : "묘사된"
+	},
+	{
+		"WORD_SEQ" : 785,
+		"WORD_NAME" : "occupied",
+		"WORD_MEAN" : "사용중"
+	},
+	{
+		"WORD_SEQ" : 786,
+		"WORD_NAME" : "surviving",
+		"WORD_MEAN" : "생존의"
+	},
+	{
+		"WORD_SEQ" : 787,
+		"WORD_NAME" : "website",
+		"WORD_MEAN" : "웹사이트"
+	},
+	{
+		"WORD_SEQ" : 788,
+		"WORD_NAME" : "destroy",
+		"WORD_MEAN" : "파괴하다"
+	},
+	{
+		"WORD_SEQ" : 789,
+		"WORD_NAME" : "hearing",
+		"WORD_MEAN" : "청문회"
+	},
+	{
+		"WORD_SEQ" : 790,
+		"WORD_NAME" : "organisms",
+		"WORD_MEAN" : "유기체"
+	},
+	{
+		"WORD_SEQ" : 791,
+		"WORD_NAME" : "Muslim",
+		"WORD_MEAN" : "이슬람교의"
+	},
+	{
+		"WORD_SEQ" : 792,
+		"WORD_NAME" : "labour",
+		"WORD_MEAN" : "노동을 하다"
+	},
+	{
+		"WORD_SEQ" : 793,
+		"WORD_NAME" : "missile",
+		"WORD_MEAN" : "미사일"
+	},
+	{
+		"WORD_SEQ" : 794,
+		"WORD_NAME" : "targets",
+		"WORD_MEAN" : "표적"
+	},
+	{
+		"WORD_SEQ" : 795,
+		"WORD_NAME" : "cited",
+		"WORD_MEAN" : "인용된"
+	},
+	{
+		"WORD_SEQ" : 796,
+		"WORD_NAME" : "empire",
+		"WORD_MEAN" : "제국을 이루다"
+	},
+	{
+		"WORD_SEQ" : 797,
+		"WORD_NAME" : "execution",
+		"WORD_MEAN" : "실행"
+	},
+	{
+		"WORD_SEQ" : 798,
+		"WORD_NAME" : "tail",
+		"WORD_MEAN" : "꼬리"
+	},
+	{
+		"WORD_SEQ" : 799,
+		"WORD_NAME" : "grounds",
+		"WORD_MEAN" : "근거"
+	},
+	{
+		"WORD_SEQ" : 800,
+		"WORD_NAME" : "lies",
+		"WORD_MEAN" : "거짓말."
+	},
+	{
+		"WORD_SEQ" : 801,
+		"WORD_NAME" : "index",
+		"WORD_MEAN" : "색인을 달다"
+	},
+	{
+		"WORD_SEQ" : 802,
+		"WORD_NAME" : "morethanone",
+		"WORD_MEAN" : "두개 이상의."
+	},
+	{
+		"WORD_SEQ" : 803,
+		"WORD_NAME" : "marks",
+		"WORD_MEAN" : "흔적들"
+	},
+	{
+		"WORD_SEQ" : 804,
+		"WORD_NAME" : "partner",
+		"WORD_MEAN" : "동업자"
+	},
+	{
+		"WORD_SEQ" : 805,
+		"WORD_NAME" : "restrictions",
+		"WORD_MEAN" : "제한 사항"
+	},
+	{
+		"WORD_SEQ" : 806,
+		"WORD_NAME" : "creates",
+		"WORD_MEAN" : "창조하다"
+	},
+	{
+		"WORD_SEQ" : 807,
+		"WORD_NAME" : "controversial",
+		"WORD_MEAN" : "논쟁의 여지가"
+	},
+	{
+		"WORD_SEQ" : 808,
+		"WORD_NAME" : "manager",
+		"WORD_MEAN" : "부장님"
+	},
+	{
+		"WORD_SEQ" : 809,
+		"WORD_NAME" : "stress",
+		"WORD_MEAN" : "악센트를 주다"
+	},
+	{
+		"WORD_SEQ" : 810,
+		"WORD_NAME" : "pairs",
+		"WORD_MEAN" : "쌍들"
+	},
+	{
+		"WORD_SEQ" : 811,
+		"WORD_NAME" : "remote",
+		"WORD_MEAN" : "원격의"
+	},
+	{
+		"WORD_SEQ" : 812,
+		"WORD_NAME" : "restored",
+		"WORD_MEAN" : "복원된"
+	},
+	{
+		"WORD_SEQ" : 813,
+		"WORD_NAME" : "festival",
+		"WORD_MEAN" : "축제"
+	},
+	{
+		"WORD_SEQ" : 814,
+		"WORD_NAME" : "carrier",
+		"WORD_MEAN" : "운송 회사"
+	},
+	{
+		"WORD_SEQ" : 815,
+		"WORD_NAME" : "albums",
+		"WORD_MEAN" : "앨범들"
+	},
+	{
+		"WORD_SEQ" : 816,
+		"WORD_NAME" : "load",
+		"WORD_MEAN" : "짐을 싣다"
+	},
+	{
+		"WORD_SEQ" : 817,
+		"WORD_NAME" : "specialized",
+		"WORD_MEAN" : "전문의"
+	},
+	{
+		"WORD_SEQ" : 818,
+		"WORD_NAME" : "diverse",
+		"WORD_MEAN" : "다양한"
+	},
+	{
+		"WORD_SEQ" : 819,
+		"WORD_NAME" : "kinds",
+		"WORD_MEAN" : "종류."
+	},
+	{
+		"WORD_SEQ" : 820,
+		"WORD_NAME" : "operator",
+		"WORD_MEAN" : "교환입니다."
+	},
+	{
+		"WORD_SEQ" : 821,
+		"WORD_NAME" : "soft",
+		"WORD_MEAN" : "부드러운"
+	},
+	{
+		"WORD_SEQ" : 822,
+		"WORD_NAME" : "invented",
+		"WORD_MEAN" : "발명된"
+	},
+	{
+		"WORD_SEQ" : 823,
+		"WORD_NAME" : "simultaneously",
+		"WORD_MEAN" : "동시에"
+	},
+	{
+		"WORD_SEQ" : 824,
+		"WORD_NAME" : "configuration",
+		"WORD_MEAN" : "배열"
+	},
+	{
+		"WORD_SEQ" : 825,
+		"WORD_NAME" : "temporary",
+		"WORD_MEAN" : "임시의"
+	},
+	{
+		"WORD_SEQ" : 826,
+		"WORD_NAME" : "differ",
+		"WORD_MEAN" : "다르다"
+	},
+	{
+		"WORD_SEQ" : 827,
+		"WORD_NAME" : "focuson",
+		"WORD_MEAN" : "집중해 보세요."
+	},
+	{
+		"WORD_SEQ" : 828,
+		"WORD_NAME" : "precise",
+		"WORD_MEAN" : "정밀한"
+	},
+	{
+		"WORD_SEQ" : 829,
+		"WORD_NAME" : "reforms",
+		"WORD_MEAN" : "개혁"
+	},
+	{
+		"WORD_SEQ" : 830,
+		"WORD_NAME" : "bringing",
+		"WORD_MEAN" : "가져가는"
+	},
+	{
+		"WORD_SEQ" : 831,
+		"WORD_NAME" : "inpart",
+		"WORD_MEAN" : "부분적으로"
+	},
+	{
+		"WORD_SEQ" : 832,
+		"WORD_NAME" : "customers",
+		"WORD_MEAN" : "고객들."
+	},
+	{
+		"WORD_SEQ" : 833,
+		"WORD_NAME" : "genre",
+		"WORD_MEAN" : "장르."
+	},
+	{
+		"WORD_SEQ" : 834,
+		"WORD_NAME" : "airport",
+		"WORD_MEAN" : "공항."
+	},
+	{
+		"WORD_SEQ" : 835,
+		"WORD_NAME" : "aware",
+		"WORD_MEAN" : "알고 있는"
+	},
+	{
+		"WORD_SEQ" : 836,
+		"WORD_NAME" : "decrease",
+		"WORD_MEAN" : "감소하다"
+	},
+	{
+		"WORD_SEQ" : 837,
+		"WORD_NAME" : "denied",
+		"WORD_MEAN" : "거부된"
+	},
+	{
+		"WORD_SEQ" : 838,
+		"WORD_NAME" : "livein",
+		"WORD_MEAN" : "에 살다"
+	},
+	{
+		"WORD_SEQ" : 839,
+		"WORD_NAME" : "thegreat",
+		"WORD_MEAN" : "위대한 사람들"
+	},
+	{
+		"WORD_SEQ" : 840,
+		"WORD_NAME" : "codes",
+		"WORD_MEAN" : "법전"
+	},
+	{
+		"WORD_SEQ" : 841,
+		"WORD_NAME" : "complexity",
+		"WORD_MEAN" : "복잡성"
+	},
+	{
+		"WORD_SEQ" : 842,
+		"WORD_NAME" : "electricity",
+		"WORD_MEAN" : "전기"
+	},
+	{
+		"WORD_SEQ" : 843,
+		"WORD_NAME" : "exports",
+		"WORD_MEAN" : "수출품"
+	},
+	{
+		"WORD_SEQ" : 844,
+		"WORD_NAME" : "stood",
+		"WORD_MEAN" : "서 있었다"
+	},
+	{
+		"WORD_SEQ" : 845,
+		"WORD_NAME" : "frequencies",
+		"WORD_MEAN" : "주파수"
+	},
+	{
+		"WORD_SEQ" : 846,
+		"WORD_NAME" : "purposeof",
+		"WORD_MEAN" : "의 목적"
+	},
+	{
+		"WORD_SEQ" : 847,
+		"WORD_NAME" : "quantity",
+		"WORD_MEAN" : "양"
+	},
+	{
+		"WORD_SEQ" : 848,
+		"WORD_NAME" : "dating",
+		"WORD_MEAN" : "데이팅"
+	},
+	{
+		"WORD_SEQ" : 849,
+		"WORD_NAME" : "folk",
+		"WORD_MEAN" : "민중의"
+	},
+	{
+		"WORD_SEQ" : 850,
+		"WORD_NAME" : "participate",
+		"WORD_MEAN" : "참여한다."
+	},
+	{
+		"WORD_SEQ" : 851,
+		"WORD_NAME" : "territories",
+		"WORD_MEAN" : "영지"
+	},
+	{
+		"WORD_SEQ" : 852,
+		"WORD_NAME" : "virtually",
+		"WORD_MEAN" : "사실상"
+	},
+	{
+		"WORD_SEQ" : 853,
+		"WORD_NAME" : "buried",
+		"WORD_MEAN" : "파묻힌"
+	},
+	{
+		"WORD_SEQ" : 854,
+		"WORD_NAME" : "peoples",
+		"WORD_MEAN" : "사람들"
+	},
+	{
+		"WORD_SEQ" : 855,
+		"WORD_NAME" : "satellite",
+		"WORD_MEAN" : "위성."
+	},
+	{
+		"WORD_SEQ" : 856,
+		"WORD_NAME" : "equalto",
+		"WORD_MEAN" : "와 동등한"
+	},
+	{
+		"WORD_SEQ" : 857,
+		"WORD_NAME" : "trip",
+		"WORD_MEAN" : "여행."
+	},
+	{
+		"WORD_SEQ" : 858,
+		"WORD_NAME" : "express",
+		"WORD_MEAN" : "표현"
+	},
+	{
+		"WORD_SEQ" : 859,
+		"WORD_NAME" : "properly",
+		"WORD_MEAN" : "적절히"
+	},
+	{
+		"WORD_SEQ" : 860,
+		"WORD_NAME" : "quantities",
+		"WORD_MEAN" : "수량"
+	},
+	{
+		"WORD_SEQ" : 861,
+		"WORD_NAME" : "speeds",
+		"WORD_MEAN" : "속도"
+	},
+	{
+		"WORD_SEQ" : 862,
+		"WORD_NAME" : "perspective",
+		"WORD_MEAN" : "관점"
+	},
+	{
+		"WORD_SEQ" : 863,
+		"WORD_NAME" : "societies",
+		"WORD_MEAN" : "사회"
+	},
+	{
+		"WORD_SEQ" : 864,
+		"WORD_NAME" : "voted",
+		"WORD_MEAN" : "투표했다"
+	},
+	{
+		"WORD_SEQ" : 865,
+		"WORD_NAME" : "annually",
+		"WORD_MEAN" : "연1년에"
+	},
+	{
+		"WORD_SEQ" : 866,
+		"WORD_NAME" : "extend",
+		"WORD_MEAN" : "확장하다"
+	},
+	{
+		"WORD_SEQ" : 867,
+		"WORD_NAME" : "governor",
+		"WORD_MEAN" : "주지사"
+	},
+	{
+		"WORD_SEQ" : 868,
+		"WORD_NAME" : "magic",
+		"WORD_MEAN" : "마술"
+	},
+	{
+		"WORD_SEQ" : 869,
+		"WORD_NAME" : "USA",
+		"WORD_MEAN" : "미국"
+	},
+	{
+		"WORD_SEQ" : 870,
+		"WORD_NAME" : "hole",
+		"WORD_MEAN" : "구멍"
+	},
+	{
+		"WORD_SEQ" : 871,
+		"WORD_NAME" : "lifetime",
+		"WORD_MEAN" : "일생의"
+	},
+	{
+		"WORD_SEQ" : 872,
+		"WORD_NAME" : "regime",
+		"WORD_MEAN" : "정권"
+	},
+	{
+		"WORD_SEQ" : 873,
+		"WORD_NAME" : "requiring",
+		"WORD_MEAN" : "필요한"
+	},
+	{
+		"WORD_SEQ" : 874,
+		"WORD_NAME" : "wing",
+		"WORD_MEAN" : "날개짓을 하다"
+	},
+	{
+		"WORD_SEQ" : 875,
+		"WORD_NAME" : "Boston",
+		"WORD_MEAN" : "보스턴"
+	},
+	{
+		"WORD_SEQ" : 876,
+		"WORD_NAME" : "Netherlands",
+		"WORD_MEAN" : "네덜란드"
+	},
+	{
+		"WORD_SEQ" : 877,
+		"WORD_NAME" : "accountof",
+		"WORD_MEAN" : "의 설명"
+	},
+	{
+		"WORD_SEQ" : 878,
+		"WORD_NAME" : "equipped",
+		"WORD_MEAN" : "장비가 있는"
+	},
+	{
+		"WORD_SEQ" : 879,
+		"WORD_NAME" : "evening",
+		"WORD_MEAN" : "저녁"
+	},
+	{
+		"WORD_SEQ" : 880,
+		"WORD_NAME" : "honor",
+		"WORD_MEAN" : "명예"
+	},
+	{
+		"WORD_SEQ" : 881,
+		"WORD_NAME" : "session",
+		"WORD_MEAN" : "세션"
+	},
+	{
+		"WORD_SEQ" : 882,
+		"WORD_NAME" : "steam",
+		"WORD_MEAN" : "김이 나다"
+	},
+	{
+		"WORD_SEQ" : 883,
+		"WORD_NAME" : "surfaces",
+		"WORD_MEAN" : "표면"
+	},
+	{
+		"WORD_SEQ" : 884,
+		"WORD_NAME" : "DVD",
+		"WORD_MEAN" : "DVD"
+	},
+	{
+		"WORD_SEQ" : 885,
+		"WORD_NAME" : "Lincoln",
+		"WORD_MEAN" : "링컨"
+	},
+	{
+		"WORD_SEQ" : 886,
+		"WORD_NAME" : "admitted",
+		"WORD_MEAN" : "인정하였다"
+	},
+	{
+		"WORD_SEQ" : 887,
+		"WORD_NAME" : "maintenance",
+		"WORD_MEAN" : "유지"
+	},
+	{
+		"WORD_SEQ" : 888,
+		"WORD_NAME" : "naturally",
+		"WORD_MEAN" : "당연히."
+	},
+	{
+		"WORD_SEQ" : 889,
+		"WORD_NAME" : "makeit",
+		"WORD_MEAN" : "성공하다"
+	},
+	{
+		"WORD_SEQ" : 890,
+		"WORD_NAME" : "separation",
+		"WORD_MEAN" : "별거"
+	},
+	{
+		"WORD_SEQ" : 891,
+		"WORD_NAME" : "thereby",
+		"WORD_MEAN" : "거기서"
+	},
+	{
+		"WORD_SEQ" : 892,
+		"WORD_NAME" : "variables",
+		"WORD_MEAN" : "변수들"
+	},
+	{
+		"WORD_SEQ" : 893,
+		"WORD_NAME" : "Lewis",
+		"WORD_MEAN" : "루이스"
+	},
+	{
+		"WORD_SEQ" : 894,
+		"WORD_NAME" : "adults",
+		"WORD_MEAN" : "어른들"
+	},
+	{
+		"WORD_SEQ" : 895,
+		"WORD_NAME" : "poverty",
+		"WORD_MEAN" : "가난"
+	},
+	{
+		"WORD_SEQ" : 896,
+		"WORD_NAME" : "retained",
+		"WORD_MEAN" : "보유의"
+	},
+	{
+		"WORD_SEQ" : 897,
+		"WORD_NAME" : "armies",
+		"WORD_MEAN" : "군대"
+	},
+	{
+		"WORD_SEQ" : 898,
+		"WORD_NAME" : "wire",
+		"WORD_MEAN" : "철사를 치다"
+	},
+	{
+		"WORD_SEQ" : 899,
+		"WORD_NAME" : "ed",
+		"WORD_MEAN" : "에드"
+	},
+	{
+		"WORD_SEQ" : 900,
+		"WORD_NAME" : "exclusively",
+		"WORD_MEAN" : "독점적으로"
+	},
+	{
+		"WORD_SEQ" : 901,
+		"WORD_NAME" : "headquarters",
+		"WORD_MEAN" : "본부"
+	},
+	{
+		"WORD_SEQ" : 902,
+		"WORD_NAME" : "movies",
+		"WORD_MEAN" : "영화"
+	},
+	{
+		"WORD_SEQ" : 903,
+		"WORD_NAME" : "warfare",
+		"WORD_MEAN" : "전쟁을 하다"
+	},
+	{
+		"WORD_SEQ" : 904,
+		"WORD_NAME" : "roll",
+		"WORD_MEAN" : "굴리다"
+	},
+	{
+		"WORD_SEQ" : 905,
+		"WORD_NAME" : "UnitedNations",
+		"WORD_MEAN" : "국제 연합"
+	},
+	{
+		"WORD_SEQ" : 906,
+		"WORD_NAME" : "aim",
+		"WORD_MEAN" : "목적"
+	},
+	{
+		"WORD_SEQ" : 907,
+		"WORD_NAME" : "explanation",
+		"WORD_MEAN" : "설명."
+	},
+	{
+		"WORD_SEQ" : 908,
+		"WORD_NAME" : "legs",
+		"WORD_MEAN" : "다리"
+	},
+	{
+		"WORD_SEQ" : 909,
+		"WORD_NAME" : "starts",
+		"WORD_MEAN" : "시작하다"
+	},
+	{
+		"WORD_SEQ" : 910,
+		"WORD_NAME" : "thermal",
+		"WORD_MEAN" : "열적인"
+	},
+	{
+		"WORD_SEQ" : 911,
+		"WORD_NAME" : "Islam",
+		"WORD_MEAN" : "이슬람교"
+	},
+	{
+		"WORD_SEQ" : 912,
+		"WORD_NAME" : "curve",
+		"WORD_MEAN" : "곡선을 그리다"
+	},
+	{
+		"WORD_SEQ" : 913,
+		"WORD_NAME" : "enemies",
+		"WORD_MEAN" : "적들"
+	},
+	{
+		"WORD_SEQ" : 914,
+		"WORD_NAME" : "lake",
+		"WORD_MEAN" : "호수"
+	},
+	{
+		"WORD_SEQ" : 915,
+		"WORD_NAME" : "objective",
+		"WORD_MEAN" : "객관적으로"
+	},
+	{
+		"WORD_SEQ" : 916,
+		"WORD_NAME" : "volumes",
+		"WORD_MEAN" : "권수"
+	},
+	{
+		"WORD_SEQ" : 917,
+		"WORD_NAME" : "opponents",
+		"WORD_MEAN" : "반대자들"
+	},
+	{
+		"WORD_SEQ" : 918,
+		"WORD_NAME" : "rear",
+		"WORD_MEAN" : "후방의"
+	},
+	{
+		"WORD_SEQ" : 919,
+		"WORD_NAME" : "civilian",
+		"WORD_MEAN" : "민간의"
+	},
+	{
+		"WORD_SEQ" : 920,
+		"WORD_NAME" : "themarket",
+		"WORD_MEAN" : "시장"
+	},
+	{
+		"WORD_SEQ" : 921,
+		"WORD_NAME" : "approval",
+		"WORD_MEAN" : "승인."
+	},
+	{
+		"WORD_SEQ" : 922,
+		"WORD_NAME" : "contribution",
+		"WORD_MEAN" : "기부금"
+	},
+	{
+		"WORD_SEQ" : 923,
+		"WORD_NAME" : "fruit",
+		"WORD_MEAN" : "과일"
+	},
+	{
+		"WORD_SEQ" : 924,
+		"WORD_NAME" : "ownership",
+		"WORD_MEAN" : "소유권"
+	},
+	{
+		"WORD_SEQ" : 925,
+		"WORD_NAME" : "prisoners",
+		"WORD_MEAN" : "죄수들"
+	},
+	{
+		"WORD_SEQ" : 926,
+		"WORD_NAME" : "gone",
+		"WORD_MEAN" : "사라지다"
+	},
+	{
+		"WORD_SEQ" : 927,
+		"WORD_NAME" : "ocean",
+		"WORD_MEAN" : "바다"
+	},
+	{
+		"WORD_SEQ" : 928,
+		"WORD_NAME" : "protocol",
+		"WORD_MEAN" : "의전의"
+	},
+	{
+		"WORD_SEQ" : 929,
+		"WORD_NAME" : "regardless",
+		"WORD_MEAN" : "개의치 않고"
+	},
+	{
+		"WORD_SEQ" : 930,
+		"WORD_NAME" : "row",
+		"WORD_MEAN" : "배를 젓다"
+	},
+	{
+		"WORD_SEQ" : 931,
+		"WORD_NAME" : "tons",
+		"WORD_MEAN" : "톤의"
+	},
+	{
+		"WORD_SEQ" : 932,
+		"WORD_NAME" : "facility",
+		"WORD_MEAN" : "시설"
+	},
+	{
+		"WORD_SEQ" : 933,
+		"WORD_NAME" : "reverse",
+		"WORD_MEAN" : "반대의"
+	},
+	{
+		"WORD_SEQ" : 934,
+		"WORD_NAME" : "threatened",
+		"WORD_MEAN" : "위협을 받고 있는"
+	},
+	{
+		"WORD_SEQ" : 935,
+		"WORD_NAME" : "wooden",
+		"WORD_MEAN" : "나무로 된"
+	},
+	{
+		"WORD_SEQ" : 936,
+		"WORD_NAME" : "artistic",
+		"WORD_MEAN" : "예술적"
+	},
+	{
+		"WORD_SEQ" : 937,
+		"WORD_NAME" : "fellow",
+		"WORD_MEAN" : "동무"
+	},
+	{
+		"WORD_SEQ" : 938,
+		"WORD_NAME" : "medieval",
+		"WORD_MEAN" : "중세의"
+	},
+	{
+		"WORD_SEQ" : 939,
+		"WORD_NAME" : "meters",
+		"WORD_MEAN" : "미터"
+	},
+	{
+		"WORD_SEQ" : 940,
+		"WORD_NAME" : "stream",
+		"WORD_MEAN" : "개울."
+	},
+	{
+		"WORD_SEQ" : 941,
+		"WORD_NAME" : "Norway",
+		"WORD_MEAN" : "노르웨이"
+	},
+	{
+		"WORD_SEQ" : 942,
+		"WORD_NAME" : "receives",
+		"WORD_MEAN" : "받다"
+	},
+	{
+		"WORD_SEQ" : 943,
+		"WORD_NAME" : "structural",
+		"WORD_MEAN" : "구조상의"
+	},
+	{
+		"WORD_SEQ" : 944,
+		"WORD_NAME" : "victims",
+		"WORD_MEAN" : "희생자들"
+	},
+	{
+		"WORD_SEQ" : 945,
+		"WORD_NAME" : "Mars",
+		"WORD_MEAN" : "화성"
+	},
+	{
+		"WORD_SEQ" : 946,
+		"WORD_NAME" : "Microsoft",
+		"WORD_MEAN" : "마이크로소프트"
+	},
+	{
+		"WORD_SEQ" : 947,
+		"WORD_NAME" : "clothing",
+		"WORD_MEAN" : "의복"
+	},
+	{
+		"WORD_SEQ" : 948,
+		"WORD_NAME" : "emerged",
+		"WORD_MEAN" : "나왔다."
+	},
+	{
+		"WORD_SEQ" : 949,
+		"WORD_NAME" : "falling",
+		"WORD_MEAN" : "빠지는 것"
+	},
+	{
+		"WORD_SEQ" : 950,
+		"WORD_NAME" : "participants",
+		"WORD_MEAN" : "참가자들"
+	},
+	{
+		"WORD_SEQ" : 951,
+		"WORD_NAME" : "supposed",
+		"WORD_MEAN" : "상정의"
+	},
+	{
+		"WORD_SEQ" : 952,
+		"WORD_NAME" : "attributedto",
+		"WORD_MEAN" : "에 기인한"
+	},
+	{
+		"WORD_SEQ" : 953,
+		"WORD_NAME" : "fair",
+		"WORD_MEAN" : "공정한"
+	},
+	{
+		"WORD_SEQ" : 954,
+		"WORD_NAME" : "fairly",
+		"WORD_MEAN" : "꽤."
+	},
+	{
+		"WORD_SEQ" : 955,
+		"WORD_NAME" : "fortwo",
+		"WORD_MEAN" : "2인용으로"
+	},
+	{
+		"WORD_SEQ" : 956,
+		"WORD_NAME" : "measurements",
+		"WORD_MEAN" : "치수"
+	},
+	{
+		"WORD_SEQ" : 957,
+		"WORD_NAME" : "tribes",
+		"WORD_MEAN" : "부족들"
+	},
+	{
+		"WORD_SEQ" : 958,
+		"WORD_NAME" : "chamber",
+		"WORD_MEAN" : "실내의"
+	},
+	{
+		"WORD_SEQ" : 959,
+		"WORD_NAME" : "consequence",
+		"WORD_MEAN" : "결과"
+	},
+	{
+		"WORD_SEQ" : 960,
+		"WORD_NAME" : "inflation",
+		"WORD_MEAN" : "인플레이션"
+	},
+	{
+		"WORD_SEQ" : 961,
+		"WORD_NAME" : "operates",
+		"WORD_MEAN" : "작동하다"
+	},
+	{
+		"WORD_SEQ" : 962,
+		"WORD_NAME" : "owner",
+		"WORD_MEAN" : "주인"
+	},
+	{
+		"WORD_SEQ" : 963,
+		"WORD_NAME" : "stronger",
+		"WORD_MEAN" : "더 강한"
+	},
+	{
+		"WORD_SEQ" : 964,
+		"WORD_NAME" : "theoretical",
+		"WORD_MEAN" : "이론상의"
+	},
+	{
+		"WORD_SEQ" : 965,
+		"WORD_NAME" : "equally",
+		"WORD_MEAN" : "대등하게"
+	},
+	{
+		"WORD_SEQ" : 966,
+		"WORD_NAME" : "therapy",
+		"WORD_MEAN" : "치료"
+	},
+	{
+		"WORD_SEQ" : 967,
+		"WORD_NAME" : "Korea",
+		"WORD_MEAN" : "코리아"
+	},
+	{
+		"WORD_SEQ" : 968,
+		"WORD_NAME" : "emperor",
+		"WORD_MEAN" : "황제를"
+	},
+	{
+		"WORD_SEQ" : 969,
+		"WORD_NAME" : "offensive",
+		"WORD_MEAN" : "공격적인"
+	},
+	{
+		"WORD_SEQ" : 970,
+		"WORD_NAME" : "valid",
+		"WORD_MEAN" : "유효한"
+	},
+	{
+		"WORD_SEQ" : 971,
+		"WORD_NAME" : "voting",
+		"WORD_MEAN" : "투표"
+	},
+	{
+		"WORD_SEQ" : 972,
+		"WORD_NAME" : "celebrated",
+		"WORD_MEAN" : "유명한"
+	},
+	{
+		"WORD_SEQ" : 973,
+		"WORD_NAME" : "meters",
+		"WORD_MEAN" : "미터"
+	},
+	{
+		"WORD_SEQ" : 974,
+		"WORD_NAME" : "stream",
+		"WORD_MEAN" : "개울."
+	},
+	{
+		"WORD_SEQ" : 975,
+		"WORD_NAME" : "Norway",
+		"WORD_MEAN" : "노르웨이"
+	},
+	{
+		"WORD_SEQ" : 976,
+		"WORD_NAME" : "receives",
+		"WORD_MEAN" : "받다"
+	},
+	{
+		"WORD_SEQ" : 977,
+		"WORD_NAME" : "structural",
+		"WORD_MEAN" : "구조상의"
+	},
+	{
+		"WORD_SEQ" : 978,
+		"WORD_NAME" : "victims",
+		"WORD_MEAN" : "희생자들"
+	},
+	{
+		"WORD_SEQ" : 979,
+		"WORD_NAME" : "Mars",
+		"WORD_MEAN" : "화성"
+	},
+	{
+		"WORD_SEQ" : 980,
+		"WORD_NAME" : "Microsoft",
+		"WORD_MEAN" : "마이크로소프트"
+	},
+	{
+		"WORD_SEQ" : 981,
+		"WORD_NAME" : "clothing",
+		"WORD_MEAN" : "의복"
+	},
+	{
+		"WORD_SEQ" : 982,
+		"WORD_NAME" : "emerged",
+		"WORD_MEAN" : "나왔다."
+	},
+	{
+		"WORD_SEQ" : 983,
+		"WORD_NAME" : "falling",
+		"WORD_MEAN" : "빠지는 것"
+	},
+	{
+		"WORD_SEQ" : 984,
+		"WORD_NAME" : "participants",
+		"WORD_MEAN" : "참가자들"
+	},
+	{
+		"WORD_SEQ" : 985,
+		"WORD_NAME" : "supposed",
+		"WORD_MEAN" : "상정의"
+	},
+	{
+		"WORD_SEQ" : 986,
+		"WORD_NAME" : "attributedto",
+		"WORD_MEAN" : "에 기인한"
+	},
+	{
+		"WORD_SEQ" : 987,
+		"WORD_NAME" : "fair",
+		"WORD_MEAN" : "공정한"
+	},
+	{
+		"WORD_SEQ" : 988,
+		"WORD_NAME" : "fairly",
+		"WORD_MEAN" : "꽤."
+	},
+	{
+		"WORD_SEQ" : 989,
+		"WORD_NAME" : "fortwo",
+		"WORD_MEAN" : "2인용으로"
+	},
+	{
+		"WORD_SEQ" : 990,
+		"WORD_NAME" : "measurements",
+		"WORD_MEAN" : "치수"
+	},
+	{
+		"WORD_SEQ" : 991,
+		"WORD_NAME" : "tribes",
+		"WORD_MEAN" : "부족들"
+	},
+	{
+		"WORD_SEQ" : 992,
+		"WORD_NAME" : "chamber",
+		"WORD_MEAN" : "실내의"
+	},
+	{
+		"WORD_SEQ" : 993,
+		"WORD_NAME" : "consequence",
+		"WORD_MEAN" : "결과"
+	},
+	{
+		"WORD_SEQ" : 994,
+		"WORD_NAME" : "inflation",
+		"WORD_MEAN" : "인플레이션"
+	},
+	{
+		"WORD_SEQ" : 995,
+		"WORD_NAME" : "operates",
+		"WORD_MEAN" : "작동하다"
+	},
+	{
+		"WORD_SEQ" : 996,
+		"WORD_NAME" : "owner",
+		"WORD_MEAN" : "주인"
+	},
+	{
+		"WORD_SEQ" : 997,
+		"WORD_NAME" : "stronger",
+		"WORD_MEAN" : "더 강한"
+	},
+	{
+		"WORD_SEQ" : 998,
+		"WORD_NAME" : "theoretical",
+		"WORD_MEAN" : "이론상의"
+	},
+	{
+		"WORD_SEQ" : 999,
+		"WORD_NAME" : "equally",
+		"WORD_MEAN" : "대등하게"
+	},
+	{
+		"WORD_SEQ" : 1000,
+		"WORD_NAME" : "therapy",
+		"WORD_MEAN" : "치료"
+	}
+]
