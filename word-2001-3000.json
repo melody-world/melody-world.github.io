@@ -1,5 +1,5 @@
 {
-"select * from word_info wi limit 2000, 1000": [
+"result": [
 	{
 		"WORD_SEQ" : 2023,
 		"WORD_NAME" : "pregnancy",
