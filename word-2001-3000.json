@@ -1,10 +1,10 @@
-{[
+[
 	{
 		"WORD_SEQ" : 2023,
 		"WORD_NAME" : "pregnancy",
 		"WORD_MEAN" : "임신"
 	},
-	{
+	{ 
 		"WORD_SEQ" : 2024,
 		"WORD_NAME" : "pregnant",
 		"WORD_MEAN" : "임신한."
@@ -4874,4 +4874,4 @@
 		"WORD_NAME" : "zone",
 		"WORD_MEAN" : "(특정한 특징용도가 있는) 지역[지구\/구역]"
 	}
-]}
+]
