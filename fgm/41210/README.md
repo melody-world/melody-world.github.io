@@ -1,0 +1,10 @@
+# 업데이트 내용
+### 2023.08.03 
+* 매매 : 2021.01~2023.07 자료 업데이트
+* 전/월세 : 2021.01~2023.08 자료 업데이트
+
+
+※ 특이사항
+> * [매매 자료 - 등기일자 추가예정](https://www.data.go.kr/bbs/ntc/selectNotice.do?originId=NOTICE_0000000003217)
+> * [매매 자료 업데이트 지연](https://www.data.go.kr/bbs/ntc/selectNotice.do?originId=NOTICE_0000000003199)
+------
