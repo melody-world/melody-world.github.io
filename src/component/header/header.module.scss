@@ -1,0 +1,164 @@
+@import '../../utils';
+
+header {
+    font-family: 'SUIT';
+    border-bottom: 1px solid;
+    border-bottom-color: rgba(0,27,55,.1);
+    position: fixed;
+    z-index: 50;
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+
+    @include mobile{ 
+        height: 48px;
+    }
+
+    .headerContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 40px;
+        height: 100%;
+
+        @include mobile{ 
+            width: calc(100% - 40px);
+            padding: 0;
+        }
+    }
+}
+
+.headerLogo {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+
+    a {
+        height: 20px;
+        width: 100px;
+        background-color: rgba(2,32,71,.05);
+    }
+}
+
+.mMenuIcon {
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
+.headerList {
+    display: flex;
+    align-items: center;
+
+    li {
+        padding: 0 8px;
+
+        a {
+            padding: 12px 10px;
+            font-size: 15px;
+            line-height: 20px;
+            border-radius: 8px;
+            border: 0;
+            cursor: pointer;
+            background-color: transparent;
+            text-align: left;
+            color: #888;
+
+            &:hover {
+                background-color: rgba(2,32,71,.05);
+                color: #000;
+                font-weight: 600;
+            }
+        }
+
+        &.active a{
+            color: #000;
+            font-weight: 600;
+        }
+    }
+}
+
+.headerMenuWrap {
+    margin: 0;
+    background-color: #fbfbfd;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(.4,0,.6,1) 80ms;
+
+    .headerMenuList {    
+        padding: 50px 0 0;
+        visibility: hidden;
+
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #333336;
+            font-size: 28px;
+            font-weight: 700;
+            padding: 5px 20px 5px 50px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition-property: opacity, transform;
+            transition-timing-function: cubic-bezier(.4,0,.6,1);
+
+            $_length: 10;
+            @for $i from 1 through $_length {
+                &:nth-child(#{$i}) {
+                    transition-delay: calc(.2s + ($i * 20ms));
+                }
+            }
+
+            button {
+                justify-content: flex-end;
+            
+                svg {
+                    opacity: 0;
+                    transition: all 0.25s ease;
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+    
+            &:hover {
+                svg {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .mMenuIcon {
+        opacity: 0;
+        transition: opacity 100ms ease-in-out;
+        transition-delay: 0.4s;
+    }
+
+    &.active{
+        visibility: visible;
+        height: 100vh;
+
+        .mMenuIcon {
+            opacity: 1;
+        }
+
+        .headerMenuList {
+            visibility: visible;
+        
+            li {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0);
+            }
+        }
+    }
+}

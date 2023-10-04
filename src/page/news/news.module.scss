@@ -1,0 +1,83 @@
+@import '../../utils';
+
+article {
+    font-family: 'SUIT';
+    margin-top: 60px;
+    padding: 100px 0;
+
+    .container {
+        width: 100%;
+        max-width: 1140px;
+        padding: 0 40px 0;
+        margin: 0 auto;
+
+        @include mobile{ 
+            width: calc(100% - 40px);
+            padding: 0;
+        }
+    }
+}
+
+.newsPage {
+    h3 {
+        @include fontSize(45px);
+        font-weight: 600;
+        color: #000000;
+        margin-bottom: 60px;
+
+        @include mobile{ 
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.titleWrap {
+    padding: 30px 10px;
+    border-bottom: 1px solid #C5C5C5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    @include mobile{ 
+        padding: 20px 10px;
+    }
+
+    p {
+        @include fontSize(20px);
+        font-weight: 600;
+        color: #4F534E;
+    }
+
+    span {
+        @include fontSize(15px);
+        font-weight: 600;
+        color: #ADB5B3;
+    }
+
+    button {
+        justify-content: flex-end;
+        
+        svg {
+            width: 22px;
+            height: 22px;
+        }
+    }
+}
+
+.contentWrap {
+    border-bottom: 1px solid #C5C5C5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px 100px;
+
+    p {
+        @include fontSize(15px);
+        font-weight: 600;
+        line-height: 20px;
+        color: #4F534E;
+        width: 100%;
+        white-space: pre-line;
+    }
+} 
