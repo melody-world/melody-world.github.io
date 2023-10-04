@@ -9,7 +9,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      CI: false
+      CI: false 
     permissions:
       contents: write
     concurrency:
