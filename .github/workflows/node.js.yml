@@ -3,14 +3,13 @@ name: findGwangmyeong
 on:
   push:
     branches: ['main']
-
   workflow_dispatch: 
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     env:
-      CI: false
+      CI: false 
     permissions:
       contents: write
     concurrency:
@@ -28,13 +27,12 @@ jobs:
 
       - name: Cache node_modules
         id: cache
-        uses: actions/cache@v3
+        uses: actions/cache@v3 
         with:
           path: '**/node_modules'
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-node-
-
 
       - name: Install dependencies     
         run: yarn install
@@ -52,3 +50,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+          keep_files: true
