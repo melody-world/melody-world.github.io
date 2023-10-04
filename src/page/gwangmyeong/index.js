@@ -79,13 +79,12 @@ const Gwangmyeong = () => {
                         <div className={styles.subWrap} ref={subRef}> 
                             <div className={styles.subTitle}>
                                 <span>
-                                    우리가 이걸 왜 만들었는지
-                                    간략하게 설명을 쓰면 더 멋있는
-                                    디자인이 될 것 같다는 생각. 협조하시죠.
+                                    국토교통부에 신고된
+                                    광명시의 아파트 실거래 자료를 제공합니다.
                                 </span>
 
                                 <div className={styles.subRound}>
-                                    <p>간단함</p>
+                                    <p>정확성</p>
                                     <p>편리함</p>
                                 
                                     <img className={styles.img_arrowDown} src={IconArrowDown} alt="화살표"/>
@@ -134,11 +133,10 @@ const Gwangmyeong = () => {
                             </div>
 
                             <div className={`${styles.contentTitle} ${scrollPosition > (isMobile ? 1000 : 2000) ? styles.dark : ''}`}>
-                                <small>거래 · 업데이트</small>
+                                <small>실거래 데이터</small>
                                 <h3 className={styles.dark}>
-                                    아침, 저녁<br/>
-                                    <span data-aos="fade-up">하루 두번</span> 갱신되는<br/>
-                                    부동산 거래 현황.
+                                    국토교통부의 데이터는<br/>
+                                    <span data-aos="fade-up">매일</span> 업데이트됩니다.<br/>
                                 </h3>
                             </div>
                         </div>
@@ -150,18 +148,16 @@ const Gwangmyeong = () => {
                         <div className={styles.listTitle}>
                             <div className={styles.contentTitle}>
                                 <div data-aos="fade-up">
-                                    <small>부동산 거래</small>
+                                    <small>거래 내역 확인</small>
                                     <h3 className={styles.dark}>
-                                        1분 만에<br/>
-                                        <span className={styles.orange}>우리동네</span> 거래를<br/>
-                                        확인해보세요
+                                        <span className={styles.orange}>우리동네</span><br></br>
+                                        거래 정보를 한눈에
                                     </h3>
                                 </div>
 
                                 <span data-aos="fade-up">
-                                    여기에다가는 무엇을 써야<br/>
-                                    잘 썼다고 소문이 날까요?<br/>
-                                    그래도 뭔가 쓰긴 해야 구성상 괜찮은데
+                                    실거래 내역을 알기 쉽고 보기 편하게 제공합니다.<br></br>
+                                    아파트의 매매 및 전/월세 거래 내역을 한 눈에 확인해보세요.
                                 </span>
                             </div>
                         </div>
@@ -190,17 +186,16 @@ const Gwangmyeong = () => {
 
                         <div className={styles.contentTitle}>
                                 <div data-aos="fade-up">
-                                    <small>상세 정보</small>
+                                    <small>상세 정보 확인</small>
                                     <h3 className={styles.dark}>
-                                        전/월세 거래부터<br/>
-                                        지하철 역까지!
+                                        상세 거래 내역부터<br/>
+                                        아파트의 여러 정보까지!
                                     </h3>
                                 </div>
 
                                 <span data-aos="fade-up">
-                                    여기에다가는 무엇을 써야<br/>
-                                    잘 썼다고 소문이 날까요?<br/>
-                                    그래도 뭔가 쓰긴 해야 구성상 괜찮은데
+                                    인근지하철, 학군, 건축물대장 등<br/>
+                                    거래된 아파트의 다양한 정보도 확인할 수 있습니다.
                                 </span>
                             </div>
                         </div>
@@ -209,7 +204,7 @@ const Gwangmyeong = () => {
                 <section className={styles.searchPage}>
                     <div className={styles.container}>
                         <div className={styles.contentTitle}>
-                            <small>검색</small>
+                            <small>편리한 검색</small>
                             <h3 className={styles.dark}>
                                 <span data-aos="fade-up">쉽고</span><br/>
                                 <span data-aos="fade-up" data-aos-delay="300">빠르고</span><br/>
@@ -217,9 +212,8 @@ const Gwangmyeong = () => {
                             </h3>
 
                             <span>
-                                여기에다가는 무엇을 써야<br/>
-                                잘 썼다고 소문이 날까요?<br/>
-                                그래도 뭔가 쓰긴 해야 구성상 괜찮은데
+                                최근 검색어, 거래일, 아파트명을 통한<br/>
+                                편리한 검색 기능을 제공합니다.
                             </span>
                         </div>
 
@@ -237,8 +231,7 @@ const Gwangmyeong = () => {
                     <div className={styles.container}>
                         <div className={styles.contentTitle}>
                             <p className={styles.dark} data-aos="fade-up">
-                                대충 문구를 적어줘야<br/>
-                                작업이 수월하죠.
+                                지금 바로 광명시의<br/>아파트 거래 내역을 확인해보세요!
                             </p>
                         </div>
 
