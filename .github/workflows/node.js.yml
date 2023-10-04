@@ -18,16 +18,16 @@ jobs:
 
     steps:
       - name: Use repository source
-        uses: actions/checkout@v2 # Note the version change to v2
+        uses: actions/checkout@v3
 
       - name: Use node.js
-        uses: actions/setup-node@v2 # Note the version change to v2
+        uses: actions/setup-node@v3
         with:
           node-version: 18
 
       - name: Cache node_modules
         id: cache
-        uses: actions/cache@v2 # Note the version change to v2
+        uses: actions/cache@v3 
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
