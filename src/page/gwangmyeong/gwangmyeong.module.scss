@@ -611,7 +611,7 @@ main {
         line-height: 70px;
 
         @include mobile{ 
-            line-height: 42px;
+            line-height: 37px;
             margin-top: 10px;
         }
 
@@ -810,6 +810,7 @@ main {
             border-radius: 7px;
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 10px;
             width: 150px;
     

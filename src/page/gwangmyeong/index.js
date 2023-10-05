@@ -39,7 +39,6 @@ const Gwangmyeong = () => {
         AOS.init();
     }, [scrollPosition]); 
 
-
     return (
         <>
             <main>
@@ -79,7 +78,7 @@ const Gwangmyeong = () => {
                         <div className={styles.subWrap} ref={subRef}> 
                             <div className={styles.subTitle}>
                                 <span>
-                                    국토교통부에 신고된
+                                    국토교통부에 신고된<br/>
                                     광명시의 아파트 실거래 자료를 제공합니다.
                                 </span>
 
@@ -150,14 +149,15 @@ const Gwangmyeong = () => {
                                 <div data-aos="fade-up">
                                     <small>거래 내역 확인</small>
                                     <h3 className={styles.dark}>
-                                        <span className={styles.orange}>우리동네</span><br></br>
-                                        거래 정보를 한눈에
+                                        우리동네<br></br>
+                                        <span className={styles.orange}>거래 정보</span>를 한눈에!
                                     </h3>
                                 </div>
 
                                 <span data-aos="fade-up">
-                                    실거래 내역을 알기 쉽고 보기 편하게 제공합니다.<br></br>
-                                    아파트의 매매 및 전/월세 거래 내역을 한 눈에 확인해보세요.
+                                    쉽고 편하게<br/>
+                                    아파트 실거래 내역과 매매 및 전/월세 거래를<br/>
+                                    한 눈에 확인할 수 있습니다.
                                 </span>
                             </div>
                         </div>
@@ -186,7 +186,7 @@ const Gwangmyeong = () => {
 
                         <div className={styles.contentTitle}>
                                 <div data-aos="fade-up">
-                                    <small>상세 정보 확인</small>
+                                    <small>상세 정보</small>
                                     <h3 className={styles.dark}>
                                         상세 거래 내역부터<br/>
                                         아파트의 여러 정보까지!
@@ -231,7 +231,7 @@ const Gwangmyeong = () => {
                     <div className={styles.container}>
                         <div className={styles.contentTitle}>
                             <p className={styles.dark} data-aos="fade-up">
-                                지금 바로 광명시의<br/>아파트 거래 내역을 확인해보세요!
+                                지금 바로 광명시<br/>아파트 거래를 확인해보세요!
                             </p>
                         </div>
 
