@@ -794,7 +794,6 @@ main {
         display: flex;
         justify-content: center;
         gap: 20px;
-        width: 150px;
 
         @include mobile {
             flex-direction: column;
@@ -812,7 +811,7 @@ main {
             display: flex;
             align-items: center;
             gap: 10px;
-            width: -webkit-fill-available;;
+            width: 150px;
     
             img {
                 width: 24px;

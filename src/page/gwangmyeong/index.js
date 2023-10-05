@@ -5,17 +5,17 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import styles from './gwangmyeong.module.scss';
 
-import screenshot1 from '../../assets/img/Img_screenshot1.png';
-import screenshot2 from '../../assets/img/Img_screenshot2.png';
-import screenshot3 from '../../assets/img/Img_screenshot3.png';
-import screenshot4 from '../../assets/img/Img_screenshot4.png';
-import screenshot5 from '../../assets/img/Img_screenshot5.png';
+import screenshot1 from 'assets/img/Img_screenshot1.png';
+import screenshot2 from 'assets/img/Img_screenshot2.png';
+import screenshot3 from 'assets/img/Img_screenshot3.png';
+import screenshot4 from 'assets/img/Img_screenshot4.png';
+import screenshot5 from 'assets/img/Img_screenshot5.png';
 
-import IconApp from '../../assets/img/Img_appIcon.png';
-import IconArrowDown from '../../assets/img/Icon_arrowDown.png';
-import IconApple from '../../assets/img/Icon_apple.png';
-import IconGoogle from '../../assets/img/Icon_google.png';
-import IconArrow from '../../assets/svg/arrow.svg';
+import IconApp from 'assets/img/Img_appIcon.png';
+import IconArrowDown from 'assets/img/Icon_arrowDown.png';
+import IconApple from 'assets/img/Icon_apple.png';
+import IconGoogle from 'assets/img/Icon_google.png';
+import IconArrow from 'assets/svg/arrow.svg';
 
 const Gwangmyeong = () => {
     const subRef = useRef(null);
