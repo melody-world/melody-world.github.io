@@ -1,5 +1,4 @@
-// import { Routes, Route, BrowserRouter, HashRouter } from "react-router-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
 
@@ -10,7 +9,7 @@ import News from "./page/news";
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <>
       <Header />
       <Routes>
         <Route exact path="/" element={<Gwangmyeong />} />
@@ -18,7 +17,7 @@ function App() {
         <Route path="news" element={<News />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
   );
 }
 
