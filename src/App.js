@@ -14,8 +14,8 @@ function App() {
       <Header />
       <Routes>
         <Route exact path="/" element={<Gwangmyeong />} />
-        <Route path="/gwangmyeong" element={<Gwangmyeong />} />
-        <Route path="/news" element={<News />} />
+        <Route path="gwangmyeong" element={<Gwangmyeong />} />
+        <Route path="news" element={<News />} />
       </Routes>
       <Footer />
     </BrowserRouter>
