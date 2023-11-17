@@ -1,7 +1,7 @@
 {
-  "name": "gwangmyeong",  
+  "name": "gwangmyeong",
   "homepage": "https://merry-eddy.co.kr",
-  "version": "0.1.0", 
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -17,7 +17,7 @@
     "react-icons": "^4.10.1",
     "react-responsive": "^9.0.2",
     "react-router-dom": "^6.15.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "sass": "^1.64.2",
     "web-vitals": "^2.1.0"
   },

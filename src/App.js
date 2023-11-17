@@ -1,4 +1,5 @@
-import { Routes, Route, BrowserRouter, HashRouter } from "react-router-dom";
+// import { Routes, Route, BrowserRouter, HashRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './App.css';
 
@@ -9,18 +10,15 @@ import News from './page/news';
 
 function App() {
   return (
-    <>
-      <HashRouter>
-        <Header/>
-        <Routes>
-          <Route exact path="/" element={<Gwangmyeong/>}/>
-          <Route path="/gwangmyeong" element={<Gwangmyeong/>}/>
-          <Route path="/news" element={<News/>}/>
-        </Routes>
-      </HashRouter>
-
+    <BrowserRouter basename={process.env.PUBLIC_URL}>      
+      <Header/>
+      <Routes>
+        <Route exact path="/" element={<Gwangmyeong/>}/>
+        <Route path="/gwangmyeong" element={<Gwangmyeong/>}/>
+        <Route path="/news" element={<News/>}/>
+      </Routes>
       <Footer/>
-    </>
+    </BrowserRouter>
   );
 }
 
