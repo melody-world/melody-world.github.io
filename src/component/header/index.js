@@ -20,7 +20,7 @@ export default function  Header() {
         <header>
             <div className={styles.headerContainer}>
                 <div className={styles.headerLogo}>
-                    <a href=""></a>
+                    <Link to=""></Link>
                 </div>
 
                 {
@@ -31,8 +31,8 @@ export default function  Header() {
                     :
                     <ul className={styles.headerList}>
                         {MENULIST.map((menu, index) => (
-                            <li key={index} className={location === menu.url ? `${styles.active}` : ''}>
-                                <a href={menu.url}>{menu.title}</a>
+                            <li key={index} className={location === menu.url ? `${styles.active}` : ''}>                                
+                                <Link to={menu.url}>{menu.title}</Link>
                             </li>
                         ))}
                     </ul>
@@ -72,6 +72,6 @@ const MENULIST = [
     {
         id: 2,
         title: '공지사항',
-        url: 'news'
+        url: '/news'
     },
 ]
