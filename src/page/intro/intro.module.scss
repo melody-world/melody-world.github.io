@@ -1,0 +1,118 @@
+@import '../../utils';
+
+main {
+    font-family: 'SUIT';    
+
+    @include mobile{ 
+        margin-top: 48px;
+        overflow-x: hidden; 
+    }    
+
+    .container {
+        width: 100%;
+        max-width: 1140px;        
+        margin: 0 auto;
+        display: flex;        
+        flex-direction: column;
+        align-items: center;
+
+        .mainImage {
+            width: auto;
+            height: 100vh;
+        }
+        
+        .title {
+            margin-top: 50px;
+            -webkit-box-align: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-pack: start;
+            justify-content: flex-start;
+
+            .titleFont {
+                color: #333;
+            }
+        }
+    }
+    
+    .memberContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        .memberWrapper {
+            max-width: 1140px;
+            display: flex;        
+            align-items: center;            
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            .imageWrapper {
+                max-width: 300px;
+                margin-left: 30px;              
+                margin-right: 30px;
+
+                .imageBox {
+                    width: 100%;
+                    margin: 0 auto;            
+                    border-radius: 50%;                      
+                    background-color: skyblue;
+                }     
+            }  
+            
+            .infoWrapper {
+                max-width: 700px;
+                margin-left: 30px;              
+                margin-right: 30px;
+                
+                .infoTitle {
+                    text-align: center;
+        
+                    h2 {
+                        color: skyblue;
+                    }
+                }
+        
+                .infoContentWrapper {
+                    max-width: 1000px;            
+                    text-align: center;
+        
+                    .infoImage {
+                        width: 30px;
+                        display: flex;
+                    }
+        
+                    .infoContent {
+                        display: block;
+                        background-color: #e8e5e5;
+                        margin-bottom: 20px;
+                        padding: 0 125px;
+                        font-size: 0.875em;
+                        line-height: 2.1428;
+                        color: #666;
+                    }
+
+                    .stackWrapper {
+                        display: flex;
+                        justify-content: space-between;
+
+                        div {
+                            width: 50px;
+                            height: 50px;
+                            background-color: #e8f3ff;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+            
+                   
+        }
+
+        
+        
+    }
+
+    
+}
