@@ -10,7 +10,7 @@ import News from "./page/news";
 
 function App() {
   return (
-    <BrowserRouter basename="https://merry-eddy.co.kr/">
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Header />
       <Routes>
         <Route exact path="/" element={<Gwangmyeong />} />
