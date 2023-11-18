@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { useMediaQuery } from 'react-responsive';
 import { Link, useLocation } from "react-router-dom";
+import { VscGrabber, VscChromeClose, VscChevronRight } from "react-icons/vsc";
 
 import styles from './header.module.scss';
-
-import { VscGrabber, VscChromeClose, VscChevronRight } from "react-icons/vsc";
 import MENU_LIST from 'constants/menuData.js';
 
-export default function  Header() {
+export default function Header() {
     const isMobile = useMediaQuery({ maxWidth: 1024 })
     const location = useLocation().pathname;
     const [menuActive, isMenuActive] = useState(false);
