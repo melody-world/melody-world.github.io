@@ -7,7 +7,8 @@ const INTRO_LIST = [
       introName: 'Merry',
       introContent: 'Hello world',
       devSide: 'Front-end',      
-      githubUrl: 'https://github.com/eeesnghyun',
+      githubNickname: 'pool1129',
+      githubUrl: 'https://github.com/pool1129',      
       devStack: [
         {
             name: 'java',
@@ -38,6 +39,7 @@ const INTRO_LIST = [
         introName: 'Eddy',
         introContent: 'Hello world',
         devSide: 'Back-end',
+        githubNickname: 'eeesnghyun',
         githubUrl: 'https://github.com/eeesnghyun',
         devStack: [
           {
