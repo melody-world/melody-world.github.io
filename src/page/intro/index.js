@@ -33,10 +33,10 @@ function Intro() {
                                             </div>
 
                                             <div className={styles.infoContentWrapper}>
-                                                <img className={styles.infoImage} src="/images/intro/member-info.png" alt="member-info"/> 
+                                                <img className={styles.infoImage} src={require('assets/img/icon_intro_info.png')} alt="member-info"/> 
                                                 <div className={styles.infoContent}>{item.introContent}</div>
 
-                                                <img className={styles.infoImage} src="/images/intro/member-stack.png" alt="member-stack"/>     
+                                                <img className={styles.infoImage} src={require('assets/img/icon_intro_stack.png')} alt="member-stack"/>     
                                                 <div className={styles.stackWrapper}>
                                                     {
                                                         item.devStack.map(stack => {
