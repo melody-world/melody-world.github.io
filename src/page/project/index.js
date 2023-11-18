@@ -36,7 +36,7 @@ function Project() {
                                             <div>
                                                 <div className={styles.projectFront}>
                                                     <div className={styles.imageWrapper}>                                
-                                                        <img src={require(`assets/img/project/${item.projectImage}`)} ></img>
+                                                        <img src={require(`assets/img/project/${item.projectImage}`)} />
                                                     </div>
                                                     <div className={styles.profileWrapper}>
                                                         <span className={tagClassName}>{item.projectType}</span>
@@ -49,19 +49,19 @@ function Project() {
                                                         {
                                                             item.projectWebLink !== '' &&
                                                                 <a className={styles.store} href={item.projectWebLink} target="_blank" rel="noreferrer noopener">
-                                                                    <img src={require('assets/img/project/icon_web.png')} ></img>Home
+                                                                    <img src={require('assets/img/project/icon_web.png')} />Home
                                                                 </a>                                                     
                                                         }                                          
                                                         {
                                                             item.projectIosLink !== '' &&
                                                                 <a className={styles.store} href={item.projectIosLink} target="_blank" rel="noreferrer noopener">
-                                                                    <img src={require('assets/img/project/icon_apple.png')} ></img>App Store
+                                                                    <img src={require('assets/img/project/icon_apple.png')} />App Store
                                                                 </a>                                                      
                                                         }
                                                         {
                                                             item.projectAndLink !== '' &&
                                                                 <a className={styles.store} href={item.projectAndLink} target="_blank" rel="noreferrer noopener">
-                                                                    <img src={require('assets/img/project/icon_google.png')} ></img>Google Play
+                                                                    <img src={require('assets/img/project/icon_google.png')} />Google Play
                                                                 </a>                                                     
                                                         }                                              
                                                     </div>

@@ -78,8 +78,11 @@ function getIntroProfile(map) {
                         
                     <figure className={styles.imageBack}>
                         <img src={map.introImage2} alt={`introImage2${map.id}`}/>                                                                
-                        <figcaption>                                            
-                            <p><a href={map.githubUrl} target="_blank" rel="noreferrer noopener">💻 Github</a></p>
+                        <figcaption>   
+                            <a href={map.githubUrl} target="_blank" rel="noreferrer noopener">
+                                <img src={require('assets/img/intro/icon_github.png')} />
+                                <p>@{map.githubNickname}</p>
+                            </a>
                         </figcaption>                                                             
                     </figure> 
                 </div>

@@ -101,6 +101,11 @@ main {
                         transform: translate(-50%, -50%) translatez(100px);
                         width: 60%;
                         backface-visibility: hidden;
+
+                        img {
+                            width: 45px;
+                            background-color: #fff;
+                        }
                     }
                 }      
                 
