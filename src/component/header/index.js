@@ -65,6 +65,11 @@ export default function  Header() {
 
 const MENULIST = [
     {
+        id: 0,
+        title: '소개',
+        url: '/intro'
+    },
+    {
         id: 1,
         title: '광명찾자',
         url: ''
