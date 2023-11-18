@@ -1,8 +1,12 @@
 
+import { useMediaQuery } from 'react-responsive';
+
 import styles from './intro.module.scss';
 import INTRO_LIST from 'constants/introData.js';
 
 function Intro() {
+    const isMobile = useMediaQuery({ maxWidth: 768 })
+
     return (
         <main>
             <div className={styles.container}>                
@@ -17,7 +21,9 @@ function Intro() {
                                 <div className={styles.memberContainer}>                    
                                     <div className={styles.memberWrapper}>
                                         {
-                                            isLeftPosition(item.id) && getIntroTitle(item)
+                                            isMobile ?
+                                                getIntroProfile(item)
+                                                : (!isMobile && isLeftPosition(item.id) && getIntroProfile(item))                                      
                                         }
                                                                             
                                         <div className={styles.infoWrapper}>
@@ -46,7 +52,7 @@ function Intro() {
                                         </div>
 
                                         {
-                                            !isLeftPosition(item.id) && getIntroTitle(item)                                            
+                                            !isMobile && !isLeftPosition(item.id) && getIntroProfile(item)                                            
                                         }
                                     </div>
                                 </div>
@@ -63,7 +69,7 @@ function isLeftPosition(id) {
     return id % 2 === 0;
 }
 
-function getIntroTitle(map) {    
+function getIntroProfile(map) {    
     return (
         <div className={styles.imageWrapper}>
             <div className={styles.hoverWrapper}>
