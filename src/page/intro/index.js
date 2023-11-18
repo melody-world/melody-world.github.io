@@ -17,44 +17,42 @@ function Intro() {
                 <div className={styles.memberContainer}>
                     {
                         INTRO_LIST.map(item => {
-                            return (                                
-                                <div className={styles.memberContainer}>                    
-                                    <div className={styles.memberWrapper}>
-                                        {
-                                            isMobile ?
-                                                getIntroProfile(item)
-                                                : (!isMobile && isLeftPosition(item.id) && getIntroProfile(item))                                      
-                                        }
-                                                                            
-                                        <div className={styles.infoWrapper}>
-                                            <div className={styles.infoTitle}>
-                                                <h2>{item.introName}</h2>
-                                                <h4>{item.devSide}</h4>
-                                            </div>
-
-                                            <div className={styles.infoContentWrapper}>
-                                                <img className={styles.infoImage} src="/images/intro/member-info.png" alt="member-info"/> 
-                                                <div className={styles.infoContent}>{item.introContent}</div>
-
-                                                <img className={styles.infoImage} src="/images/intro/member-stack.png" alt="member-stack"/>     
-                                                <div className={styles.stackWrapper}>
-                                                    {
-                                                        item.devStack.map(stack => {
-                                                            return (
-                                                                <div>
-                                                                    <img src={stack.image} alt={stack.name}/>
-                                                                </div>  
-                                                            );
-                                                        })
-                                                    }                                                                                  
-                                                </div>
-                                            </div>
+                            return (                                                  
+                                <div className={styles.memberWrapper}>
+                                    {
+                                        isMobile ?
+                                            getIntroProfile(item)
+                                            : (!isMobile && isLeftPosition(item.id) && getIntroProfile(item))                                      
+                                    }
+                                                                        
+                                    <div className={styles.infoWrapper}>
+                                        <div className={styles.infoTitle}>
+                                            <h2>{item.introName}</h2>
+                                            <h4>{item.devSide}</h4>
                                         </div>
 
-                                        {
-                                            !isMobile && !isLeftPosition(item.id) && getIntroProfile(item)                                            
-                                        }
+                                        <div className={styles.infoContentWrapper}>
+                                            <img className={styles.infoImage} src={require('assets/img/intro/icon_intro_info.png')} alt="member-info"/> 
+                                            <div className={styles.infoContent}>{item.introContent}</div>
+
+                                            <img className={styles.infoImage} src={require('assets/img/intro/icon_intro_stack.png')} alt="member-stack"/>     
+                                            <div className={styles.stackWrapper}>
+                                                {
+                                                    item.devStack.map(stack => {
+                                                        return (
+                                                            <div>
+                                                                <img src={stack.image} alt={stack.name}/>
+                                                            </div>  
+                                                        );
+                                                    })
+                                                }                                                                                  
+                                            </div>
+                                        </div>
                                     </div>
+
+                                    {
+                                        !isMobile && !isLeftPosition(item.id) && getIntroProfile(item)                                            
+                                    }
                                 </div>
                             );
                         })

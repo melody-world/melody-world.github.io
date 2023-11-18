@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { useMediaQuery } from 'react-responsive';
 import { Link, useLocation } from "react-router-dom";
+import { VscGrabber, VscChromeClose, VscChevronRight } from "react-icons/vsc";
 
 import styles from './header.module.scss';
+import MENU_LIST from 'constants/menuData.js';
 
-import { VscGrabber , VscChromeClose , VscChevronRight } from "react-icons/vsc";
-
-export default function  Header() {
+export default function Header() {
     const isMobile = useMediaQuery({ maxWidth: 1024 })
     const location = useLocation().pathname;
     const [menuActive, isMenuActive] = useState(false);
@@ -30,7 +30,7 @@ export default function  Header() {
                     </button>
                     :
                     <ul className={styles.headerList}>
-                        {MENULIST.map((menu, index) => (
+                        {MENU_LIST.map((menu, index) => (
                             <li key={index} className={location === menu.url ? `${styles.active}` : ''}>                                
                                 <Link to={menu.url}>{menu.title}</Link>
                             </li>
@@ -48,7 +48,7 @@ export default function  Header() {
                         </button>
 
                         <ul className={styles.headerMenuList}>
-                            {MENULIST.map((menu, index) => (
+                            {MENU_LIST.map((menu, index) => (
                                 <li key={index} onClick={mMenuHandler}>
                                     <Link to={menu.url}>{menu.title}</Link >
                                     <button type="button"><VscChevronRight/></button>
@@ -62,21 +62,3 @@ export default function  Header() {
         </header>
     )
 }
-
-const MENULIST = [
-    {
-        id: 0,
-        title: '소개',
-        url: '/intro'
-    },
-    {
-        id: 1,
-        title: '광명찾자',
-        url: ''
-    },
-    {
-        id: 2,
-        title: '공지사항',
-        url: '/news'
-    },
-]
