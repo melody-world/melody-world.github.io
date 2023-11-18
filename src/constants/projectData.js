@@ -1,3 +1,5 @@
+
+
 const PROJECT_LIST = [
     {
         id: 1,
@@ -7,7 +9,8 @@ const PROJECT_LIST = [
         projectType: 'APP',
         projectWebLink: '',
         projectAndLink: 'https://play.google.com/store/apps/details?id=com.app.findgwangmyeong',
-        projectIosLink: 'https://apps.apple.com/kr/app/%EA%B4%91%EB%AA%85%EC%B0%BE%EC%9E%90/id6451822761'
+        projectIosLink: 'https://apps.apple.com/kr/app/%EA%B4%91%EB%AA%85%EC%B0%BE%EC%9E%90/id6451822761',
+        readMore: 'https://merry-eddy.co.kr/findgwangmyeong'
     },
     {
         id: 2,
@@ -17,7 +20,8 @@ const PROJECT_LIST = [
         projectType: 'WEB',
         projectWebLink: 'https://naver.com',
         projectAndLink: 'https://play.google.com/store/apps/details?id=com.app.findgwangmyeong',
-        projectIosLink: 'https://apps.apple.com/kr/app/%EA%B4%91%EB%AA%85%EC%B0%BE%EC%9E%90/id6451822761'
+        projectIosLink: 'https://apps.apple.com/kr/app/%EA%B4%91%EB%AA%85%EC%B0%BE%EC%9E%90/id6451822761',
+        readMore: 'https://merry-eddy.co.kr/findgwangmyeong'
     },        
     {
         id: 3,  
@@ -27,7 +31,8 @@ const PROJECT_LIST = [
         projectType: 'APP',
         projectWebLink: '',
         projectAndLink: 'https://play.google.com/store/apps/details?id=com.app.findgwangmyeong',
-        projectIosLink: 'https://apps.apple.com/kr/app/%EA%B4%91%EB%AA%85%EC%B0%BE%EC%9E%90/id6451822761'
+        projectIosLink: 'https://apps.apple.com/kr/app/%EA%B4%91%EB%AA%85%EC%B0%BE%EC%9E%90/id6451822761',
+        readMore: 'https://merry-eddy.co.kr/findgwangmyeong'
     },
 ];
   

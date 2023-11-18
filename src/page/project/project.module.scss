@@ -40,13 +40,13 @@ main {
                 align-items: center;
                 margin-bottom: 20px;
                 font-size: 50px;
-                font-weight: 600;
+                font-weight: 800;
             }
 
             .subTitle {
                 line-height: 1.2em;
-                font-size: 20px;                                
-                font-weight: 500;
+                font-size: 25px;                                
+                font-weight: 600;
             }
 
             @media (max-width: 896px) {                
@@ -114,14 +114,14 @@ main {
                         backface-visibility: hidden;
                     }
 
-                    .imageFront {
+                    .projectFront {
                         transition: transform 1s;
                         backface-visibility: hidden;
                         transform-style: preserve-3d;
                         transform: rotateY(0deg);
                     }
 
-                    .imageBack {
+                    .projectBack {
                         width: 100%;
                         position: absolute;
                         left: 0;
@@ -131,7 +131,7 @@ main {
                         transform-style: preserve-3d;
                     }   
 
-                    .projectImageWrapper {
+                    .imageWrapper {
                         display: flex;
                         flex-direction: column;
                         justify-content: space-evenly;
@@ -165,14 +165,16 @@ main {
                         }
                     }
 
-                    .projectProfileWrapper {
-                        padding: 28px 24px 32px;
+                    .profileWrapper {
+                        padding: 28px 24px 28px;
                         background-color: #fff;
 
                         span {
+                            display: inline-block;
                             word-break: keep-all;
-                            margin-bottom: 16px;
+                            margin-bottom: 16px;                            
                         }
+                        
                         .projectTag {
                             display: inline-block;
                             min-width: 50px;
@@ -194,6 +196,16 @@ main {
                             background-color: #b3b3ff;
                         }
 
+                        p {
+                            display: flex;
+                            justify-content: flex-end;
+
+                            .moreBtn {
+                                background-color: #D5D7DC;
+                                padding: 10px 20px 10px;
+                            }
+                        }
+                        
                         .projectTitle {
                             line-height: 1.4em;
                             font-size: 20px;
@@ -212,13 +224,17 @@ main {
                     perspective: 1000px;
                 }
 
-                .projectItem:hover .imageFront {
+                .projectItem:hover .projectFront {
                     transform: rotateX(180deg);
                 }
-                .projectItem .imageBack {
+                .projectItem .projectBack {
                     transform: rotateX(-180deg);
+                    
+                    .profileWrapper {
+                        padding: 20px 24px;
+                    }
                 }
-                .projectItem:hover .imageBack {
+                .projectItem:hover .projectBack {
                     transform: rotateX(0deg);
                 }
             }

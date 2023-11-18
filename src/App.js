@@ -17,7 +17,7 @@ function App() {
         <Route exact path="/" element={<Gwangmyeong />} />
         <Route path="/intro" element={<Intro />} />
         <Route path="/project" element={<Proejct />} />
-        <Route path="/gwangmyeong" element={<Gwangmyeong />} />
+        <Route path="/findgwangmyeong" element={<Gwangmyeong />} />
         <Route path="/news" element={<News />} />
       </Routes>
       <Footer />

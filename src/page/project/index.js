@@ -11,10 +11,11 @@ function Project() {
                     <div className={styles.introContainer}>
                         <div className={styles.introWrapper}>
                             <div className={styles.introText}>
+
                                 <span className={styles.title}>프로젝트</span>
-                                <span className={styles.subTitle}>
+                                <span className={styles.subTitle}>                                                                    
                                     우리의 재밌는 상상을<br/>
-                                    현실화한 프로젝트를 소개합니다.
+                                    현실화한 프로젝트를 소개합니다
                                 </span>
                             </div>
                         </div>
@@ -33,20 +34,18 @@ function Project() {
                                     return (
                                         <li className={styles.projectItem}>
                                             <div>
-                                                <div className={styles.imageFront}>
-                                                    <div className={styles.projectImageWrapper}>                                
+                                                <div className={styles.projectFront}>
+                                                    <div className={styles.imageWrapper}>                                
                                                         <img src={require(`assets/img/project/${item.projectImage}`)} ></img>
                                                     </div>
-                                                    <div className={styles.projectProfileWrapper}>
+                                                    <div className={styles.profileWrapper}>
                                                         <span className={tagClassName}>{item.projectType}</span>
-                                                        <p>
-                                                            <span className={styles.projectTitle}>{item.projectName}</span>
-                                                        </p>                                        
+                                                        <span className={styles.projectTitle}>{item.projectName}</span>                                                        
                                                     </div>
                                                 </div>
 
-                                                <div className={styles.imageBack}>                                
-                                                    <div className={styles.projectImageWrapper}>           
+                                                <div className={styles.projectBack}>                                
+                                                    <div className={styles.imageWrapper}>           
                                                         {
                                                             item.projectWebLink !== '' &&
                                                                 <a className={styles.store} href={item.projectWebLink} target="_blank" rel="noreferrer noopener">
@@ -64,12 +63,13 @@ function Project() {
                                                                 <a className={styles.store} href={item.projectAndLink} target="_blank" rel="noreferrer noopener">
                                                                     <img src={require('assets/img/project/icon_google.png')} ></img>Google Play
                                                                 </a>                                                     
-                                                        }                                                        
+                                                        }                                              
                                                     </div>
-                                                    <div className={styles.projectProfileWrapper}>
+                                                    <div className={styles.profileWrapper}>
+                                                        <span className={styles.projectTitle}>"{item.projectContent}"</span>
                                                         <p>
-                                                            <span className={styles.projectTitle}>"{item.projectContent}"</span>
-                                                        </p>  
+                                                            <a href={item.readMore} target="_blank" rel="noreferrer noopener"><span className={styles.moreBtn}>더보기</span></a>
+                                                        </p>                                                        
                                                     </div>
                                                 </div>
                                             </div>
