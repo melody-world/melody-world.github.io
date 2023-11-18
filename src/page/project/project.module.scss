@@ -48,17 +48,51 @@ main {
                 font-size: 20px;                                
                 font-weight: 500;
             }
+
+            @media (max-width: 896px) {                
+                .introText {
+                    width: 100%;
+                    padding-top: 60px;
+                }
+
+                .title {
+                    margin-bottom: 16px;
+                    font-size: 35px;
+                }
+
+                .subTitle {
+                    line-height: 1.25em;
+                    font-size: 20px;
+                }
+        
+                .introWrapper  {
+                    height: 100%;
+                    background-position: right 30px bottom 30px;
+                    background-size: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;                    
+                }
+            }
         }
 
+        @media (max-width: 896px) {   
+            .introContainer {
+                padding: 0 24px;
+            }
+        }
+        
         .projectContainer {
             max-width: 1140px;
             margin: 0px auto;
 
             .projectList {
                 display: flex;
-                gap: 48px 28px;
-                flex-wrap: wrap;
                 margin: 48px 0; 
+                padding: 10px;
+                gap: 48px 28px;
+                flex-wrap: wrap;                
 
                 .projectItem {
                     flex: 1 1 30%;
@@ -140,7 +174,6 @@ main {
                             margin-bottom: 16px;
                         }
                         .projectTag {
-                            background-color: #5FC6FF;
                             display: inline-block;
                             min-width: 50px;
                             height: 28px;
@@ -151,6 +184,14 @@ main {
                             color: #fff;
                             line-height: 28px;
                             text-align: center;
+                        }
+
+                        .tagApp {
+                            background-color: #5FC6FF;
+                        }
+
+                        .tagWeb {
+                            background-color: #b3b3ff;
                         }
 
                         .projectTitle {

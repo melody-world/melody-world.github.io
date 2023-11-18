@@ -26,6 +26,10 @@ function Project() {
                         <ul className={styles.projectList}>
                             {
                                 PROJECT_LIST.map(item => {
+                                    const tagClassName = item.projectType === 'WEB' ? 
+                                                        `${styles.projectTag} ${styles.tagWeb}` : 
+                                                        `${styles.projectTag} ${styles.tagApp}`;
+
                                     return (
                                         <li className={styles.projectItem}>
                                             <div>
@@ -34,7 +38,7 @@ function Project() {
                                                         <img src={require(`assets/img/project/${item.projectImage}`)} ></img>
                                                     </div>
                                                     <div className={styles.projectProfileWrapper}>
-                                                        <span className={styles.projectTag}>{item.projectType}</span>
+                                                        <span className={tagClassName}>{item.projectType}</span>
                                                         <p>
                                                             <span className={styles.projectTitle}>{item.projectName}</span>
                                                         </p>                                        
@@ -44,17 +48,23 @@ function Project() {
                                                 <div className={styles.imageBack}>                                
                                                     <div className={styles.projectImageWrapper}>           
                                                         {
+                                                            item.projectWebLink !== '' &&
+                                                                <a className={styles.store} href={item.projectWebLink} target="_blank" rel="noreferrer noopener">
+                                                                    <img src={require('assets/img/project/icon_web.png')} ></img>Home
+                                                                </a>                                                     
+                                                        }                                          
+                                                        {
                                                             item.projectIosLink !== '' &&
-                                                                <a className={styles.store} href="" target="_blank" rel="noreferrer noopener">
+                                                                <a className={styles.store} href={item.projectIosLink} target="_blank" rel="noreferrer noopener">
                                                                     <img src={require('assets/img/project/icon_apple.png')} ></img>App Store
                                                                 </a>                                                      
                                                         }
                                                         {
                                                             item.projectAndLink !== '' &&
-                                                                <a className={styles.store} href="" target="_blank" rel="noreferrer noopener">
+                                                                <a className={styles.store} href={item.projectAndLink} target="_blank" rel="noreferrer noopener">
                                                                     <img src={require('assets/img/project/icon_google.png')} ></img>Google Play
                                                                 </a>                                                     
-                                                        }                                          
+                                                        }                                                        
                                                     </div>
                                                     <div className={styles.projectProfileWrapper}>
                                                         <p>
