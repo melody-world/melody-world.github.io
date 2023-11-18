@@ -1,5 +1,6 @@
 
 import styles from './intro.module.scss';
+import INTRO_LIST from 'constants/introData.js';
 
 function Intro() {
     return (
@@ -9,116 +10,78 @@ function Intro() {
                     <h1 className={styles.titleFont}>We are providing various ideas as a service🤩</h1>                    
                 </div>
 
-                <div className={styles.memberContainer}>                    
-                    <div className={styles.memberWrapper}>
-                        <div className={styles.imageWrapper}>
-                            <div className={styles.hoverWrapper}>
-                                <div>
-                                    <figure className={styles.imageFront}>
-                                        <img src="/images/intro/eddy.png" alt="eddy"/>                                                                
-                                    </figure>
-                                        
-                                    <figure className={styles.imageBack}>
-                                        <img src="/images/intro/eddy_work.png" alt="eddy-work"/>                        
-                                        <figcaption>                                            
-                                            <p>💻 Github</p>
-                                        </figcaption>                                                             
-                                    </figure> 
+                <div className={styles.memberContainer}>
+                    {
+                        INTRO_LIST.map(item => {
+                            return (                                
+                                <div className={styles.memberContainer}>                    
+                                    <div className={styles.memberWrapper}>
+                                        {
+                                            isLeftPosition(item.id) && getIntroTitle(item)
+                                        }
+                                                                            
+                                        <div className={styles.infoWrapper}>
+                                            <div className={styles.infoTitle}>
+                                                <h2>{item.introName}</h2>
+                                                <h4>{item.devSide}</h4>
+                                            </div>
+
+                                            <div className={styles.infoContentWrapper}>
+                                                <img className={styles.infoImage} src="/images/intro/member-info.png" alt="member-info"/> 
+                                                <div className={styles.infoContent}>{item.introContent}</div>
+
+                                                <img className={styles.infoImage} src="/images/intro/member-stack.png" alt="member-stack"/>     
+                                                <div className={styles.stackWrapper}>
+                                                    {
+                                                        item.devStack.map(stack => {
+                                                            return (
+                                                                <div>
+                                                                    <img src={stack.image} alt={stack.name}/>
+                                                                </div>  
+                                                            );
+                                                        })
+                                                    }                                                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {
+                                            !isLeftPosition(item.id) && getIntroTitle(item)                                            
+                                        }
+                                    </div>
                                 </div>
-                            </div>                    
-                        </div>
-
-                        <div className={styles.infoWrapper}>
-                            <div className={styles.infoTitle}>
-                                <h2>Merry</h2>
-                                <h4>Front-end</h4>
-                            </div>
-
-                            <div className={styles.infoContentWrapper}>
-                                <img className={styles.infoImage} src="/images/intro/member-info.png" alt="member-info"/> 
-                                <div className={styles.infoContent}>
-                                    Hello world
-                                </div>
-
-                                <img className={styles.infoImage} src="/images/intro/member-stack.png" alt="member-stack"/>     
-                                <div className={styles.stackWrapper}>
-                                    <div>
-                                        <img src="/images/intro/icon_java.png" alt="java"/>
-                                    </div>                                    
-                                    <div>
-                                        <img src="/images/intro/icon_spring.png" alt="spring"/>
-                                    </div>                                    
-                                    <div>
-                                        <img src="/images/intro/icon_database.png" alt="database"/>
-                                    </div>                                    
-                                    <div>
-                                        <img src="/images/intro/icon_flutter.png" alt="flutter"/>
-                                    </div>                                    
-                                    <div>
-                                        <img src="/images/intro/icon_aws.png" alt="aws"/>
-                                    </div>                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={styles.memberWrapper}>                        
-                        <div className={styles.infoWrapper}>
-                            <div className={styles.infoTitle}>
-                                <h2>Eddy</h2>
-                                <h4>Back-end</h4>
-                            </div>
-
-                            <div className={styles.infoContentWrapper}>
-                                <img className={styles.infoImage} src="/images/intro/member-info.png" alt="member-info"/> 
-                                <div className={styles.infoContent}>
-                                    Hello world
-                                </div>
-
-                                <img className={styles.infoImage} src="/images/intro/member-stack.png" alt="member-stack"/>     
-                                <div className={styles.stackWrapper}>
-                                    <div>
-                                        <img src="/images/intro/icon_java.png" alt="java"/>
-                                    </div>                                    
-                                    <div>
-                                        <img src="/images/intro/icon_spring.png" alt="spring"/>
-                                    </div>                                    
-                                    <div>
-                                        <img src="/images/intro/icon_database.png" alt="database"/>
-                                    </div>                                    
-                                    <div>
-                                        <img src="/images/intro/icon_flutter.png" alt="flutter"/>
-                                    </div>                                    
-                                    <div>
-                                        <img src="/images/intro/icon_aws.png" alt="aws"/>
-                                    </div>                                    
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className={styles.imageWrapper}>
-                            <div className={styles.hoverWrapper}>
-                                <div>
-                                    <figure className={styles.imageFront}>
-                                        <img src="/images/intro/eddy.png" alt="eddy"/>                                           
-                                    </figure>
-                                        
-                                    <figure className={styles.imageBack}>
-                                        <img src="/images/intro/eddy_work.png" alt="eddy-work"/>                        
-                                        <figcaption>                                            
-                                            <p>
-                                                <a href="https://github.com/eeesnghyun" target="_blank">💻 Github</a>
-                                            </p>
-                                        </figcaption>                                                             
-                                    </figure> 
-                                </div>
-                            </div>                    
-                        </div>
-                    </div>
+                            );
+                        })
+                    }
                 </div>
             </div>            
         </main>
     );  
+}
+
+function isLeftPosition(id) {
+    return id % 2 === 0;
+}
+
+function getIntroTitle(map) {    
+    return (
+        <div className={styles.imageWrapper}>
+            <div className={styles.hoverWrapper}>
+                <div>
+                    <figure className={styles.imageFront}>
+                        <img src={map.introImage1} alt={`introImage1${map.id}`}/>                                                                
+                    </figure>
+                        
+                    <figure className={styles.imageBack}>
+                        <img src={map.introImage2} alt={`introImage2${map.id}`}/>                                                                
+                        <figcaption>                                            
+                            <p><a href={map.githubUrl} target="_blank" rel="noreferrer noopener">💻 Github</a></p>
+                        </figcaption>                                                             
+                    </figure> 
+                </div>
+            </div>                    
+        </div>
+    );
 }
 
 export default Intro;
