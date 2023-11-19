@@ -1,23 +1,45 @@
 import React, { useState, useEffect } from "react";
 import moment from 'moment';
-import axios from 'axios';
 import {Accordion, AccordionBody, AccordionHeader, AccordionItem} from "react-headless-accordion";
+import { VscChevronDown , VscChevronUp } from "react-icons/vsc";
+
+import Request from "services/Request";
+import PROJECT_LIST from "constants/projectData";
 
 import styles from './news.module.scss';
 
-import { VscChevronDown , VscChevronUp } from "react-icons/vsc";
-
 export default function News() {
     const [newList, setNewsList] = useState([]); 
+    async function fetchData() {
+        // 프로젝트 단위로 공지사항을 조회한다.
+        const porjectList = PROJECT_LIST.filter(project => project.shortName != '');
+        const promises = porjectList.map(async (item) => {
+            try {    
+                const response = await Request.get(`/${item.shortName}/notice.json`);
+                const dataList = response.data.data.map((data) => ({
+                    ...data, 
+                    projectName : item.projectName
+                }));
 
-    useEffect(() => {    
-        axios.get('https://merry-eddy.co.kr/fgm/notice.json')
-        .then(function(res) {
-            setNewsList(res.data.data);
-        })
-        .catch(function(err) {
-            console.log(err);
-        })
+                return dataList;
+            } catch (err) {
+                console.log(err);
+                return [];
+            }
+        });
+    
+        try {
+            const results = await Promise.all(promises);
+            const flattenedNewsList = results.flat();
+
+            setNewsList(flattenedNewsList);
+        } catch (error) {
+            console.log(error);
+        }
+    }    
+        
+    useEffect(() => {
+        fetchData();    
     }, []);
 
     return (
@@ -26,15 +48,15 @@ export default function News() {
                 <h3>💬 공지사항</h3>
 
                 <Accordion>
-                    {newList.map(({id, title, createDate, content}, index) => (
+                    {newList.map((item, index) => (
                         <AccordionItem key={index}>
                             {({open}) => (
                                 <>
                                     <AccordionHeader as={"div"}>
                                         <div className={`${styles.titleWrap} ${open ? 'accordion-active' : ''}`}>
                                             <div>
-                                                <p>{title}</p>
-                                                <span>{moment(createDate, 'YYYYMMDD').format('YYYY.MM.DD')}</span>
+                                                <p>[{item.projectName}] {item.title}</p>
+                                                <span>{moment(item.createDate, 'YYYYMMDD').format('YYYY.MM.DD')}</span>
                                             </div>
 
                                             {
@@ -47,7 +69,7 @@ export default function News() {
 
                                     <AccordionBody>
                                         <div className={styles.contentWrap}>
-                                            <p>{content}</p>
+                                            <p>{item.content}</p>
                                         </div>
                                     </AccordionBody>
                                 </>
