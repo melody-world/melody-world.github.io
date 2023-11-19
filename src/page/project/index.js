@@ -1,12 +1,57 @@
+import React, { useState, useEffect } from "react";
 import { useMediaQuery } from 'react-responsive';
 
 import styles from './project.module.scss';
 import PROJECT_LIST from 'constants/projectData';
 
 function Project() {
+    const isMobile = useMediaQuery({ maxWidth: 1024 })
+    const AutoHideModal = ({ isVisible, onClose, delay = 3000 }) => {
+        useEffect(() => {
+          let timeoutId;
+    
+          if (isVisible) {
+            timeoutId = setTimeout(() => {
+              onClose();
+            }, delay);
+          }
+    
+          return () => {
+            clearTimeout(timeoutId);
+          };
+        }, [isVisible, onClose, delay]);
+    
+        return (            
+          <div className={`${styles.modal} ${isVisible ? styles.visible : styles.hidden}`}>
+            <p>💡 탭하여 내용을 확인해보세요</p>
+          </div>
+        );
+      };
+
+    const [modalVisible, setModalVisible] = useState(true);
+    const closeModal = () => {
+      setModalVisible(false);
+    };
+  
+    useEffect(() => {
+      const timeoutId = setTimeout(() => {
+        setModalVisible(false);
+      }, 3000);
+  
+      return () => {
+        clearTimeout(timeoutId);
+      };
+    }, []);
+
     return (
         <main>
             <div className={styles.container}>                
+                {
+                    isMobile &&
+                    <div>
+                        <AutoHideModal isVisible={modalVisible} onClose={closeModal} />
+                    </div>
+                }
                 <section>
                     <div className={styles.introContainer}>
                         <div className={styles.introWrapper}>
@@ -18,7 +63,7 @@ function Project() {
                                     현실화한 프로젝트를 소개합니다
                                 </span>
                             </div>
-                        </div>
+                        </div>                        
                     </div>
                 </section>
 
