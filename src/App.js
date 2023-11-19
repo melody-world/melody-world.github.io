@@ -7,6 +7,7 @@ import Footer from "./component/footer";
 import Intro from "./page/intro";
 import Proejct from "./page/project";
 import Gwangmyeong from "./page/gwangmyeong";
+import Onebiteword from "./page/onebiteword";
 import News from "./page/news";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/intro" element={<Intro />} />
         <Route path="/project" element={<Proejct />} />
         <Route path="/findgwangmyeong" element={<Gwangmyeong />} />
+        <Route path="/onebiteword" element={<Onebiteword />} />
         <Route path="/news" element={<News />} />
       </Routes>
       <Footer />
