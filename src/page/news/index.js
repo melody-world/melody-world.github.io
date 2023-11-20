@@ -12,7 +12,7 @@ export default function News() {
   const [newList, setNewsList] = useState([]);
   async function fetchData() {
     // 프로젝트 단위로 공지사항을 조회한다.
-    const porjectList = PROJECT_LIST.filter((project) => project.shortName != "");
+    const porjectList = PROJECT_LIST.filter((project) => project.shortName !== "");
     const getDataList = porjectList.map(async (item) => {
       try {
         const response = await Request.get(`/${item.shortName}/notice.json`);
