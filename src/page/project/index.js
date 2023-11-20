@@ -70,7 +70,7 @@ function Project() {
           <div className={styles.projectContainer}>
             <ul className={styles.projectList}>
               {PROJECT_LIST.sort((a, b) => {
-                return b - a;
+                return b.id - a.id;
               }).map((item) => {
                 const typeObj = item.projectType.map((pType) => (
                   <span
