@@ -25,7 +25,7 @@ const PROJECT_LIST = [
   },
   {
     id: 3,
-    projectName: "광명찾자 - 아파트 실거래가 조회",
+    projectName: "오늘의평화",
     projectContent: "국토교통부 데이터를 기반으로\n전국 아파트 실거래가를 제공합니다",
     projectImage: "img_findgwangmyeong.png",
     projectType: ["APP"],
