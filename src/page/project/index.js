@@ -74,6 +74,7 @@ function Project() {
               }).map((item) => {
                 const typeObj = item.projectType.map((pType) => (
                   <span
+                    key={pType}
                     className={
                       pType === "WEB"
                         ? `${styles.projectTag} ${styles.tagWeb}`
@@ -85,11 +86,11 @@ function Project() {
                 ));
 
                 return (
-                  <li className={styles.projectItem}>
+                  <li key={item.id} className={styles.projectItem}>
                     <div>
                       <div className={styles.projectFront}>
                         <div className={styles.imageWrapper}>
-                          <img src={require(`assets/img/project/${item.projectImage}`)} />
+                          <img src={require(`assets/img/project/${item.projectImage}`)} alt={item.id} />
                         </div>
                         <div className={styles.profileWrapper}>
                           <p>{typeObj}</p>
@@ -99,7 +100,7 @@ function Project() {
 
                       <div className={styles.projectBack}>
                         <div className={styles.imageWrapper}>
-                          <img src={require(`assets/img/project/${item.projectImage}`)} />
+                          <img src={require(`assets/img/project/${item.projectImage}`)} alt={item.id} />
                         </div>
                         <div className={styles.profileWrapper}>
                           <p className={styles.projectTitle}>"{item.projectContent}"</p>
