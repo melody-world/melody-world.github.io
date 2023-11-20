@@ -1,0 +1,33 @@
+@import "../../utils";
+
+main {
+  font-family: "SUIT";
+
+  @include mobile {
+    margin-top: 48px;
+    overflow-x: hidden;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .wordWrapper {
+      min-width: 300px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .wordName {
+      min-width: 150px;
+    }
+
+    .wordMean {
+      word-break: break-word;
+      width: 150px;
+    }
+  }
+}
