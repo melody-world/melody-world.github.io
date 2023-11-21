@@ -17,27 +17,6 @@ main {
       width: 100%;
     }
 
-    .modal {
-      position: fixed;
-      z-index: 999;
-      bottom: -100%;
-      left: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      color: #fff;
-      padding: 16px;
-      text-align: center;
-      transition: bottom 0.7s ease;
-    }
-
-    .visible {
-      bottom: 0;
-    }
-
-    .hidden {
-      display: none;
-    }
-
     .introContainer {
       height: 421px;
       background-color: #4db2fa;
@@ -196,7 +175,6 @@ main {
             background-color: #fff;
 
             p {
-              word-break: keep-all;
               margin-bottom: 16px;
             }
 
@@ -222,8 +200,10 @@ main {
               background-color: #b3b3ff;
             }
 
-            p {
+            div {
               display: flex;
+              flex-direction: row;
+              justify-content: flex-end;
 
               .moreBtn {
                 background-color: #d5d7dc;
