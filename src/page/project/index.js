@@ -2,55 +2,64 @@ import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 
 import styles from "./project.module.scss";
+import BottomPopup from "component/popup/BottomPopup";
 import PROJECT_LIST from "constants/projectData";
 
-function Project() {
+export default function Project() {
   const isMobile = useMediaQuery({ maxWidth: 1024 });
-  const AutoHideModal = ({ isVisible, onClose, delay = 3000 }) => {
-    useEffect(() => {
-      let timeoutId;
+  const [showBottomPopup, setShowBottomPopup] = useState(false);
 
-      if (isVisible) {
-        timeoutId = setTimeout(() => {
-          onClose();
-        }, delay);
-      }
+  useEffect(() => {
+    const showPopupAfterDelay = () => {
+      setShowBottomPopup(true);
+    };
+
+    if (isMobile) {
+      const timeoutId = setTimeout(showPopupAfterDelay, 1000);
 
       return () => {
         clearTimeout(timeoutId);
       };
-    }, [isVisible, onClose, delay]);
+    }
+  }, [isMobile]);
 
+  function ProjectFront({ typeObj, item }) {
     return (
-      <div className={`${styles.modal} ${isVisible ? styles.visible : styles.hidden}`}>
-        <p>💡 탭하여 내용을 확인해보세요</p>
+      <div className={styles.projectFront}>
+        <div className={styles.imageWrapper}>
+          <img src={require(`assets/img/project/${item.projectImage}`)} alt={item.id} />
+        </div>
+        <div className={styles.profileWrapper}>
+          <p>{typeObj}</p>
+          <p className={styles.projectTitle}>{item.projectName}</p>
+        </div>
       </div>
     );
-  };
+  }
 
-  const [modalVisible, setModalVisible] = useState(true);
-  const closeModal = () => {
-    setModalVisible(false);
-  };
-
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setModalVisible(false);
-    }, 3000);
-
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, []);
+  function ProjectBack({ item }) {
+    return (
+      <div className={styles.projectBack}>
+        <div className={styles.imageWrapper}>
+          <img src={require(`assets/img/project/${item.projectImage}`)} alt={item.id} />
+        </div>
+        <div className={styles.profileWrapper}>
+          <p className={styles.projectTitle}>"{item.projectContent}"</p>
+          <div>
+            <a className={styles.moreBtn} href={item.readMore} target="_blank" rel="noreferrer noopener">
+              더보기
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <main>
-      <div className={styles.container}>
-        {isMobile && (
-          <div>
-            <AutoHideModal isVisible={modalVisible} onClose={closeModal} />
-          </div>
-        )}
+      <div className={styles.container} id="root">
+        {isMobile && showBottomPopup && <BottomPopup content="💡 탭하여 내용을 확인해보세요" />}
+
         <section>
           <div className={styles.introContainer}>
             <div className={styles.introWrapper}>
@@ -101,37 +110,3 @@ function Project() {
     </main>
   );
 }
-
-function ProjectFront({ typeObj, item }) {
-  return (
-    <div className={styles.projectFront}>
-      <div className={styles.imageWrapper}>
-        <img src={require(`assets/img/project/${item.projectImage}`)} alt={item.id} />
-      </div>
-      <div className={styles.profileWrapper}>
-        <p>{typeObj}</p>
-        <p className={styles.projectTitle}>{item.projectName}</p>
-      </div>
-    </div>
-  );
-}
-
-function ProjectBack({ item }) {
-  return (
-    <div className={styles.projectBack}>
-      <div className={styles.imageWrapper}>
-        <img src={require(`assets/img/project/${item.projectImage}`)} alt={item.id} />
-      </div>
-      <div className={styles.profileWrapper}>
-        <p className={styles.projectTitle}>"{item.projectContent}"</p>
-        <p>
-          <a href={item.readMore} target="_blank" rel="noreferrer noopener">
-            <span className={styles.moreBtn}>더보기</span>
-          </a>
-        </p>
-      </div>
-    </div>
-  );
-}
-
-export default Project;

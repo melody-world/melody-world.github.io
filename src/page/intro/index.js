@@ -1,94 +1,89 @@
+import { useMediaQuery } from "react-responsive";
 
-import { useMediaQuery } from 'react-responsive';
+import styles from "./intro.module.scss";
+import INTRO_LIST from "constants/introData.js";
 
-import styles from './intro.module.scss';
-import INTRO_LIST from 'constants/introData.js';
+export default function Intro() {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
 
-function Intro() {
-    const isMobile = useMediaQuery({ maxWidth: 768 })
-
-    return (
-        <main>
-            <div className={styles.container}>                
-                <div className={styles.title}>                      
-                    <h1 className={styles.titleFont}>We are providing various ideas as a service🤩</h1>                    
-                </div>
-
-                <div className={styles.memberContainer}>
-                    {
-                        INTRO_LIST.map(item => {
-                            return (                                                  
-                                <div className={styles.memberWrapper}>
-                                    {
-                                        isMobile ?
-                                            getIntroProfile(item)
-                                            : (!isMobile && isLeftPosition(item.id) && getIntroProfile(item))                                      
-                                    }
-                                                                        
-                                    <div className={styles.infoWrapper}>
-                                        <div className={styles.infoTitle}>
-                                            <h2>{item.introName}</h2>
-                                            <h4>{item.devSide}</h4>
-                                        </div>
-
-                                        <div className={styles.infoContentWrapper}>
-                                            <img className={styles.infoImage} src={require('assets/img/intro/icon_intro_info.png')} alt="member-info"/> 
-                                            <div className={styles.infoContent}>{item.introContent}</div>
-
-                                            <img className={styles.infoImage} src={require('assets/img/intro/icon_intro_stack.png')} alt="member-stack"/>     
-                                            <div className={styles.stackWrapper}>
-                                                {
-                                                    item.devStack.map(stack => {
-                                                        return (
-                                                            <div>
-                                                                <img src={stack.image} alt={stack.name}/>
-                                                            </div>  
-                                                        );
-                                                    })
-                                                }                                                                                  
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    {
-                                        !isMobile && !isLeftPosition(item.id) && getIntroProfile(item)                                            
-                                    }
-                                </div>
-                            );
-                        })
-                    }
-                </div>
-            </div>            
-        </main>
-    );  
-}
-
-function isLeftPosition(id) {
-    return id % 2 === 0;
-}
-
-function getIntroProfile(map) {    
-    return (
-        <div className={styles.imageWrapper}>
-            <div className={styles.hoverWrapper}>
-                <div>
-                    <figure className={styles.imageFront}>
-                        <img src={map.introImage1} alt={`introImage1${map.id}`}/>                                                                
-                    </figure>
-                        
-                    <figure className={styles.imageBack}>
-                        <img src={map.introImage2} alt={`introImage2${map.id}`}/>                                                                
-                        <figcaption>   
-                            <a href={map.githubUrl} target="_blank" rel="noreferrer noopener">
-                                <img src={require('assets/img/intro/icon_github.png')} />
-                                <p>@{map.githubNickname}</p>
-                            </a>
-                        </figcaption>                                                             
-                    </figure> 
-                </div>
-            </div>                    
+  return (
+    <main>
+      <div className={styles.container}>
+        <div className={styles.title}>
+          <h1 className={styles.titleFont}>We are providing various ideas as a service🤩</h1>
         </div>
-    );
+
+        <div className={styles.memberContainer}>
+          {INTRO_LIST.map((item) => {
+            return (
+              <div className={styles.memberWrapper} key={item.id}>
+                {isMobile ? getIntroProfile(item) : !isMobile && isLeftPosition(item.id) && getIntroProfile(item)}
+
+                <div className={styles.infoWrapper}>
+                  <div className={styles.infoTitle}>
+                    <h2>{item.introName}</h2>
+                    <h4>{item.devSide}</h4>
+                  </div>
+
+                  <div className={styles.infoContentWrapper}>
+                    <img
+                      className={styles.infoImage}
+                      src={require("assets/img/intro/icon_intro_info.png")}
+                      alt="member-info"
+                    />
+                    <div className={styles.infoContent}>{item.introContent}</div>
+
+                    <img
+                      className={styles.infoImage}
+                      src={require("assets/img/intro/icon_intro_stack.png")}
+                      alt="member-stack"
+                    />
+                    <div className={styles.stackWrapper}>
+                      {item.devStack.map((stack) => {
+                        return (
+                          <div key={stack.name}>
+                            <img src={stack.image} alt={stack.name} />
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+
+                {!isMobile && !isLeftPosition(item.id) && getIntroProfile(item)}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </main>
+  );
 }
 
-export default Intro;
+const isLeftPosition = (id) => {
+  return id % 2 === 0;
+};
+
+const getIntroProfile = (map) => {
+  return (
+    <div className={styles.imageWrapper}>
+      <div className={styles.hoverWrapper}>
+        <div>
+          <figure className={styles.imageFront}>
+            <img src={map.introImage1} alt={`introImage1${map.id}`} />
+          </figure>
+
+          <figure className={styles.imageBack}>
+            <img src={map.introImage2} alt={`introImage2${map.id}`} />
+            <figcaption>
+              <a href={map.githubUrl} target="_blank" rel="noreferrer noopener">
+                <img src={require("assets/img/intro/icon_github.png")} alt={`github${map.id}`} />
+                <p>@{map.githubNickname}</p>
+              </a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  );
+};

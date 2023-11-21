@@ -17,27 +17,6 @@ main {
       width: 100%;
     }
 
-    .modal {
-      position: fixed;
-      z-index: 999;
-      bottom: -100%;
-      left: 0;
-      width: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      color: #fff;
-      padding: 16px;
-      text-align: center;
-      transition: bottom 0.7s ease;
-    }
-
-    .visible {
-      bottom: 0;
-    }
-
-    .hidden {
-      display: none;
-    }
-
     .introContainer {
       height: 421px;
       background-color: #4db2fa;
