@@ -196,7 +196,6 @@ main {
             background-color: #fff;
 
             p {
-              word-break: keep-all;
               margin-bottom: 16px;
             }
 
@@ -222,8 +221,10 @@ main {
               background-color: #b3b3ff;
             }
 
-            p {
+            div {
               display: flex;
+              flex-direction: row;
+              justify-content: flex-end;
 
               .moreBtn {
                 background-color: #d5d7dc;
