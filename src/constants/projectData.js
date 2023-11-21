@@ -21,7 +21,7 @@ const PROJECT_LIST = [
     projectAndLink: "https://play.google.com/store/apps/details?id=com.app.findgwangmyeong",
     projectIosLink: "https://apps.apple.com/kr/app/%EA%B4%91%EB%AA%85%EC%B0%BE%EC%9E%90/id6451822761",
     readMore: "/onebiteword",
-    shortName: "",
+    shortName: "obs",
   },
   {
     id: 3,

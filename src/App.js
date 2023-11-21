@@ -1,4 +1,4 @@
-import { Routes, Route, Switch } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
 
@@ -11,6 +11,8 @@ import Onebiteword from "./page/onebiteword";
 import News from "./page/news";
 import Privacy from "./page/privacy";
 
+import PROJECT_LIST from "constants/projectData";
+
 export default function App() {
   return (
     <>
@@ -22,8 +24,14 @@ export default function App() {
         <Route path="/findgwangmyeong" element={<Gwangmyeong />} />
         <Route path="/onebiteword" element={<Onebiteword />} />
         <Route path="/news" element={<News />} />
-        <Route path="/findgwangmyeong/privacy" element={<Privacy appName="광명찾자 - 아파트 실거래가 조회" />} />
-        <Route path="/onebiteword/privacy" element={<Privacy appName="한입단어" />} />
+
+        {/*
+         * 개인정보 처리방침 컴포넌트 연결
+         * 프로젝트 리스트 readMore 경로 참조, privacy 컴포넌트를 재사용한다.
+         */}
+        {PROJECT_LIST.map((item) => (
+          <Route key={item.id} path={`${item.readMore}/privacy`} element={<Privacy appName={item.projectName} />} />
+        ))}
       </Routes>
       <Footer />
     </>
