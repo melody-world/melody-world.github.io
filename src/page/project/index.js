@@ -58,7 +58,7 @@ export default function Project() {
   return (
     <main>
       <div className={styles.container} id="root">
-        {isMobile && showBottomPopup && <BottomPopup content="💡 탭하여 내용을 확인해보세요" />}
+        {isMobile && showBottomPopup && <BottomPopup content="💡 프로젝트를 탭하여 내용을 확인해보세요" />}
 
         <section>
           <div className={styles.introContainer}>
