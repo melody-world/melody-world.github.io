@@ -88,29 +88,8 @@ function Project() {
                 return (
                   <li key={item.id} className={styles.projectItem}>
                     <div>
-                      <div className={styles.projectFront}>
-                        <div className={styles.imageWrapper}>
-                          <img src={require(`assets/img/project/${item.projectImage}`)} alt={item.id} />
-                        </div>
-                        <div className={styles.profileWrapper}>
-                          <p>{typeObj}</p>
-                          <p className={styles.projectTitle}>{item.projectName}</p>
-                        </div>
-                      </div>
-
-                      <div className={styles.projectBack}>
-                        <div className={styles.imageWrapper}>
-                          <img src={require(`assets/img/project/${item.projectImage}`)} alt={item.id} />
-                        </div>
-                        <div className={styles.profileWrapper}>
-                          <p className={styles.projectTitle}>"{item.projectContent}"</p>
-                          <p>
-                            <a href={item.readMore} target="_blank" rel="noreferrer noopener">
-                              <span className={styles.moreBtn}>더보기</span>
-                            </a>
-                          </p>
-                        </div>
-                      </div>
+                      <ProjectFront typeObj={typeObj} item={item} key={`front-${item.id}`} />
+                      <ProjectBack item={item} key={`back-${item.id}`} />
                     </div>
                   </li>
                 );
@@ -120,6 +99,38 @@ function Project() {
         </section>
       </div>
     </main>
+  );
+}
+
+function ProjectFront({ typeObj, item }) {
+  return (
+    <div className={styles.projectFront}>
+      <div className={styles.imageWrapper}>
+        <img src={require(`assets/img/project/${item.projectImage}`)} alt={item.id} />
+      </div>
+      <div className={styles.profileWrapper}>
+        <p>{typeObj}</p>
+        <p className={styles.projectTitle}>{item.projectName}</p>
+      </div>
+    </div>
+  );
+}
+
+function ProjectBack({ item }) {
+  return (
+    <div className={styles.projectBack}>
+      <div className={styles.imageWrapper}>
+        <img src={require(`assets/img/project/${item.projectImage}`)} alt={item.id} />
+      </div>
+      <div className={styles.profileWrapper}>
+        <p className={styles.projectTitle}>"{item.projectContent}"</p>
+        <p>
+          <a href={item.readMore} target="_blank" rel="noreferrer noopener">
+            <span className={styles.moreBtn}>더보기</span>
+          </a>
+        </p>
+      </div>
+    </div>
   );
 }
 

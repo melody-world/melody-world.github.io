@@ -11,9 +11,13 @@ export default function Onebiteword() {
     const fetchData = async () => {
       try {
         const response = await Request.get(`/onebiteword/1.json`);
-        const dataList = response.data.data.map((data) => ({
+        let dataList = response.data.data.map((data) => ({
           ...data,
         }));
+
+        if (Array.from(dataList).length > 0) {
+          dataList = getRandomItems(dataList, 10);
+        }
 
         setData(dataList);
       } catch (error) {
@@ -23,6 +27,17 @@ export default function Onebiteword() {
 
     fetchData();
   }, []);
+
+  /**
+   * 배열로부터 입력받은 개수만큼 랜덤하게 값 추출
+   * @param {Array} arr
+   * @param {int} count
+   * @returns
+   */
+  const getRandomItems = (arr, count) => {
+    const resultArray = [...arr].sort(() => Math.random() - 0.5);
+    return resultArray.slice(0, count);
+  };
 
   return (
     <main>
