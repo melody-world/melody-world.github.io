@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
+import { Link, useLocation } from "react-router-dom";
 
 import styles from "./project.module.scss";
 import BottomPopup from "component/popup/BottomPopup";
@@ -23,42 +24,10 @@ export default function Project() {
     }
   }, [isMobile]);
 
-  function ProjectFront({ typeObj, item }) {
-    return (
-      <div className={styles.projectFront}>
-        <div className={styles.imageWrapper}>
-          <img src={require(`assets/img/project/${item.projectImage}`)} alt={item.id} />
-        </div>
-        <div className={styles.profileWrapper}>
-          <p>{typeObj}</p>
-          <p className={styles.projectTitle}>{item.projectName}</p>
-        </div>
-      </div>
-    );
-  }
-
-  function ProjectBack({ item }) {
-    return (
-      <div className={styles.projectBack}>
-        <div className={styles.imageWrapper}>
-          <img src={require(`assets/img/project/${item.projectImage}`)} alt={item.id} />
-        </div>
-        <div className={styles.profileWrapper}>
-          <p className={styles.projectTitle}>"{item.projectContent}"</p>
-          <div>
-            <a className={styles.moreBtn} href={item.readMore} target="_blank" rel="noreferrer noopener">
-              더보기
-            </a>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <main>
       <div className={styles.container} id="root">
-        {isMobile && showBottomPopup && <BottomPopup content="💡 탭하여 내용을 확인해보세요" />}
+        {isMobile && showBottomPopup && <BottomPopup content="💡 프로젝트를 탭하여 내용을 확인해보세요" />}
 
         <section>
           <div className={styles.introContainer}>
@@ -110,3 +79,35 @@ export default function Project() {
     </main>
   );
 }
+
+const ProjectFront = ({ typeObj, item }) => {
+  return (
+    <div className={styles.projectFront}>
+      <div className={styles.imageWrapper}>
+        <img src={require(`assets/img/project/${item.projectImage}`)} alt={item.id} />
+      </div>
+      <div className={styles.profileWrapper}>
+        <p>{typeObj}</p>
+        <p className={styles.projectTitle}>{item.projectName}</p>
+      </div>
+    </div>
+  );
+};
+
+const ProjectBack = ({ item }) => {
+  return (
+    <div className={styles.projectBack}>
+      <div className={styles.imageWrapper}>
+        <img src={require(`assets/img/project/${item.projectImage}`)} alt={item.id} />
+      </div>
+      <div className={styles.profileWrapper}>
+        <p className={styles.projectTitle}>"{item.projectContent}"</p>
+        <div>
+          <Link className={styles.moreBtn} to={item.readMore}>
+            더보기
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};

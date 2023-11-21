@@ -1,27 +1,17 @@
 import React from "react";
 
-import styles from './privacy.module.scss';
+import styles from "./privacy.module.scss";
 
-import { VscChromeClose } from "react-icons/vsc";
+export default function Privacy({ appName }) {
+  return (
+    <main>
+      <div className={styles.container}>
+        <span className={styles.title}>개인정보 처리방침</span>
 
-const Privacy = (props) => {
-    return (
-        <div className={styles.pagePop}>
-            <div className={styles.privacyPage}>
-                <button type="button" className={styles.btnClose} onClick={props.onClick}>
-                    <VscChromeClose/>
-                </button>
-
-                <h3>개인정보 처리방침</h3>
-
-                <div className={styles.privacyContent}>
-                    <h4>[광명 찾자] 개인정보 처리방침</h4>
-                    <p>※ 본 앱은 개인정보를 수집하지 않습니다.</p>             
-                </div>
-            </div>
-
+        <div className={styles.contentWrapper}>
+          <span className={styles.appName}>{appName}</span>은(는) 개인정보를 수집하지 않습니다.
         </div>
-    )
+      </div>
+    </main>
+  );
 }
-
-export default Privacy;
