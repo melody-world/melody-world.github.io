@@ -103,7 +103,7 @@ const ProjectBack = ({ item }) => {
       <div className={styles.profileWrapper}>
         <p className={styles.projectTitle}>"{item.projectContent}"</p>
         <div>
-          <Link className={styles.moreBtn} to={item.readMore}>
+          <Link className={styles.moreBtn} to={item.readMore} target="_blank">
             더보기
           </Link>
         </div>
