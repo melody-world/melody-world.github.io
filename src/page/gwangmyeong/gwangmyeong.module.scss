@@ -2,6 +2,7 @@
 
 main {
   font-family: "SUIT";
+  margin-top: 0;
 
   @include mobile {
     overflow-x: hidden;

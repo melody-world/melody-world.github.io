@@ -1,10 +1,10 @@
 @import "../../utils";
 
 main {
+  margin-top: 48px;
   font-family: "SUIT";
 
   @include mobile {
-    margin-top: 48px;
     overflow-x: hidden;
   }
 
@@ -41,97 +41,6 @@ main {
         li {
           list-style: disc;
         }
-      }
-    }
-  }
-
-  .pagePop {
-    font-family: "SUIT";
-    position: fixed;
-    top: 0;
-    z-index: 900;
-    width: 100vw;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .btnClose {
-      position: absolute;
-      right: 20px;
-      top: 18px;
-      display: block;
-      width: 33px;
-      height: 33px;
-      border: none;
-      background: transparent;
-      cursor: pointer;
-      z-index: 2;
-    }
-
-    h3 {
-      font-size: 24px;
-      padding: 50px 30px 50px;
-      border-bottom: 2px solid #171919;
-      text-align: center;
-
-      @include mobile {
-        padding: 30px 10px 30px;
-        font-size: 15px;
-      }
-    }
-
-    h4 {
-      margin-top: 40px;
-      @include fontSize(20px);
-      line-height: 1.5;
-      font-weight: bold;
-      color: #000;
-    }
-
-    p {
-      @include fontSize(15px);
-      line-height: 1.5;
-      color: #7a7a7a;
-      word-break: keep-all;
-    }
-  }
-
-  .privacyPage {
-    width: 100%;
-    max-width: 740px;
-    background: #fff;
-    position: relative;
-
-    @include mobile {
-      width: calc(100% - 40px);
-      padding: 0;
-    }
-
-    .privacyContent {
-      max-height: 60vh;
-      position: relative;
-      padding: 0 40px 40px 40px;
-      overflow-y: auto;
-
-      @include mobile {
-        padding: 0 20px 40px;
-      }
-
-      &::-webkit-scrollbar {
-        width: 8px;
-      }
-
-      &::-webkit-scrollbar-thumb {
-        height: 30%;
-        background: #ff9147;
-        border-radius: 10px;
-      }
-
-      &::-webkit-scrollbar-track {
-        background: #c9c9c9;
-        border-radius: 10px;
       }
     }
   }
