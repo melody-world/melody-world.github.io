@@ -29,6 +29,19 @@ main {
         margin: 0 2px;
         font-weight: 500;
       }
+
+      section {
+        margin-bottom: 20px;
+      }
+
+      ul {
+        margin: 0;
+        padding: 1em;
+
+        li {
+          list-style: disc;
+        }
+      }
     }
   }
 
