@@ -14,9 +14,11 @@ import Privacy from "./page/privacy";
 import PROJECT_LIST from "constants/projectData";
 
 export default function App() {
+  const hideHeader = PROJECT_LIST.some((item) => window.location.pathname === item.readMore);
+
   return (
     <>
-      <Header />
+      {!hideHeader && <Header />}
       <Routes>
         <Route exact path="/" element={<Gwangmyeong />} />
         <Route path="/intro" element={<Intro />} />
