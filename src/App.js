@@ -23,8 +23,8 @@ export default function App() {
         <Route exact path="/" element={<Gwangmyeong />} />
         <Route path="/intro" element={<Intro />} />
         <Route path="/project" element={<Project />} />
-        <Route path="/findgwangmyeong" element={<Gwangmyeong />} />
-        <Route path="/onebiteword" element={<Onebiteword />} />
+        <Route path="/findgwangmyeong" exact element={<Gwangmyeong />} />
+        <Route path="/onebiteword" exact element={<Onebiteword />} />
         <Route path="/news" element={<News />} />
 
         {/*
