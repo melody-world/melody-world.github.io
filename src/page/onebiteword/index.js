@@ -10,7 +10,7 @@ export default function Onebiteword() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await Request.get(`/onebiteword/1.json`);
+        const response = await Request.get(`/obw/1.json`);
         let dataList = response.data.data.map((data) => ({
           ...data,
         }));
