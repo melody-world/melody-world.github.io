@@ -52,7 +52,7 @@ export default function Onebiteword() {
             </div>
             <div>
               <a
-                click={() => {
+                onClick={() => {
                   if (
                     typeof SpeechSynthesisUtterance === "undefined" ||
                     typeof window.speechSynthesis === "undefined"
