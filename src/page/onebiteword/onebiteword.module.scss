@@ -18,6 +18,10 @@ main {
       flex-direction: row;
       justify-content: space-between;
       margin-bottom: 10px;
+
+      a {
+        cursor: pointer;
+      }
     }
 
     .wordName {
