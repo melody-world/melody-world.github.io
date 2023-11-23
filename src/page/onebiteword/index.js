@@ -51,7 +51,7 @@ export default function Onebiteword() {
               {item.wordMean}
             </div>
             <div>
-              <a
+              <button
                 onClick={() => {
                   if (
                     typeof SpeechSynthesisUtterance === "undefined" ||
@@ -74,7 +74,7 @@ export default function Onebiteword() {
                 }}
               >
                 듣기
-              </a>
+              </button>
             </div>
           </div>
         ))}
