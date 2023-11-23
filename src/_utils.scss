@@ -1,19 +1,25 @@
 /*변수*/
-@mixin mobile{
-    @media (max-width: 1024px){
-        @content;
-    }
+@mixin mobile {
+  @media (max-width: 1024px) {
+    @content;
+  }
 }
 
 // 폰트 사이즈 계산 함수
-@mixin fontSize($size){
-    font-size: $size;
+@mixin fontSize($size) {
+  font-size: $size;
 
-    @include mobile{ 
-        @if calc($size / 2) <= 10px {
-            font-size: 13px;
-        } @else {
-            font-size: (calc($size / 2));
-        }
+  @include mobile {
+    @if calc($size / 2) <= 10px {
+      font-size: 13px;
+    } @else {
+      font-size: (calc($size / 2));
     }
+  }
+}
+
+@mixin container {
+  max-width: 1140px;
+  padding: 0 40px 0;
+  margin: 0 auto;
 }

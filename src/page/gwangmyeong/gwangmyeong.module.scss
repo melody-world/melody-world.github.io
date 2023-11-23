@@ -1,35 +1,21 @@
 @import "../../utils";
 
-main {
-  font-family: "SUIT";
-  margin-top: 0;
+.container {
+  @include container;
+}
+
+.updatePage,
+.listPage,
+.detailPage,
+.searchPage,
+.storePage {
+  max-height: 1080px;
+  display: flex;
+  align-items: center;
+  padding: 200px 0;
 
   @include mobile {
-    overflow-x: hidden;
-  }
-
-  .updatePage,
-  .listPage,
-  .detailPage,
-  .searchPage,
-  .storePage {
-    height: calc(100vh - 60px);
-    max-height: 1080px;
-    display: flex;
-    align-items: center;
-    padding: 200px 0;
-
-    @include mobile {
-      height: calc(100vh - 48px);
-      padding: 100px 0;
-    }
-  }
-
-  .container {
-    width: 100%;
-    max-width: 1140px;
-    padding: 0 40px 0;
-    margin: 0 auto;
+    padding: 100px 0;
   }
 }
 
@@ -46,6 +32,7 @@ main {
     position: absolute;
     top: 0;
     left: 50%;
+    width: 100%;
     transform: translateX(-50%);
     margin-top: 90px;
     display: flex;
@@ -118,7 +105,8 @@ main {
       font-family: "TheJamsil";
       margin-bottom: 20px;
       position: relative;
-      text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+      text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+        0px -5px 35px rgba(255, 255, 255, 0.3);
 
       @include mobile {
         font-size: 70px;
@@ -287,7 +275,7 @@ main {
   overflow: hidden;
 
   @include mobile {
-    height: 300vw;
+    height: 330vw;
   }
 
   .backRound {
@@ -415,6 +403,7 @@ main {
 
   .container {
     position: relative;
+    width: 100%;
 
     @include mobile {
       display: flex;
@@ -436,7 +425,7 @@ main {
     position: absolute;
     bottom: 50%;
     transform: translateY(50%);
-    right: 0;
+    right: 50px;
     z-index: -1;
     overflow: hidden;
     background-color: #c4deee;
@@ -599,6 +588,10 @@ main {
 .contentTitle {
   width: fit-content;
 
+  @include mobile {
+    width: 100%;
+  }
+
   small {
     color: #ff9147;
     @include fontSize(25px);
@@ -710,7 +703,7 @@ main {
     }
 
     .img_mockupDetail {
-      right: -210px;
+      right: -300px;
       position: absolute;
       max-width: 590px;
 
@@ -750,7 +743,7 @@ main {
 
     @include mobile {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
     }
   }
 
@@ -776,7 +769,6 @@ main {
 }
 
 .storePage {
-  padding: 0;
   position: relative;
 
   .container {
