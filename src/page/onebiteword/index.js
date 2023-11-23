@@ -65,8 +65,8 @@ export default function Onebiteword() {
 
                   const speechMsg = new SpeechSynthesisUtterance();
                   speechMsg.rate = 1; // 속도: 0.1 ~ 10
-                  speechMsg.pitch = 1; // 음높이: 0 ~ 2
-                  speechMsg.lang = "ko-KR";
+                  speechMsg.pitch = 1.2; // 음높이: 0 ~ 2
+                  speechMsg.lang = "en-US";
                   speechMsg.text = item.wordName;
 
                   // SpeechSynthesisUtterance에 저장된 내용을 바탕으로 음성합성 실행
