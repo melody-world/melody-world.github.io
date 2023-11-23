@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment";
-import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from "react-headless-accordion";
+import {
+  Accordion,
+  AccordionBody,
+  AccordionHeader,
+  AccordionItem,
+} from "react-headless-accordion";
 import { VscChevronDown, VscChevronUp } from "react-icons/vsc";
 
 import Request from "services/Request";
@@ -12,7 +17,9 @@ export default function News() {
   const [newList, setNewsList] = useState([]);
   async function fetchData() {
     // 프로젝트 단위로 공지사항을 조회한다.
-    const porjectList = PROJECT_LIST.filter((project) => project.shortName !== "");
+    const porjectList = PROJECT_LIST.filter(
+      (project) => project.shortName !== ""
+    );
     const getDataList = porjectList.map(async (item) => {
       try {
         const response = await Request.get(`/${item.shortName}/notice.json`);
@@ -43,7 +50,7 @@ export default function News() {
   }, []);
 
   return (
-    <article className={styles.newsPage}>
+    <main className={styles.newsPage}>
       <div className={styles.container}>
         <h3>💬 공지사항</h3>
 
@@ -53,12 +60,20 @@ export default function News() {
               {({ open }) => (
                 <>
                   <AccordionHeader as={"div"}>
-                    <div className={`${styles.titleWrap} ${open ? "accordion-active" : ""}`}>
+                    <div
+                      className={`${styles.titleWrap} ${
+                        open ? "accordion-active" : ""
+                      }`}
+                    >
                       <div>
                         <p>
                           [{item.projectName}] {item.title}
                         </p>
-                        <span>{moment(item.createDate, "YYYYMMDD").format("YYYY.MM.DD")}</span>
+                        <span>
+                          {moment(item.createDate, "YYYYMMDD").format(
+                            "YYYY.MM.DD"
+                          )}
+                        </span>
                       </div>
 
                       {open ? (
@@ -84,6 +99,6 @@ export default function News() {
           ))}
         </Accordion>
       </div>
-    </article>
+    </main>
   );
 }
