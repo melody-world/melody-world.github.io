@@ -50,7 +50,7 @@ export default function News() {
   }, []);
 
   return (
-    <main className={styles.newsPage}>
+    <main>
       <div className={styles.container}>
         <h3>💬 공지사항</h3>
 

@@ -10,17 +10,20 @@ import Gwangmyeong from "./page/gwangmyeong";
 import Onebiteword from "./page/onebiteword";
 import News from "./page/news";
 import Privacy from "./page/privacy";
+import Main from "page/main";
 
 import PROJECT_LIST from "constants/projectData";
 
 export default function App() {
-  const hideHeader = PROJECT_LIST.some((item) => window.location.pathname === item.readMore);
+  const hideHeader = PROJECT_LIST.some(
+    (item) => window.location.pathname === item.readMore
+  );
 
   return (
     <>
       {!hideHeader && <Header />}
       <Routes>
-        <Route exact path="/" element={<Gwangmyeong />} />
+        <Route exact path="/" element={<Main />} />
         <Route path="/intro" element={<Intro />} />
         <Route path="/project" element={<Project />} />
         <Route path="/findgwangmyeong" exact element={<Gwangmyeong />} />
@@ -32,7 +35,11 @@ export default function App() {
          * 프로젝트 리스트 readMore 경로 참조, privacy 컴포넌트를 재사용한다.
          */}
         {PROJECT_LIST.map((item) => (
-          <Route key={item.id} path={`${item.readMore}/privacy`} element={<Privacy appName={item.projectName} />} />
+          <Route
+            key={item.id}
+            path={`${item.readMore}/privacy`}
+            element={<Privacy appName={item.projectName} />}
+          />
         ))}
       </Routes>
       <Footer />

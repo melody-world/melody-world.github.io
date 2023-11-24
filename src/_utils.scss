@@ -1,3 +1,9 @@
+$color-main: #4d3b2e;
+$color-point: #837f38;
+$color-back: #eae1da;
+$color-title: #272400;
+$color-desc: #494737;
+
 /*변수*/
 @mixin mobile {
   @media (max-width: 1024px) {
@@ -20,6 +26,10 @@
 
 @mixin container {
   max-width: 1140px;
-  padding: 0 40px 0;
+  padding: 200px 40px;
   margin: 0 auto;
+
+  @include mobile {
+    padding: 100px 20px;
+  }
 }

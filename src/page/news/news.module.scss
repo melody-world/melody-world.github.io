@@ -1,24 +1,16 @@
 @import "../../utils";
 
-.newsPage {
-  padding: 200px 0;
+.container {
+  @include container;
 
-  @include mobile {
-    padding: 100px 0;
-  }
+  h3 {
+    @include fontSize(45px);
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 60px;
 
-  .container {
-    @include container;
-
-    h3 {
-      @include fontSize(45px);
-      font-weight: 600;
-      color: #000000;
-      margin-bottom: 60px;
-
-      @include mobile {
-        margin-bottom: 30px;
-      }
+    @include mobile {
+      margin-bottom: 30px;
     }
   }
 }
