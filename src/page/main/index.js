@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from "react";
+import { useMediaQuery } from "react-responsive";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import PROJECT_LIST from "constants/projectData";
@@ -6,6 +8,18 @@ import "swiper/css";
 import styles from "./main.module.scss";
 
 export default function Main() {
+  const isMobile = useMediaQuery({ maxWidth: 1024 });
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const updateScroll = () => {
+    setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+    console.log(scrollPosition);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", updateScroll);
+  }, [scrollPosition]);
+
   const params = {
     spaceBetween: 10,
     slidesPerView: 1.25,
@@ -43,14 +57,14 @@ export default function Main() {
             <SwiperSlide key={index} className={styles.mainSlide}>
               <a href={item.readMore}>
                 <div className={styles.projectImg}>
-                  <img
-                    src={item.projectMainImage}
-                    alt="프로젝트 메인 이미지"
-                  ></img>
+                  <img src={item.projectMainImage} alt="프로젝트 메인 이미지" />
                 </div>
                 <div className={styles.projectText}>
-                  <div className={styles.projectLogo}>
-                    <img src="" alt="프로젝트 로고"></img>
+                  <div className={styles.bigLogo}>
+                    <img src={item.projectLogo1} alt="프로젝트 로고" />
+                  </div>
+                  <div className={styles.smallLogo}>
+                    <img src={item.projectLogo2} alt="프로젝트 모바일 로고" />
                   </div>
                   <span>{item.projectContent}</span>
                 </div>
@@ -58,6 +72,32 @@ export default function Main() {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+
+      <div className={styles.contactPage}>
+        <div
+          className={`${styles.container} ${
+            scrollPosition > (isMobile ? 30 : 200) ? styles.active : ""
+          }`}
+        >
+          <h3>
+            우리의 문은
+            <br />
+            항상 열려 있습니다.
+          </h3>
+          <p>
+            '메리에디하우스'에게 궁금한게 있나요?
+            <br />
+            언제든지, 편하게 문의를 남겨주세요.
+          </p>
+          <a
+            href="https://open.kakao.com/o/sPB3tYBf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            서비스 문의하기
+          </a>
+        </div>
       </div>
     </main>
   );

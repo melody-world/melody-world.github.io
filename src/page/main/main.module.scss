@@ -79,6 +79,11 @@
     margin-top: 0;
   }
 
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
   a {
     display: inline-block;
     border-radius: 20px;
@@ -134,14 +139,93 @@
     }
   }
 
-  .projectLogo {
+  .bigLogo {
     width: 300px;
     height: 100px;
-    background-color: #ddd;
 
     @include mobile {
-      width: 50px;
-      height: 50px;
+      display: none;
+    }
+  }
+
+  .smallLogo {
+    display: none;
+    width: 50px;
+    height: 50px;
+
+    @include mobile {
+      display: block;
+    }
+  }
+}
+
+.contactPage {
+  .container {
+    padding: 70px 0;
+    background: rgb(45, 45, 50);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    transition: all 0.85s;
+    opacity: 0;
+
+    &.active {
+      width: 100%;
+      opacity: 1;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 44px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 22px;
+      line-height: 130%;
+
+      @include mobile {
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 22px;
+      color: rgb(176, 184, 193);
+      line-height: 145%;
+
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+
+    a {
+      background-color: rgba(222, 222, 255, 0.19);
+      color: #fff;
+      padding: 18px 24px;
+      @include fontSize(15px);
+      font-weight: 600;
+      display: inline-block;
+      line-height: 18px;
+      border-radius: 7px;
+      transition: all ease-in-out 0.25s;
+
+      &:hover {
+        color: #fff;
+        background: rgba(222, 222, 255, 0.4);
+      }
+
+      @include mobile {
+        padding: 10px 20px;
+      }
     }
   }
 }

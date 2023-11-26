@@ -19,7 +19,11 @@ export default function Footer() {
         <div className={styles.footerContainer}>
           <ul className={styles.footerList}>
             <li>
-              <a href="https://open.kakao.com/o/sPB3tYBf" target="_blank">
+              <a
+                href="https://open.kakao.com/o/sPB3tYBf"
+                target="_blank"
+                rel="noreferrer"
+              >
                 서비스 문의
               </a>
             </li>
