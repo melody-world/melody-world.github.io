@@ -3,7 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
 import Header from "./component/header";
-import Footer from "./component/footer";
 import Intro from "./page/intro";
 import Project from "./page/project";
 import Gwangmyeong from "./page/gwangmyeong";

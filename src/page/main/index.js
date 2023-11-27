@@ -13,12 +13,11 @@ export default function Main() {
 
   const updateScroll = () => {
     setScrollPosition(window.scrollY || document.documentElement.scrollTop);
-    console.log(scrollPosition);
   };
 
   useEffect(() => {
     window.addEventListener("scroll", updateScroll);
-  }, [scrollPosition]);
+  });
 
   const params = {
     spaceBetween: 10,

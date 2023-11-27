@@ -7,7 +7,7 @@ const PROJECT_LIST = [
     projectMainImage: "/images/main/img_gwangmyeong.jpg",
     projectLogo1: "/images/main/icon_gwangmyeong.png",
     projectLogo2: "/images/main/icon_gwangmyeong_m.png",
-    projectType: ["APP"],
+    projectType: ["APP", "WEB"],
     projectWebLink: "",
     projectAndLink:
       "https://play.google.com/store/apps/details?id=com.app.findgwangmyeong",
