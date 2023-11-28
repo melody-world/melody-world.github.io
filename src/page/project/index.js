@@ -1,10 +1,24 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import BottomPopup from "component/popup/BottomPopup";
 import PROJECT_LIST from "constants/projectData";
 
 import styles from "./project.module.scss";
 
 export default function Project() {
+  const PROJECT_FILTER = ["전체", "WEB", "APP"];
+  const [proList, setProList] = useState(PROJECT_LIST);
+  const [filter, setFilter] = useState("전체");
+
+  const handlerFilter = (e) => {
+    const result = PROJECT_LIST.filter((ele) => {
+      return ele.projectType.includes(e.currentTarget.innerText);
+    });
+
+    setFilter(e.currentTarget.innerText);
+    setProList(result);
+  };
+
   return (
     <main>
       <div className={styles.container}>
@@ -14,13 +28,20 @@ export default function Project() {
 
         <section className={styles.projectPage}>
           <ul>
-            <li className={styles.active}>전체</li>
-            <li>WEB</li>
-            <li>APP</li>
+            {PROJECT_FILTER.map((ele) => {
+              return (
+                <li
+                  className={`${filter === ele ? `${styles.active}` : ""}`}
+                  onClick={(e) => handlerFilter(e)}
+                >
+                  {ele}
+                </li>
+              );
+            })}
           </ul>
 
           <div className={styles.projectList}>
-            {PROJECT_LIST.map((item) => {
+            {proList.map((item) => {
               return (
                 <Link
                   key={item.id}
