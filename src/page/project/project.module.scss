@@ -5,6 +5,15 @@
   height: 480px;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
+
+  h2 {
+    @include mainTitle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .projectPage {
@@ -33,12 +42,21 @@
 
   &:nth-child(2n) {
     flex-direction: row-reverse;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   .projectImg {
     border-radius: 8px;
     overflow: hidden;
     width: 50%;
+    border: 1px solid #dddddd50;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   .projectInfo {
@@ -47,12 +65,20 @@
     h5 {
       @include subMidTitle;
       margin: 0 0 40px;
+
+      @include mobile {
+        margin: 0 0 20px;
+      }
     }
 
     p {
       @include subDesc;
       white-space: pre;
       word-break: keep-all;
+    }
+
+    @include mobile {
+      width: 100%;
     }
   }
 
@@ -69,6 +95,10 @@
       border-radius: 4px;
       background: $beige;
       color: $black;
+
+      @include mobile {
+        font-size: 15px;
+      }
     }
   }
 
@@ -80,5 +110,10 @@
     a {
       @include button_more;
     }
+  }
+
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
   }
 }

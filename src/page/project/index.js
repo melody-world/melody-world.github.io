@@ -4,7 +4,6 @@ import Matter, {
   Engine,
   Render,
   Bodies,
-  Common,
   Composites,
   Mouse,
   MouseConstraint,
@@ -20,13 +19,14 @@ export default function Project() {
   const canvasRef = useRef();
 
   useEffect(() => {
+    const innerWidth = window.innerWidth;
     let engine = Engine.create();
     let render = Render.create({
       element: containerRef.current,
       engine: engine,
       canvas: canvasRef.current,
       options: {
-        width: 1920,
+        width: innerWidth,
         height: 480,
         background: "#fff",
         showAngleIndicator: false,
@@ -34,42 +34,29 @@ export default function Project() {
       },
     });
 
-    var offset = 10,
-      options = {
-        isStatic: true,
-        render: {
-          fillStyle: "transparent",
-        },
-      };
+    var options = {
+      isStatic: true,
+      render: {
+        fillStyle: "transparent",
+      },
+    };
 
     World.add(engine.world, [
-      Bodies.rectangle(960, -offset, 1920.5 + 2 * offset, 150.5, options),
-      Bodies.rectangle(960, 480 + offset, 1920.5 + 2 * offset, 150.5, options),
-      Bodies.rectangle(1920 + offset, 260, 150.5, 480.5 + 2 * offset, options),
-      Bodies.rectangle(-offset, 260, 150.5, 480.5 + 2 * offset, options),
+      Bodies.rectangle(0, 0, innerWidth * 2, 100, options),
+      Bodies.rectangle(0, 480, innerWidth * 2, 100, options),
+      Bodies.rectangle(innerWidth, 480 / 2, 100, 480, options),
+      Bodies.rectangle(0, 0, 100, 480 * 2, options),
     ]);
 
-    var stack = Composites.stack(20, 20, 10, 5, 0, 0, function (x, y) {
-      if (Common.random() > 0.35) {
-        return Bodies.rectangle(x, y, 220, 46, {
+    var i = 0;
+    var stack = Composites.stack(24, 24, 10, 5, 0, 0, function (x, y) {
+      i++;
+
+      if (i < 16) {
+        return Bodies.rectangle(x, y, 180, 46, {
           render: {
             sprite: {
-              texture: "/images/main/img_gwangmyeong.jpg",
-              xScale: 0.25,
-              yScale: 0.25,
-            },
-          },
-        });
-      } else {
-        return Bodies.rectangle(x, y, 20, 64, {
-          density: 0.0005,
-          frictionAir: 0.06,
-          restitution: 0.3,
-          friction: 0.01,
-          render: {
-            sprite: {
-              texture:
-                "https://e7.pngegg.com/pngimages/870/501/png-clipart-emoji-emoji-wink-sticker-smiley-emoticon-hand-emoji-face-hand-emoji-thumbnail.png",
+              texture: `/images/main/icon_bg_${i}.png`,
               xScale: 0.25,
               yScale: 0.25,
             },
@@ -79,6 +66,23 @@ export default function Project() {
     });
 
     World.add(engine.world, stack);
+
+    var word = Bodies.rectangle(300, 200, 100, 200, {
+      restitution: 0.95,
+      friction: 0.05,
+      density: 0.0005,
+      render: {
+        fillStyle: "transparent",
+        text: {
+          content: "Test",
+          color: "blue",
+          size: 16,
+          family: "Papyrus",
+        },
+      },
+    });
+
+    World.add(engine.world, word);
 
     var mouse = Mouse.create(render.canvas),
       mouseConstraint = MouseConstraint.create(engine, {
@@ -103,6 +107,7 @@ export default function Project() {
 
       {/* 캔버스 애니메이션 영역 */}
       <section className={styles.projectHead} ref={containerRef}>
+        <h2>상상을 현실로</h2>
         <canvas ref={canvasRef} />
       </section>
 

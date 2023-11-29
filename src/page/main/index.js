@@ -18,6 +18,7 @@ export default function Main() {
     },
     breakpoints: {
       1024: {
+        autoplay: true,
         slidesPerView: 2.25,
         spaceBetween: 8,
         centeredSlides: false,

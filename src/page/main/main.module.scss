@@ -2,6 +2,7 @@
 
 .mainPage {
   padding: 80px 0 20px 0;
+  margin-top: 60px;
 
   .container {
     @include container;
@@ -56,8 +57,8 @@
     border-radius: 8px;
     overflow: hidden;
     position: relative;
-    height: 420px;
     transition: all 0.3s ease;
+    border: 1px solid #dddddd50;
 
     &:hover {
       transform: translateY(-5px);
@@ -72,7 +73,7 @@
     bottom: 8px;
     left: 8px;
     width: calc(100% - 48px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid #dddddd30;
     backdrop-filter: blur(12px);
     border-radius: 8px;
 
