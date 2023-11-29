@@ -1,8 +1,9 @@
-$color-main: #4d3b2e;
-$color-point: #837f38;
-$color-back: #eae1da;
-$color-title: #272400;
-$color-desc: #494737;
+$brown: #4d3b2e;
+$green: #837f38;
+$beige: #eae1da;
+$darkbrown: #272400;
+$darkgreen: #494737;
+$black: #17191a;
 
 /*변수*/
 @mixin mobile {
@@ -25,11 +26,116 @@ $color-desc: #494737;
 }
 
 @mixin container {
-  max-width: 1140px;
-  padding: 200px 40px;
-  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: auto;
 
   @include mobile {
-    padding: 100px 20px;
+    width: calc(100% - 32px);
+    padding: 0 16px;
+  }
+}
+
+/* text */
+@mixin mainTitle {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
+  color: $black;
+
+  @include mobile {
+    font-size: 36px;
+  }
+}
+
+@mixin mainDesc {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: $black;
+
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+@mixin subBigTitle {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+
+  @include mobile {
+    font-size: 30px;
+  }
+}
+
+@mixin subMidTitle {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.25;
+
+  @include mobile {
+    font-size: 28px;
+  }
+}
+
+@mixin subSmallTitle {
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 700;
+
+  @include mobile {
+    font-size: 20px;
+  }
+}
+
+@mixin subDesc {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.8;
+
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+/* button */
+@mixin button($back, $hover, $font) {
+  color: $font;
+  background-color: $back;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  transition: all 0.3s;
+  border-radius: 12px;
+
+  &:hover {
+    background-color: $hover;
+  }
+
+  @include mobile {
+    padding: 12px 20px 12px 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@mixin button_more {
+  color: #464a4d;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 700;
+  padding: 8px 20px 8px 12px;
+  border-radius: 24px;
+  border: 1px solid #e8eef2;
+  background-size: 10px;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.6;
   }
 }

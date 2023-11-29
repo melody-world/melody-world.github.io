@@ -1,69 +1,138 @@
+import { useEffect, useRef } from "react";
+import Matter, {
+  World,
+  Engine,
+  Render,
+  Bodies,
+  Common,
+  Composites,
+  Mouse,
+  MouseConstraint,
+} from "matter-js";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import BottomPopup from "component/popup/BottomPopup";
 import PROJECT_LIST from "constants/projectData";
 
 import styles from "./project.module.scss";
 
 export default function Project() {
-  const PROJECT_FILTER = ["전체", "WEB", "APP"];
-  const [proList, setProList] = useState(PROJECT_LIST);
-  const [filter, setFilter] = useState("전체");
+  const containerRef = useRef();
+  const canvasRef = useRef();
 
-  const handlerFilter = (e) => {
-    const result = PROJECT_LIST.filter((ele) => {
-      return ele.projectType.includes(e.currentTarget.innerText);
+  useEffect(() => {
+    let engine = Engine.create();
+    let render = Render.create({
+      element: containerRef.current,
+      engine: engine,
+      canvas: canvasRef.current,
+      options: {
+        width: 1920,
+        height: 480,
+        background: "#fff",
+        showAngleIndicator: false,
+        wireframes: false,
+      },
     });
 
-    setFilter(e.currentTarget.innerText);
-    setProList(result);
-  };
+    var offset = 10,
+      options = {
+        isStatic: true,
+        render: {
+          fillStyle: "transparent",
+        },
+      };
+
+    World.add(engine.world, [
+      Bodies.rectangle(960, -offset, 1920.5 + 2 * offset, 150.5, options),
+      Bodies.rectangle(960, 480 + offset, 1920.5 + 2 * offset, 150.5, options),
+      Bodies.rectangle(1920 + offset, 260, 150.5, 480.5 + 2 * offset, options),
+      Bodies.rectangle(-offset, 260, 150.5, 480.5 + 2 * offset, options),
+    ]);
+
+    var stack = Composites.stack(20, 20, 10, 5, 0, 0, function (x, y) {
+      if (Common.random() > 0.35) {
+        return Bodies.rectangle(x, y, 220, 46, {
+          render: {
+            sprite: {
+              texture: "/images/main/img_gwangmyeong.jpg",
+              xScale: 0.25,
+              yScale: 0.25,
+            },
+          },
+        });
+      } else {
+        return Bodies.rectangle(x, y, 20, 64, {
+          density: 0.0005,
+          frictionAir: 0.06,
+          restitution: 0.3,
+          friction: 0.01,
+          render: {
+            sprite: {
+              texture:
+                "https://e7.pngegg.com/pngimages/870/501/png-clipart-emoji-emoji-wink-sticker-smiley-emoticon-hand-emoji-face-hand-emoji-thumbnail.png",
+              xScale: 0.25,
+              yScale: 0.25,
+            },
+          },
+        });
+      }
+    });
+
+    World.add(engine.world, stack);
+
+    var mouse = Mouse.create(render.canvas),
+      mouseConstraint = MouseConstraint.create(engine, {
+        mouse: mouse,
+        constraint: {
+          stiffness: 0.2,
+          render: {
+            visible: false,
+          },
+        },
+      });
+
+    World.add(engine.world, mouseConstraint);
+
+    Matter.Runner.run(engine);
+    Render.run(render);
+  }, []);
 
   return (
     <main>
-      <div className={styles.container}>
-        <BottomPopup content="💡 프로젝트를 탭하여 내용을 확인해 보세요." />
+      <BottomPopup content="💡 프로젝트를 탭하여 내용을 확인해 보세요." />
 
-        <h3>🎲 재미있는 상상을 현실로</h3>
+      {/* 캔버스 애니메이션 영역 */}
+      <section className={styles.projectHead} ref={containerRef}>
+        <canvas ref={canvasRef} />
+      </section>
 
-        <section className={styles.projectPage}>
-          <ul>
-            {PROJECT_FILTER.map((ele) => {
-              return (
-                <li
-                  className={`${filter === ele ? `${styles.active}` : ""}`}
-                  onClick={(e) => handlerFilter(e)}
-                >
-                  {ele}
-                </li>
-              );
-            })}
-          </ul>
-
+      {/* 프로젝트 리스트 영역 */}
+      <section className={styles.projectPage}>
+        <div className={styles.container}>
           <div className={styles.projectList}>
-            {proList.map((item) => {
+            {PROJECT_LIST.map((item) => {
               return (
                 <Link
                   key={item.id}
-                  className={styles.projectContent}
+                  className={styles.project}
                   to={item.readMore}
                   target="_blank"
                 >
-                  <img src={item.projectMainImage} alt="프로젝트 메인 이미지" />
+                  <div className={styles.projectImg}>
+                    <img
+                      src={item.projectMainImage}
+                      alt="프로젝트 메인 이미지"
+                    />
+                  </div>
 
-                  <div className={styles.projectDetail}>
-                    <div className={styles.projectTitle}>
-                      <h5>{item.projectName}</h5>
-
-                      <p>
-                        {item.projectType.map((type) => {
-                          return <small>{type}</small>;
-                        })}
-                      </p>
+                  <div className={styles.projectInfo}>
+                    <div className={styles.projectType}>
+                      {item.projectType.map((type) => {
+                        return <small>{type}</small>;
+                      })}
                     </div>
-
-                    <span>{item.projectContent}</span>
-
+                    <h5>{item.projectName}</h5>
+                    <p>{item.projectContent}</p>
                     <div className={styles.projectDirect}>
                       {item.projectWebLink != null ? (
                         <a
@@ -104,8 +173,8 @@ export default function Project() {
               );
             })}
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
   );
 }

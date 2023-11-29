@@ -4,13 +4,11 @@
   @include container;
   @include fontSize(20px);
   font-weight: 600;
-  color: $color-title;
   line-height: 1.5;
 
   h3 {
     @include fontSize(45px);
     font-weight: 600;
-    color: $color-title;
     margin-bottom: 60px;
 
     @include mobile {
@@ -21,17 +19,12 @@
   strong {
     font-size: 22px;
     font-weight: 700;
-    color: $color-title;
     display: inline-block;
     margin-top: 10px;
 
     @include mobile {
       font-size: 15px;
     }
-  }
-
-  span {
-    color: $color-title;
   }
 
   ul {

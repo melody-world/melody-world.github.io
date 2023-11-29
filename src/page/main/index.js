@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { useMediaQuery } from "react-responsive";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import PROJECT_LIST from "constants/projectData";
@@ -8,31 +7,19 @@ import "swiper/css";
 import styles from "./main.module.scss";
 
 export default function Main() {
-  const isMobile = useMediaQuery({ maxWidth: 1024 });
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  const updateScroll = () => {
-    setScrollPosition(window.scrollY || document.documentElement.scrollTop);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", updateScroll);
-  });
-
   const params = {
     spaceBetween: 10,
-    slidesPerView: 1.25,
+    slidesPerView: 1,
     centeredSlides: true,
     className: styles.mainSwiper,
-    loop: true,
     autoplay: {
       delay: 1000,
       disableOnInteraction: false,
     },
     breakpoints: {
       1024: {
-        slidesPerView: 1.5,
-        spaceBetween: 30,
+        slidesPerView: 2.25,
+        spaceBetween: 8,
         centeredSlides: false,
       },
     },
@@ -40,55 +27,54 @@ export default function Main() {
 
   return (
     <main>
-      <div className={styles.mainPage}>
-        <div className={styles.mainTitle}>
-          <h2>
-            이제껏 가장 막강한 <br />
-            의료 생태계
-            <br />
-            어벤져스 탄생
-          </h2>
-          <a href="/project">프로젝트 구경하기</a>
+      <section className={styles.mainPage}>
+        <div className={styles.container}>
+          {/* 메인 타이틀 영역 */}
+          <div className={styles.mainTitle}>
+            <h2>디자인 첫걸음</h2>
+            <p>
+              새로운 분야에 첫발을 내디딜 때 누구나 막연하게 두렵죠.
+              <br />
+              374개의 영상을 통해 디자인을 배워보세요.
+            </p>
+            <div className={styles.btnArea}>
+              <a href="/project">프로젝트 전체보기</a>
+              <a href="/intro">멤버소개</a>
+            </div>
+          </div>
         </div>
+      </section>
 
+      <section>
+        {/* 메인 스와이퍼 영역 */}
         <Swiper {...params} modules={[Autoplay]}>
           {PROJECT_LIST.map((item, index) => (
             <SwiperSlide key={index} className={styles.mainSlide}>
               <a href={item.readMore}>
-                <div className={styles.projectImg}>
-                  <img src={item.projectMainImage} alt="프로젝트 메인 이미지" />
-                </div>
-                <div className={styles.projectText}>
-                  <div className={styles.bigLogo}>
-                    <img src={item.projectLogo1} alt="프로젝트 로고" />
-                  </div>
-                  <div className={styles.smallLogo}>
-                    <img src={item.projectLogo2} alt="프로젝트 모바일 로고" />
-                  </div>
-                  <span>{item.projectContent}</span>
+                <img src={item.projectMainImage} alt="프로젝트 메인 이미지" />
+                <div className={styles.projectInfo}>
+                  <h3>{item.projectName}</h3>
+                  <p>{item.projectContent} </p>
+                  {item.projectType.map((type, index) => {
+                    return <span key={index}>{type}</span>;
+                  })}
                 </div>
               </a>
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
+      </section>
 
-      <div className={styles.contactPage}>
-        <div
-          className={`${styles.container} ${
-            scrollPosition > (isMobile ? 30 : 200) ? styles.active : ""
-          }`}
-        >
-          <h3>
-            우리의 문은
-            <br />
-            항상 열려 있습니다.
-          </h3>
-          <p>
+      <section className={styles.contactPage}>
+        {/* 연락 영역 */}
+        <div className={styles.container}>
+          <p>메리&에디하우스의 </p>
+          <h3>문은 항상 열려 있습니다.</h3>
+          <span>
             '메리에디하우스'에게 궁금한게 있나요?
             <br />
             언제든지, 편하게 문의를 남겨주세요.
-          </p>
+          </span>
           <a
             href="https://open.kakao.com/o/sPB3tYBf"
             target="_blank"
@@ -97,7 +83,7 @@ export default function Main() {
             서비스 문의하기
           </a>
         </div>
-      </div>
+      </section>
     </main>
   );
 }

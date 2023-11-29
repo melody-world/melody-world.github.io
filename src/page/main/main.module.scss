@@ -1,231 +1,168 @@
 @import "../../utils";
 
 .mainPage {
-  @include container;
-  padding: 150px 0 200px 0;
+  padding: 80px 0 20px 0;
+
+  .container {
+    @include container;
+  }
 
   @include mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 100px 0;
+    padding: 40px 0 20px;
   }
 }
 
 .mainTitle {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-
-  @include mobile {
-    gap: 24px;
-    align-items: center;
+  h2 {
+    @include mainTitle;
+    margin-bottom: 8px;
   }
 
-  h2 {
-    @include fontSize(50px);
-    font-weight: 700;
+  p {
+    @include mainDesc;
+    margin-bottom: 12px;
 
     @include mobile {
       text-align: center;
     }
+  }
 
-    &::after {
-      content: "";
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      margin: 1px 0 0 5px;
-      background-color: #313334;
-      border-radius: 50%;
+  .btnArea {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
 
-      @include mobile {
-        width: 5px;
-        height: 5px;
-      }
+    a:first-child {
+      @include button($green, $darkgreen, #fff);
+    }
+
+    a:last-child {
+      @include button($brown, $darkbrown, #fff);
     }
   }
 
-  a {
-    background-color: #3182f6;
-    color: #fff;
-    padding: 18px 24px;
-    @include fontSize(15px);
-    font-weight: 600;
-    line-height: 18px;
-    border-radius: 7px;
-    transition: all ease-in-out 0.25s;
-
-    &:hover {
-      color: #fff;
-      background-color: #1b64da;
-    }
-
-    @include mobile {
-      padding: 10px 20px;
-    }
+  @include mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 
 .mainSwiper {
-  width: 100%;
-  margin-top: -250px;
-  transform: translateX(40%);
+  padding: 80px 24px;
 
-  @include mobile {
-    transform: none;
-    margin-top: 0;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
-
-  a {
-    display: inline-block;
-    border-radius: 20px;
-    margin: 10px;
-    box-shadow: 0px 2px 12px rgb(0 0 0 / 12%);
-    transition: all 0.3s ease;
+  .mainSlide {
+    border-radius: 8px;
     overflow: hidden;
+    position: relative;
+    height: 420px;
+    transition: all 0.3s ease;
 
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0px 2px 12px rgb(0 0 0 / 20%);
     }
-
-    @include mobile {
-      margin: 15px 5px 5px;
-      border-radius: 10px;
-    }
   }
 
-  .projectImg {
-    height: 400px;
-
-    @include mobile {
-      height: auto;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
-  }
-
-  .projectText {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-
-    @include mobile {
-      padding: 14px;
-    }
-
-    span {
-      font-size: 22px;
-      color: #313334;
-      font-weight: 400;
-      word-break: keep-all;
-      white-space: pre-line;
-
-      @include mobile {
-        font-size: 14px;
-      }
-    }
-  }
-
-  .bigLogo {
-    width: 300px;
-    height: 100px;
-
-    @include mobile {
-      display: none;
-    }
-  }
-
-  .smallLogo {
-    display: none;
-    width: 50px;
-    height: 50px;
-
-    @include mobile {
-      display: block;
-    }
-  }
-}
-
-.contactPage {
-  .container {
-    padding: 70px 0;
-    background: rgb(45, 45, 50);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 500px;
-    margin: 0 auto;
-    transition: all 0.85s;
-    opacity: 0;
-
-    &.active {
-      width: 100%;
-      opacity: 1;
-    }
-
-    @include mobile {
-      width: 100%;
-    }
+  .projectInfo {
+    color: $black;
+    position: absolute;
+    padding: 16px;
+    bottom: 8px;
+    left: 8px;
+    width: calc(100% - 48px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 8px;
 
     h3 {
-      font-size: 44px;
+      font-size: 24px;
       font-weight: 700;
-      color: #fff;
-      margin-bottom: 22px;
-      line-height: 130%;
+      margin-bottom: 4px;
+      line-height: 1.5;
 
       @include mobile {
-        font-size: 25px;
-        margin-bottom: 20px;
+        font-size: 18px;
       }
     }
 
     p {
-      font-size: 20px;
-      font-weight: 400;
-      margin-bottom: 22px;
-      color: rgb(176, 184, 193);
-      line-height: 145%;
+      font-size: 14px;
+      line-height: 1.5;
+      white-space: pre;
+      word-break: keep-all;
 
       @include mobile {
-        font-size: 14px;
+        font-size: 13px;
+        line-height: 1.4;
       }
     }
 
-    a {
-      background-color: rgba(222, 222, 255, 0.19);
-      color: #fff;
-      padding: 18px 24px;
-      @include fontSize(15px);
-      font-weight: 600;
+    span {
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 12px;
+      padding: 8px;
       display: inline-block;
-      line-height: 18px;
-      border-radius: 7px;
-      transition: all ease-in-out 0.25s;
-
-      &:hover {
-        color: #fff;
-        background: rgba(222, 222, 255, 0.4);
-      }
-
-      @include mobile {
-        padding: 10px 20px;
-      }
+      margin: 24px 8px 0 0;
+      background-color: rgba(0, 0, 0, 0.2);
     }
+
+    @include mobile {
+      width: calc(100% - 44px);
+      padding: 12px;
+    }
+  }
+
+  @include mobile {
+    padding: 30px 16px;
+  }
+}
+
+.contactPage {
+  padding: 80px 0;
+
+  .container {
+    @include container;
+    border-radius: 8px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: url("../../../public/images/main/img_contact.jpg");
+
+    @include mobile {
+      width: calc(100% - 64px);
+      padding: 32px 16px;
+      height: auto;
+    }
+  }
+
+  p {
+    @include subSmallTitle;
+    color: $black;
+  }
+
+  h3 {
+    @include subBigTitle;
+    color: $black;
+    margin-bottom: 8px;
+  }
+
+  span {
+    @include subDesc;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  a {
+    @include button($green, $darkgreen, #fff);
+  }
+
+  @include mobile {
+    padding: 30px 0;
   }
 }

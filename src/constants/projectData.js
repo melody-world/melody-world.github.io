@@ -5,8 +5,6 @@ const PROJECT_LIST = [
     projectContent:
       "국토교통부 데이터를 기반으로\n전국 아파트 실거래가를 제공합니다",
     projectMainImage: "/images/main/img_gwangmyeong.jpg",
-    projectLogo1: "/images/main/icon_gwangmyeong.png",
-    projectLogo2: "/images/main/icon_gwangmyeong_m.png",
     projectType: ["APP", "WEB"],
     projectWebLink: "",
     projectAndLink:
@@ -15,6 +13,19 @@ const PROJECT_LIST = [
       "https://apps.apple.com/kr/app/%EA%B4%91%EB%AA%85%EC%B0%BE%EC%9E%90/id6451822761",
     readMore: "/findgwangmyeong",
     shortName: "fgm",
+  },
+
+  {
+    id: 2,
+    projectName: "폭탄찾기",
+    projectContent: "해당 페이지는 준비중입니다.",
+    projectMainImage: "",
+    projectType: ["APP"],
+    projectWebLink: "",
+    projectAndLink: "",
+    projectIosLink: "",
+    readMore: "",
+    shortName: "",
   },
 ];
 

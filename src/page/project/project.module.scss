@@ -1,151 +1,84 @@
 @import "../../utils";
 
-.container {
-  @include container;
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
-
-  h3 {
-    @include fontSize(45px);
-    font-weight: 600;
-    color: $color-title;
-    margin-bottom: 60px;
-
-    @include mobile {
-      margin-bottom: 30px;
-    }
-  }
+.projectHead {
+  width: 100%;
+  height: 480px;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .projectPage {
-  ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
+  padding: 160px 0 80px;
 
-    li {
-      font-size: 20px;
-      font-weight: 500;
-      padding: 16px 24px;
-      cursor: pointer;
-
-      @include mobile {
-        font-size: 16px;
-        padding: 16px 8px;
-      }
-
-      &.active {
-        font-weight: 700;
-        color: #1b84ff;
-      }
-    }
+  .container {
+    @include container;
   }
 
   .projectList {
-    margin-top: 36px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-
-    @include mobile {
-      grid-template-columns: repeat(1, 1fr);
-      margin: 0;
-    }
-  }
-}
-
-.projectContent {
-  position: relative;
-  height: fit-content;
-  color: #fff;
-  display: inline-block;
-  border-radius: 20px;
-  overflow: hidden;
-  height: 208px;
-
-  @include mobile {
-    height: auto;
-    border-radius: 10px;
-  }
-
-  .projectDetail {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    padding: 24px;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
   }
 
-  small,
-  span {
-    font-size: 14px;
-    font-weight: 500;
-    white-space: pre;
-    line-height: 22px;
+  @include mobile {
+    padding: 40px 0;
+  }
+}
 
-    @include mobile {
-      font-size: 12px;
-    }
+.project {
+  margin-bottom: 120px;
+  gap: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:nth-child(2n) {
+    flex-direction: row-reverse;
   }
 
-  .projectTitle {
-    h5 {
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 30px;
-      display: flex;
-      margin: 0;
-      flex-direction: column;
+  .projectImg {
+    border-radius: 8px;
+    overflow: hidden;
+    width: 50%;
+  }
 
-      @include mobile {
-        font-size: 18px;
-      }
+  .projectInfo {
+    width: 50%;
+
+    h5 {
+      @include subMidTitle;
+      margin: 0 0 40px;
     }
 
     p {
-      display: flex;
-      gap: 12px;
-      color: #a5b2c5;
+      @include subDesc;
+      white-space: pre;
+      word-break: keep-all;
+    }
+  }
+
+  .projectType {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 8px;
+
+    small {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 18px;
+      font-weight: 500;
+      border-radius: 4px;
+      background: $beige;
+      color: $black;
     }
   }
 
   .projectDirect {
+    margin-top: 20px;
     display: flex;
-    gap: 12px;
+    gap: 8px;
 
     a {
-      font-size: 16px;
-      font-weight: 500;
-      color: #1b84ff;
-      display: inline-block;
-
-      @include mobile {
-        font-size: 14px;
-      }
-
-      &::after {
-        content: "→";
-        display: inline-block;
-      }
-    }
-  }
-
-  &:hover {
-    img {
-      filter: brightness(0.4);
-    }
-
-    > div {
-      opacity: 1;
+      @include button_more;
     }
   }
 }
