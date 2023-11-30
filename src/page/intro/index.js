@@ -4,17 +4,6 @@ import INTRO_LIST from "constants/introData.js";
 export default function Intro() {
   return (
     <main>
-      {/* 공통 가치 영역 */}
-      <section className={styles.valuePage}>
-        <div className={styles.container}>
-          <h4>Core Value</h4>
-          <div className={styles.valueText}>
-            <p>함께 성장을 가장 중요한 가치로 생각합니다.</p>
-            <span>test</span>
-          </div>
-        </div>
-      </section>
-
       {/* 멤버 소개 영역 */}
       <section className={styles.memberPage}>
         <div className={styles.container}>
@@ -24,14 +13,33 @@ export default function Intro() {
             디자인 이론과 코딩 지식까지
           </h2>
 
-          <ul className={styles.memberList}>
-            <li></li>
+          <ul>
+            {INTRO_LIST.map((el) => {
+              return (
+                <li className={styles.memberInfo}>
+                  <figure>
+                    <img src={el.introImage1} alt="멤버 아이콘" />
+                  </figure>
+
+                  <div className={styles.memberName}>
+                    <h3>{el.introName}</h3>
+                    <small>{el.devSide}</small>
+                  </div>
+
+                  <p>{el.introContent}</p>
+
+                  <a href={el.githubUrl}>깃허브</a>
+
+                  <div className={styles.memberStack}></div>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </section>
 
+      {/* 연락 영역 */}
       <section className={styles.contactPage}>
-        {/* 연락 영역 */}
         <div className={styles.container}>
           <p>메리&에디하우스의 </p>
           <h3>문은 항상 열려 있습니다.</h3>
