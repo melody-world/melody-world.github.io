@@ -1,105 +1,86 @@
 @import "../../utils";
 
-.introPage {
-  padding: 200px 0;
+.valuePage {
+  .container {
+    @include container;
+    display: flex;
+  }
 
+  h4 {
+    font-size: 20px;
+  }
+}
+
+.valueText {
+  p {
+    @include subSmallTitle;
+    margin-bottom: 40px;
+  }
+
+  span {
+    @include subDesc;
+    word-break: keep-all;
+  }
+}
+
+.memberPage {
   .container {
     @include container;
   }
-}
 
-.memberWrapper {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.imageWrapper {
-  overflow: hidden;
-  border: 1px solid red;
-  display: flex;
-
-  img {
-    width: 100%;
-    height: 100%;
+  h2 {
+    @include subMidTitle;
+    margin-bottom: 40px;
   }
+}
 
-  .introTalk {
+.memberList {
+  li {
+  }
+}
+
+.contactPage {
+  padding: 80px 0;
+
+  .container {
+    @include container;
+    border-radius: 8px;
+    height: 400px;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    gap: 15px;
+    justify-content: center;
+    background: url("../../../public/images/main/img_contact.jpg");
 
-    p {
-      width: 300px;
-      height: 50px;
-      border: 1px solid red;
+    @include mobile {
+      width: calc(100% - 64px);
+      padding: 32px 16px;
+      height: auto;
     }
   }
-}
 
-.infoWrapper {
-  .infoTitle {
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 12px;
-    gap: 10px;
-
-    h3 {
-      font-size: 40px;
-      font-weight: 700;
-      color: #27353f;
-    }
-
-    p {
-      background-color: rgba(2, 32, 71, 0.05);
-      color: #000;
-      font-weight: 600;
-      padding: 12px 10px;
-      font-size: 15px;
-      border-radius: 8px;
-      color: #888;
-    }
-  }
-}
-
-.infoContent {
   p {
-    font-size: 20px;
-    font-weight: 500;
-    white-space: pre-line;
-    color: #787f86;
-    line-height: 30px;
+    @include subSmallTitle;
+    color: $black;
   }
 
-  .stackWrapper {
-    display: flex;
-    flex-direction: column;
+  h3 {
+    @include subBigTitle;
+    color: $black;
+    margin-bottom: 8px;
+  }
 
-    > div {
-      display: flex;
-      gap: 10px;
-    }
-
-    img {
-      width: 50px;
-      filter: grayscale(1);
-    }
+  span {
+    @include subDesc;
+    margin-bottom: 16px;
+    text-align: center;
   }
 
   a {
-    background-color: rgba(0, 12, 30, 0.8);
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 24px;
-    border-radius: 7px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 150px;
-    margin-top: 40px;
+    @include button($green, $darkgreen, #fff);
+  }
+
+  @include mobile {
+    padding: 30px 0;
   }
 }

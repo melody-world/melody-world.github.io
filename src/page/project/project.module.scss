@@ -53,6 +53,12 @@
     overflow: hidden;
     width: 50%;
     border: 1px solid #dddddd50;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 2px 12px rgb(0 0 0 / 20%);
+    }
 
     @include mobile {
       width: 100%;

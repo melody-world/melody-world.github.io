@@ -66,8 +66,8 @@ export default function Main() {
         </Swiper>
       </section>
 
+      {/* 연락 영역 */}
       <section className={styles.contactPage}>
-        {/* 연락 영역 */}
         <div className={styles.container}>
           <p>메리&에디하우스의 </p>
           <h3>문은 항상 열려 있습니다.</h3>
