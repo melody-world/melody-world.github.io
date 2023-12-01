@@ -78,14 +78,8 @@
     border-radius: 8px;
 
     h3 {
-      font-size: 24px;
-      font-weight: 700;
+      @include subSmallTitle;
       margin-bottom: 4px;
-      line-height: 1.5;
-
-      @include mobile {
-        font-size: 18px;
-      }
     }
 
     p {
@@ -93,10 +87,10 @@
       line-height: 1.5;
       white-space: pre;
       word-break: keep-all;
+      margin-bottom: 24px;
 
       @include mobile {
-        font-size: 13px;
-        line-height: 1.4;
+        display: none;
       }
     }
 
@@ -107,7 +101,7 @@
       line-height: 12px;
       padding: 8px;
       display: inline-block;
-      margin: 24px 8px 0 0;
+      margin: 0 8px 0 0;
       background-color: rgba(0, 0, 0, 0.2);
     }
 
@@ -119,51 +113,5 @@
 
   @include mobile {
     padding: 30px 16px;
-  }
-}
-
-.contactPage {
-  padding: 80px 0;
-
-  .container {
-    @include container;
-    border-radius: 8px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background: url("../../../public/images/main/img_contact.jpg");
-
-    @include mobile {
-      width: calc(100% - 64px);
-      padding: 32px 16px;
-      height: auto;
-    }
-  }
-
-  p {
-    @include subSmallTitle;
-    color: $black;
-  }
-
-  h3 {
-    @include subBigTitle;
-    color: $black;
-    margin-bottom: 8px;
-  }
-
-  span {
-    @include subDesc;
-    margin-bottom: 16px;
-    text-align: center;
-  }
-
-  a {
-    @include button($green, $darkgreen, #fff);
-  }
-
-  @include mobile {
-    padding: 30px 0;
   }
 }

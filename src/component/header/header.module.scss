@@ -41,9 +41,6 @@ header {
 
 .mMenuIcon {
   justify-content: flex-end;
-  position: absolute;
-  top: 0;
-  right: 24px;
 }
 
 .headerList {
@@ -137,7 +134,9 @@ header {
     opacity: 0;
     transition: opacity 100ms ease-in-out;
     transition-delay: 0.4s;
-    margin: 8px 8px 0 0;
+    margin: 8px 32px 0 0;
+    position: absolute;
+    right: 0;
   }
 
   &.active {

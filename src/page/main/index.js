@@ -2,6 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import PROJECT_LIST from "constants/projectData";
+import Contact from "component/contact";
 
 import "swiper/css";
 import styles from "./main.module.scss";
@@ -68,22 +69,7 @@ export default function Main() {
       </section>
 
       {/* 연락 영역 */}
-      <section className={styles.contactPage}>
-        <div className={styles.container}>
-          <p>메리에디하우스의 </p>
-          <h3>문은 항상 열려 있습니다</h3>
-          <span>
-            언제든지, 편하게 문의를 남겨주세요
-          </span>
-          <a
-            href="https://open.kakao.com/o/sPB3tYBf"
-            target="_blank"
-            rel="noreferrer"
-          >
-            서비스 문의하기
-          </a>
-        </div>
-      </section>
+      <Contact />
     </main>
   );
 }
