@@ -6,7 +6,7 @@ export default function BottomPopup({ content }) {
     zIndex: "999",
     bottom: "20px",
     left: "50%",
-    width: "maxContent",
+    width: "max-content",
     transform: "translateX(-50%)",
     background: "rgba(0, 0, 0, 0.8)",
     color: "#fff",

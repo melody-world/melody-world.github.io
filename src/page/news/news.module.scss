@@ -28,7 +28,8 @@
 
   h4 {
     @include subDesc;
-    margin: 0;
+    line-height: 1.5;
+    margin: 0 0 5px;
 
     &:hover {
       color: #464a4d;
@@ -39,6 +40,10 @@
     font-size: 16px;
     font-weight: 500;
     color: $black;
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 
   button {
