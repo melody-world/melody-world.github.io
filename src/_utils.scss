@@ -6,6 +6,12 @@ $darkgreen: #494737;
 $black: #17191a;
 
 /*변수*/
+@mixin tablet {
+  @media (max-width: 1500px) {
+    @content;
+  }
+}
+
 @mixin mobile {
   @media (max-width: 1024px) {
     @content;
@@ -33,6 +39,11 @@ $black: #17191a;
   margin: auto;
 
   @include mobile {
+    width: calc(100% - 32px);
+    padding: 0 16px;
+  }
+
+  @include tablet {
     width: calc(100% - 32px);
     padding: 0 16px;
   }

@@ -2,7 +2,6 @@ import React, { useRef, useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import AOS from "aos";
 
-import "aos/dist/aos.css";
 import styles from "./gwangmyeong.module.scss";
 
 import screenshot1 from "assets/img/Img_screenshot1.png";
