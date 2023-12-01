@@ -78,11 +78,11 @@ export default function News() {
 
                         {open ? (
                           <button type="button">
-                            <VscChevronDown />
+                            <VscChevronUp />
                           </button>
                         ) : (
                           <button type="button">
-                            <VscChevronUp />
+                            <VscChevronDown />
                           </button>
                         )}
                       </div>
