@@ -1,0 +1,47 @@
+@import "../../utils";
+
+.contactPage {
+  padding: 80px 0;
+
+  .container {
+    @include container;
+    border-radius: 8px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: url("../../../public/images/main/img_contact.jpg");
+
+    @include mobile {
+      width: calc(100% - 64px);
+      padding: 32px 16px;
+      height: auto;
+    }
+  }
+
+  p {
+    @include subSmallTitle;
+    color: $black;
+  }
+
+  h3 {
+    @include subBigTitle;
+    color: $black;
+    margin-bottom: 8px;
+  }
+
+  span {
+    @include subDesc;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  a {
+    @include button($green, $darkgreen, #fff);
+  }
+
+  @include mobile {
+    padding: 30px 0;
+  }
+}

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useMediaQuery } from "react-responsive";
-
 import Request from "services/Request";
+
 import styles from "./onebiteword.module.scss";
 
 export default function Onebiteword() {
