@@ -1,113 +1,87 @@
-import React, { useState, useEffect } from "react";
-import { useMediaQuery } from "react-responsive";
-import { Link, useLocation } from "react-router-dom";
-
-import styles from "./project.module.scss";
+import { Link } from "react-router-dom";
 import BottomPopup from "component/popup/BottomPopup";
 import PROJECT_LIST from "constants/projectData";
+import Gravity from "./matter";
+
+import styles from "./project.module.scss";
 
 export default function Project() {
-  const isMobile = useMediaQuery({ maxWidth: 1024 });
-  const [showBottomPopup, setShowBottomPopup] = useState(false);
-
-  useEffect(() => {
-    const showPopupAfterDelay = () => {
-      setShowBottomPopup(true);
-    };
-
-    if (isMobile) {
-      const timeoutId = setTimeout(showPopupAfterDelay, 1000);
-
-      return () => {
-        clearTimeout(timeoutId);
-      };
-    }
-  }, [isMobile]);
-
   return (
     <main>
-      <div className={styles.container} id="root">
-        {isMobile && showBottomPopup && <BottomPopup content="💡 프로젝트를 탭하여 내용을 확인해보세요" />}
+      <BottomPopup content="💡 프로젝트를 탭하여 내용을 확인해 보세요." />
 
-        <section>
-          <div className={styles.introContainer}>
-            <div className={styles.introWrapper}>
-              <div className={styles.introText}>
-                <span className={styles.title}>프로젝트</span>
-                <span className={styles.subTitle}>
-                  우리의 재밌는 상상을
-                  <br />
-                  현실화한 프로젝트를 소개합니다
-                </span>
-              </div>
-            </div>
-          </div>
-        </section>
+      {/* 캔버스 애니메이션 영역 */}
+      <Gravity />
 
-        <section>
-          <div className={styles.projectContainer}>
-            <ul className={styles.projectList}>
-              {PROJECT_LIST.sort((a, b) => {
-                return b.id - a.id;
-              }).map((item) => {
-                const typeObj = item.projectType.map((pType) => (
-                  <span
-                    key={pType}
-                    className={
-                      pType === "WEB"
-                        ? `${styles.projectTag} ${styles.tagWeb}`
-                        : `${styles.projectTag} ${styles.tagApp}`
-                    }
-                  >
-                    {pType}
-                  </span>
-                ));
+      {/* 프로젝트 리스트 영역 */}
+      <section className={styles.projectPage}>
+        <div className={styles.container}>
+          <div className={styles.projectList}>
+            {PROJECT_LIST.map((item) => {
+              return (
+                <Link
+                  key={item.id}
+                  className={styles.project}
+                  to={item.readMore}
+                  target="_blank"
+                >
+                  <div className={styles.projectImg}>
+                    <img
+                      src={item.projectMainImage}
+                      alt="프로젝트 메인 이미지"
+                    />
+                  </div>
 
-                return (
-                  <li key={item.id} className={styles.projectItem}>
-                    <div>
-                      <ProjectFront typeObj={typeObj} item={item} key={`front-${item.id}`} />
-                      <ProjectBack item={item} key={`back-${item.id}`} />
+                  <div className={styles.projectInfo}>
+                    <div className={styles.projectType}>
+                      {item.projectType.map((type) => {
+                        return <small>{type}</small>;
+                      })}
                     </div>
-                  </li>
-                );
-              })}
-            </ul>
+                    <h5>{item.projectName}</h5>
+                    <p>{item.projectContent}</p>
+                    <div className={styles.projectDirect}>
+                      {item.projectWebLink != null ? (
+                        <a
+                          href={item.projectWebLink}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Website
+                        </a>
+                      ) : (
+                        ""
+                      )}
+                      {item.projectIosLink != null ? (
+                        <a
+                          href={item.projectIosLink}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Apple
+                        </a>
+                      ) : (
+                        ""
+                      )}
+                      {item.projectAndLink != null ? (
+                        <a
+                          href={item.projectAndLink}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Android
+                        </a>
+                      ) : (
+                        ""
+                      )}
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
   );
 }
-
-const ProjectFront = ({ typeObj, item }) => {
-  return (
-    <div className={styles.projectFront}>
-      <div className={styles.imageWrapper}>
-        <img src={require(`assets/img/project/${item.projectImage}`)} alt={item.id} />
-      </div>
-      <div className={styles.profileWrapper}>
-        <p>{typeObj}</p>
-        <p className={styles.projectTitle}>{item.projectName}</p>
-      </div>
-    </div>
-  );
-};
-
-const ProjectBack = ({ item }) => {
-  return (
-    <div className={styles.projectBack}>
-      <div className={styles.imageWrapper}>
-        <img src={require(`assets/img/project/${item.projectImage}`)} alt={item.id} />
-      </div>
-      <div className={styles.profileWrapper}>
-        <p className={styles.projectTitle}>"{item.projectContent}"</p>
-        <div>
-          <Link className={styles.moreBtn} to={item.readMore} target="_blank">
-            더보기
-          </Link>
-        </div>
-      </div>
-    </div>
-  );
-};

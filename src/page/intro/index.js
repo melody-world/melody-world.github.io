@@ -1,89 +1,88 @@
-import { useMediaQuery } from "react-responsive";
-
-import styles from "./intro.module.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import { Link } from "react-router-dom";
 import INTRO_LIST from "constants/introData.js";
 
+import "swiper/css";
+import styles from "./intro.module.scss";
+
 export default function Intro() {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const params = {
+    spaceBetween: 8,
+    slidesPerView: "auto",
+    className: styles.stackSwiper,
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
+  };
 
   return (
     <main>
-      <div className={styles.container}>
-        <div className={styles.title}>
-          <h1 className={styles.titleFont}>We are providing various ideas as a service🤩</h1>
-        </div>
+      {/* 멤버 소개 영역 */}
+      <section className={styles.memberPage}>
+        <div className={styles.container}>
+          <h2>
+            디자인 툴 강의부터
+            <br />
+            디자인 이론과 코딩 지식까지
+          </h2>
 
-        <div className={styles.memberContainer}>
-          {INTRO_LIST.map((item) => {
-            return (
-              <div className={styles.memberWrapper} key={item.id}>
-                {isMobile ? getIntroProfile(item) : !isMobile && isLeftPosition(item.id) && getIntroProfile(item)}
+          <ul>
+            {INTRO_LIST.map((el) => {
+              return (
+                <li className={styles.memberInfo}>
+                  <Link to={el.githubUrl}>
+                    <figure className={styles.memberImg}>
+                      <img src={el.introImage} alt="멤버 아이콘" />
+                    </figure>
 
-                <div className={styles.infoWrapper}>
-                  <div className={styles.infoTitle}>
-                    <h2>{item.introName}</h2>
-                    <h4>{item.devSide}</h4>
-                  </div>
-
-                  <div className={styles.infoContentWrapper}>
-                    <img
-                      className={styles.infoImage}
-                      src={require("assets/img/intro/icon_intro_info.png")}
-                      alt="member-info"
-                    />
-                    <div className={styles.infoContent}>{item.introContent}</div>
-
-                    <img
-                      className={styles.infoImage}
-                      src={require("assets/img/intro/icon_intro_stack.png")}
-                      alt="member-stack"
-                    />
-                    <div className={styles.stackWrapper}>
-                      {item.devStack.map((stack) => {
-                        return (
-                          <div key={stack.name}>
-                            <img src={stack.image} alt={stack.name} />
-                          </div>
-                        );
-                      })}
+                    <div className={styles.memberName}>
+                      <h3>{el.introName}</h3>
+                      <small>{el.devSide}</small>
                     </div>
-                  </div>
-                </div>
 
-                {!isMobile && !isLeftPosition(item.id) && getIntroProfile(item)}
-              </div>
-            );
-          })}
+                    <p>{el.introContent}</p>
+
+                    <Swiper {...params} modules={[Autoplay]}>
+                      {el.devStack.map((item, index) => (
+                        <SwiperSlide className={styles.stackSlide}>
+                          <figure>
+                            <img
+                              src={`/images/intro/icon_${item}.png`}
+                              alt="기술스택 아이콘"
+                            />
+                          </figure>
+                        </SwiperSlide>
+                      ))}
+                    </Swiper>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
-      </div>
+      </section>
+
+      {/* 연락 영역 */}
+      <section className={styles.contactPage}>
+        <div className={styles.container}>
+          <p>메리&에디하우스의 </p>
+          <h3>문은 항상 열려 있습니다.</h3>
+          <span>
+            '메리에디하우스'에게 궁금한게 있나요?
+            <br />
+            언제든지, 편하게 문의를 남겨주세요.
+          </span>
+          <a
+            href="https://open.kakao.com/o/sPB3tYBf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            서비스 문의하기
+          </a>
+        </div>
+      </section>
     </main>
   );
 }
-
-const isLeftPosition = (id) => {
-  return id % 2 === 0;
-};
-
-const getIntroProfile = (map) => {
-  return (
-    <div className={styles.imageWrapper}>
-      <div className={styles.hoverWrapper}>
-        <div>
-          <figure className={styles.imageFront}>
-            <img src={map.introImage1} alt={`introImage1${map.id}`} />
-          </figure>
-
-          <figure className={styles.imageBack}>
-            <img src={map.introImage2} alt={`introImage2${map.id}`} />
-            <figcaption>
-              <a href={map.githubUrl} target="_blank" rel="noreferrer noopener">
-                <img src={require("assets/img/intro/icon_github.png")} alt={`github${map.id}`} />
-                <p>@{map.githubNickname}</p>
-              </a>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
-  );
-};

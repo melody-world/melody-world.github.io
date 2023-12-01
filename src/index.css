@@ -14,8 +14,19 @@ code {
 }
 
 main {
-  margin-top: 61px;
+  /* margin-top: 61px; */
   overflow-x: hidden;
+}
+
+a {
+  display: inline-block;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
 }
 
 @media (max-width: 1024px) {

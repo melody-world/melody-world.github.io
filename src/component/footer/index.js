@@ -7,7 +7,7 @@ export default function Footer() {
   const [showPrivacyPop, setShowPrivacyPop] = useState(false);
 
   /// [개인정보처리방침] 이벤트
-  const togglePrivacy = (event) => {
+  const togglePrivacy = () => {
     setShowPrivacyPop(!showPrivacyPop);
   };
 
@@ -19,14 +19,18 @@ export default function Footer() {
         <div className={styles.footerContainer}>
           <ul className={styles.footerList}>
             <li>
-              <a href="https://open.kakao.com/o/sPB3tYBf" target="_blank">
+              <a
+                href="https://open.kakao.com/o/sPB3tYBf"
+                target="_blank"
+                rel="noreferrer"
+              >
                 서비스 문의
               </a>
             </li>
           </ul>
 
           <div className={styles.footerCopy}>
-            <a>Copyright © MerryEddyHouse. All rights reserved</a>
+            <span>Copyright © MerryEddyHouse. All rights reserved</span>
           </div>
         </div>
       </footer>

@@ -1,47 +1,35 @@
 @import "../../utils";
 
-main {
-  margin-top: 48px;
-  font-family: "SUIT";
+.container {
+  @include container;
+  @include fontSize(20px);
+  font-weight: 600;
+  line-height: 1.5;
 
-  @include mobile {
-    overflow-x: hidden;
+  h3 {
+    @include fontSize(45px);
+    font-weight: 600;
+    margin-bottom: 60px;
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
   }
 
-  .container {
-    width: 50%;
-    margin: 0 auto;
+  strong {
+    font-size: 22px;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 10px;
 
-    .title {
-      display: block;
-      padding: 48px 0px 24px;
-      color: rgb(51, 61, 75);
-      font-size: 32px;
-      font-weight: 700;
+    @include mobile {
+      font-size: 15px;
     }
+  }
 
-    .contentWrapper {
-      background-color: #d3edff;
-      margin-bottom: 48px;
-      padding: 30px 40px;
-
-      .appName {
-        margin: 0 2px;
-        font-weight: 500;
-      }
-
-      section {
-        margin-bottom: 20px;
-      }
-
-      ul {
-        margin: 0;
-        padding: 1em;
-
-        li {
-          list-style: disc;
-        }
-      }
+  ul {
+    li {
+      list-style: disc;
     }
   }
 }

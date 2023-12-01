@@ -1,18 +1,21 @@
-@import url('https://webfontworld.github.io/sunn/SUIT.css');
-@import url('https://webfontworld.github.io/TheJamsil/TheJamsil.css');
+@import url("https://webfontworld.github.io/sunn/SUIT.css");
+@import url("https://webfontworld.github.io/TheJamsil/TheJamsil.css");
 
 ::selection {
   background-color: #424242;
   color: #fff;
 }
 
-a, li {
+a,
+li {
   text-decoration: none;
   list-style: none;
   color: currentColor;
 }
 
-p , h2, h3{
+p,
+h2,
+h3 {
   margin: 0;
 }
 
@@ -25,6 +28,10 @@ button {
   display: flex;
   align-items: center;
   padding: 0;
+}
+
+figure {
+  margin: 0;
 }
 
 svg {

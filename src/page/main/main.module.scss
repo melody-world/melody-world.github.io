@@ -1,0 +1,169 @@
+@import "../../utils";
+
+.mainPage {
+  padding: 80px 0 20px 0;
+  margin-top: 60px;
+
+  .container {
+    @include container;
+  }
+
+  @include mobile {
+    padding: 40px 0 20px;
+  }
+}
+
+.mainTitle {
+  h2 {
+    @include mainTitle;
+    margin-bottom: 8px;
+  }
+
+  p {
+    @include mainDesc;
+    margin-bottom: 12px;
+
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  .btnArea {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+
+    a:first-child {
+      @include button($green, $darkgreen, #fff);
+    }
+
+    a:last-child {
+      @include button($brown, $darkbrown, #fff);
+    }
+  }
+
+  @include mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.mainSwiper {
+  padding: 80px 24px;
+
+  .mainSlide {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid #dddddd50;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 2px 12px rgb(0 0 0 / 20%);
+    }
+  }
+
+  .projectInfo {
+    color: $black;
+    position: absolute;
+    padding: 16px;
+    bottom: 8px;
+    left: 8px;
+    width: calc(100% - 48px);
+    border: 1px solid #dddddd30;
+    backdrop-filter: blur(12px);
+    border-radius: 8px;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      line-height: 1.5;
+
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+      white-space: pre;
+      word-break: keep-all;
+
+      @include mobile {
+        font-size: 13px;
+        line-height: 1.4;
+      }
+    }
+
+    span {
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 12px;
+      padding: 8px;
+      display: inline-block;
+      margin: 24px 8px 0 0;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    @include mobile {
+      width: calc(100% - 44px);
+      padding: 12px;
+    }
+  }
+
+  @include mobile {
+    padding: 30px 16px;
+  }
+}
+
+.contactPage {
+  padding: 80px 0;
+
+  .container {
+    @include container;
+    border-radius: 8px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: url("../../../public/images/main/img_contact.jpg");
+
+    @include mobile {
+      width: calc(100% - 64px);
+      padding: 32px 16px;
+      height: auto;
+    }
+  }
+
+  p {
+    @include subSmallTitle;
+    color: $black;
+  }
+
+  h3 {
+    @include subBigTitle;
+    color: $black;
+    margin-bottom: 8px;
+  }
+
+  span {
+    @include subDesc;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  a {
+    @include button($green, $darkgreen, #fff);
+  }
+
+  @include mobile {
+    padding: 30px 0;
+  }
+}

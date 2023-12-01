@@ -7,7 +7,6 @@ import {
   AccordionItem,
 } from "react-headless-accordion";
 import { VscChevronDown, VscChevronUp } from "react-icons/vsc";
-
 import Request from "services/Request";
 import PROJECT_LIST from "constants/projectData";
 
@@ -50,55 +49,57 @@ export default function News() {
   }, []);
 
   return (
-    <main className={styles.newsPage}>
-      <div className={styles.container}>
-        <h3>💬 공지사항</h3>
+    <main>
+      <section className={styles.newsPage}>
+        <div className={styles.container}>
+          <h3>💬 공지사항</h3>
 
-        <Accordion>
-          {newList.map((item, index) => (
-            <AccordionItem key={index}>
-              {({ open }) => (
-                <>
-                  <AccordionHeader as={"div"}>
-                    <div
-                      className={`${styles.titleWrap} ${
-                        open ? "accordion-active" : ""
-                      }`}
-                    >
-                      <div>
-                        <p>
-                          [{item.projectName}] {item.title}
-                        </p>
-                        <span>
-                          {moment(item.createDate, "YYYYMMDD").format(
-                            "YYYY.MM.DD"
-                          )}
-                        </span>
+          <Accordion>
+            {newList.map((item, index) => (
+              <AccordionItem key={index}>
+                {({ open }) => (
+                  <>
+                    <AccordionHeader as={"div"}>
+                      <div
+                        className={`${styles.titleWrap} ${
+                          open ? "accordion-active" : ""
+                        }`}
+                      >
+                        <div>
+                          <h4>
+                            [{item.projectName}] {item.title}
+                          </h4>
+                          <span>
+                            {moment(item.createDate, "YYYYMMDD").format(
+                              "YYYY.MM.DD"
+                            )}
+                          </span>
+                        </div>
+
+                        {open ? (
+                          <button type="button">
+                            <VscChevronDown />
+                          </button>
+                        ) : (
+                          <button type="button">
+                            <VscChevronUp />
+                          </button>
+                        )}
                       </div>
+                    </AccordionHeader>
 
-                      {open ? (
-                        <button type="button">
-                          <VscChevronDown />
-                        </button>
-                      ) : (
-                        <button type="button">
-                          <VscChevronUp />
-                        </button>
-                      )}
-                    </div>
-                  </AccordionHeader>
-
-                  <AccordionBody>
-                    <div className={styles.contentWrap}>
-                      <p>{item.content}</p>
-                    </div>
-                  </AccordionBody>
-                </>
-              )}
-            </AccordionItem>
-          ))}
-        </Accordion>
-      </div>
+                    <AccordionBody>
+                      <div className={styles.contentWrap}>
+                        <p>{item.content}</p>
+                      </div>
+                    </AccordionBody>
+                  </>
+                )}
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
     </main>
   );
 }
