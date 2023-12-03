@@ -38,7 +38,6 @@ export default function Main() {
               우리의 프로젝트는 일상의 사소한 아이디어로부터 시작됩니다
               <br />
               사용자 중심 인터페이스와 안정적인 기능을 더한 다양한 프로덕트를 소개합니다
-              
             </p>
             <div className={styles.btnArea}>
               <a href="/project">프로젝트 전체보기</a>
