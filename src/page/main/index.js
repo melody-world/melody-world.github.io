@@ -33,11 +33,11 @@ export default function Main() {
         <div className={styles.container}>
           {/* 메인 타이틀 영역 */}
           <div className={styles.mainTitle}>
-            <h2>디자인 첫걸음</h2>
+            <h2>'상상을 현실로'</h2>
             <p>
-              새로운 분야에 첫발을 내디딜 때 누구나 막연하게 두렵죠.
+              우리의 프로젝트는 일상의 사소한 아이디어로부터 시작됩니다
               <br />
-              374개의 영상을 통해 디자인을 배워보세요.
+              사용자 중심 인터페이스와 안정적인 기능을 더한 다양한 프로덕트를 소개합니다
             </p>
             <div className={styles.btnArea}>
               <a href="/project">프로젝트 전체보기</a>

@@ -24,9 +24,9 @@ export default function Intro() {
       <section className={styles.memberPage}>
         <div className={styles.container}>
           <h2>
-            디자인 툴 강의부터
+            기획부터 디자인,
             <br />
-            디자인 이론과 코딩 지식까지
+            개발부터 런칭까지
           </h2>
 
           <ul>
