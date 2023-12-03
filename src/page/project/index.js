@@ -8,7 +8,7 @@ import styles from "./project.module.scss";
 export default function Project() {
   return (
     <main>
-      <BottomPopup content="💡 프로젝트를 탭하여 내용을 확인해 보세요." />
+      {/* <BottomPopup content="💡 프로젝트를 탭하여 내용을 확인해 보세요." /> */}
 
       {/* 캔버스 애니메이션 영역 */}
       <Gravity />

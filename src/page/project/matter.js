@@ -53,7 +53,7 @@ export default function Gravity() {
         return Bodies.rectangle(x, y, 180, 46, {
           render: {
             sprite: {
-              texture: `/images/main/icon_bg_${i}.png`,
+              texture: `/images/project/icon_bg_${i}.png`,
               xScale: 0.25,
               yScale: 0.25,
             },
