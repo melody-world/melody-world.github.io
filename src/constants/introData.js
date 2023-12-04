@@ -1,17 +1,18 @@
 const INTRO_LIST = [
   {
     id: 1,
-    introImage: "/images/project/icon_bg_11.png",
+    introImage: "/images/intro/img_merry.png",
     introName: "메리",
     introContent:
-      "공동의 목표를 향해 함께 달릴 준비가 된,\n훌륭한 동료들이 곁에 있습니다.공동의 목표를 향해 함께 달릴 준비가 된,\n훌륭한 동료들이 곁에 있습니다.",
+      "NextJS와 Typescript를 공부하고 있습니다.\n" +
+      "프론트엔드 개발자로 재직중이며 효율적인 코드에 대해서 고민합니다.\n",
     devSide: "Front-end",
     githubUrl: "https://github.com/pool1129",
-    devStack: ["html5", "css", "javascript", "react", "nextjs"],
+    devStack: ["html5", "css", "javascript", "react", "nextjs", "typescript"],
   },
   {
     id: 2,
-    introImage: "/images/project/icon_bg_11.png",
+    introImage: "/images/intro/img_eddy.png",
     introName: "에디",
     introContent:
       "Spring Boot와 Java(JAVA8)기반 개발 환경에 익숙합니다.\n" +

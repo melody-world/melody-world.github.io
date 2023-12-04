@@ -1,11 +1,17 @@
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import BottomPopup from "component/popup/BottomPopup";
 import PROJECT_LIST from "constants/projectData";
 import Gravity from "./matter";
+import AOS from "aos";
 
 import styles from "./project.module.scss";
 
 export default function Project() {
+  useEffect(() => {
+    /// AOS 초기화
+    AOS.init();
+  }, []);
+
   return (
     <main>
       {/* <BottomPopup content="💡 프로젝트를 탭하여 내용을 확인해 보세요." /> */}
@@ -20,6 +26,8 @@ export default function Project() {
             {PROJECT_LIST.map((item) => {
               return (
                 <Link
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom"
                   key={item.id}
                   className={styles.project}
                   to={item.readMore}

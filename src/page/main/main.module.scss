@@ -38,7 +38,7 @@
     }
 
     a:last-child {
-      @include button($brown, $darkbrown, #fff);
+      @include button($beige, #0220470d, $black);
     }
   }
 

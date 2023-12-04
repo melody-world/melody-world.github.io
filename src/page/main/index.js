@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import PROJECT_LIST from "constants/projectData";
 import Contact from "component/contact";
+import AOS from "aos";
 
 import "swiper/css";
 import styles from "./main.module.scss";
 
 export default function Main() {
+  useEffect(() => {
+    /// AOS 초기화
+    AOS.init();
+  }, []);
+
   const params = {
     spaceBetween: 10,
     slidesPerView: 1,
@@ -33,13 +39,18 @@ export default function Main() {
         <div className={styles.container}>
           {/* 메인 타이틀 영역 */}
           <div className={styles.mainTitle}>
-            <h2>'상상을 현실로'</h2>
-            <p>
+            <h2 data-aos="fade-up">'상상을 현실로'</h2>
+            <p data-aos="fade-up" data-aos-delay="100">
               우리의 프로젝트는 일상의 사소한 아이디어로부터 시작됩니다
               <br />
-              사용자 중심 인터페이스와 안정적인 기능을 더한 다양한 프로덕트를 소개합니다
+              사용자 중심 인터페이스와 안정적인 기능을 더한 다양한 프로덕트를
+              소개합니다
             </p>
-            <div className={styles.btnArea}>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="200"
+              className={styles.btnArea}
+            >
               <a href="/project">프로젝트 전체보기</a>
               <a href="/intro">멤버소개</a>
             </div>

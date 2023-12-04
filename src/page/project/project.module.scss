@@ -14,7 +14,18 @@
     text-align: center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  @keyframes slide-top {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, 0%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -100px);
+    }
   }
 }
 

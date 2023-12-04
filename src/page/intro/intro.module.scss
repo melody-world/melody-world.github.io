@@ -39,6 +39,10 @@
   height: 460px;
   width: 580px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
 
   &:last-child {
     margin-top: 125px;
@@ -53,14 +57,6 @@
     box-shadow: 0px 2px 12px rgb(0 0 0 / 20%);
   }
 
-  a {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    height: 100%;
-  }
-
   p {
     @include subDesc;
     word-break: keep-all;
@@ -69,7 +65,7 @@
 
   .memberImg {
     top: -80px;
-    right: -125px;
+    right: -55px;
     position: absolute;
     width: 400px;
     height: 400px;
@@ -105,6 +101,12 @@
 
   small {
     @include button_more;
+  }
+
+  a {
+    @include button_more;
+    background-color: $green;
+    color: #fff;
   }
 }
 
