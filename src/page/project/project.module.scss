@@ -7,6 +7,21 @@
   overflow: hidden;
   position: relative;
 
+  p {
+    @include subSmallTitle;
+    color: $black;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -180%);
+
+    @include mobile {
+      transform: translate(-50%, -160%);
+    }
+  }
+
   h2 {
     @include mainTitle;
     position: absolute;
@@ -24,7 +39,7 @@
     }
     100% {
       opacity: 1;
-      transform: translate(-50%, -100px);
+      transform: translate(-50%, -50%);
     }
   }
 }
@@ -84,6 +99,7 @@
     h5 {
       @include subMidTitle;
       margin: 0 0 40px;
+      word-break: keep-all;
 
       @include mobile {
         margin: 0 0 20px;

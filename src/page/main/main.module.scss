@@ -22,6 +22,7 @@
   p {
     @include mainDesc;
     margin-bottom: 12px;
+    word-break: keep-all;
 
     @include mobile {
       text-align: center;

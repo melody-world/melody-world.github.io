@@ -15,9 +15,8 @@ const INTRO_LIST = [
     introImage: "/images/intro/img_eddy.png",
     introName: "에디",
     introContent:
-      "Spring Boot와 Java(JAVA8)기반 개발 환경에 익숙합니다.\n" +
-      "온프레미스와 클라우드 환경에서 서비스를 운영해본 경험이 있고, 현재는 B2C 솔루션을 개발하는 스타트업에 재직중입니다.\n" +
-      "최근에는 앱 개발에 관심이 생겨 Flutter를 공부하고 있습니다.",
+      "Spring Boot와 Java 개발 환경에 익숙합니다.\n" +
+      "현재는 B2C 솔루션을 개발하는 스타트업에 재직중입니다. 최근에는 앱 개발에 관심이 생겨 Flutter를 공부하고 있습니다.",
     devSide: "Back-end",
     githubUrl: "https://github.com/eeesnghyun",
     devStack: ["java", "spring", "database", "aws", "flutter"],
