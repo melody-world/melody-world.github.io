@@ -1,5 +1,4 @@
 @import url("https://webfontworld.github.io/sunn/SUIT.css");
-@import url("https://webfontworld.github.io/TheJamsil/TheJamsil.css");
 
 ::selection {
   background-color: #424242;
@@ -23,8 +22,6 @@ button {
   border: none;
   outline: none;
   background: none;
-  width: 48px;
-  height: 48px;
   display: flex;
   align-items: center;
   padding: 0;

@@ -1,30 +1,144 @@
 @import "../../utils";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
 
-main {
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.cardPage {
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
 
-    .wordWrapper {
-      min-width: 300px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      margin-bottom: 10px;
+  .mixBtn {
+    @include button($green, $darkgreen, #fff);
+    position: absolute;
+    cursor: pointer;
+    bottom: 100px;
+    font-family: "SUIT";
+  }
+}
 
-      button {
-        cursor: pointer;
+.cardList {
+  height: 320px;
+  width: 220px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  &.transition {
+    .card {
+      transform: rotateZ(0deg);
+      box-shadow: none;
+
+      &:nth-child(1) {
+        left: 0px;
+      }
+
+      &:nth-child(2) {
+        left: 240px;
+      }
+
+      &:nth-child(3) {
+        left: 480px;
+      }
+
+      &:nth-child(4) {
+        left: -240px;
+      }
+
+      &:nth-child(5) {
+        left: -480px;
       }
     }
+  }
+}
 
-    .wordName {
-      min-width: 150px;
-    }
+.card {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  box-shadow: 1px 2px 2px 0 #aaa;
+  position: absolute;
+  transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.12);
+  font-family: "Pretendard";
 
-    .wordMean {
-      word-break: break-word;
-      width: 150px;
+  &:nth-child(1) {
+    z-index: 10;
+    transform: rotateZ(-2deg);
+  }
+
+  &:nth-child(2) {
+    z-index: 9;
+    transform: rotateZ(-4deg);
+  }
+
+  &:nth-child(3) {
+    z-index: 8;
+    transform: rotateZ(0deg);
+  }
+
+  &:nth-child(4) {
+    z-index: 7;
+    transform: rotateZ(4deg);
+  }
+
+  &:nth-child(5) {
+    z-index: 6;
+    transform: rotateZ(2deg);
+  }
+
+  .cardFilp {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    &.active {
+      transform: rotateY(180deg);
     }
+  }
+
+  .frontCard,
+  .backCard {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    perspective: 1000;
+    height: 100%;
+    text-align: center;
+    word-break: keep-all;
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+  .frontCard {
+    button {
+      width: 20px;
+      height: 20px;
+      border: 1px solid red;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .backCard {
+    transform: rotateY(180deg);
   }
 }

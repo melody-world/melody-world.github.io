@@ -1,83 +1,110 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Request from "services/Request";
 
 import styles from "./onebiteword.module.scss";
 
 export default function Onebiteword() {
-  const [wordList, setData] = useState([]);
+  const [wordList, setWordList] = useState([]);
+  const [cntIndex, setCntIndex] = useState();
+  const [suffleStatus, setSuffleStatus] = useState(false);
+
+  const getWordList = async () => {
+    try {
+      const res = await Request.get(`/obw/1.json`);
+      const data = res.data.data;
+      let list;
+
+      if (data.length > 0) {
+        list = getRandomWords(data, 5);
+      }
+
+      setWordList(list);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
+
+  const getRandomWords = (list, count) => {
+    const result = [...list].sort(() => Math.random() - 0.5);
+    return result.slice(0, count);
+  };
+
+  const playWord = (text) => {
+    window.speechSynthesis.cancel();
+
+    const speechMsg = new SpeechSynthesisUtterance();
+    speechMsg.rate = 1;
+    speechMsg.pitch = 1.2;
+    speechMsg.lang = "en-US";
+    speechMsg.text = text;
+
+    window.speechSynthesis.speak(speechMsg);
+  };
+
+  const suffleCard = () => {
+    if (!suffleStatus) getWordList();
+
+    setCntIndex();
+    setSuffleStatus((prev) => !prev);
+  };
+
+  const filpCard = (index) => {
+    if (index === cntIndex) {
+      setCntIndex();
+      return;
+    }
+
+    suffleStatus && setCntIndex(index);
+  };
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await Request.get(`/obw/1.json`);
-        let dataList = response.data.data.map((data) => ({
-          ...data,
-        }));
+    window.speechSynthesis.getVoices();
 
-        if (Array.from(dataList).length > 0) {
-          dataList = getRandomItems(dataList, 10);
-        }
-
-        setData(dataList);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      }
-    };
-
-    fetchData();
+    getWordList();
   }, []);
-
-  /**
-   * 배열로부터 입력받은 개수만큼 랜덤하게 값 추출
-   * @param {Array} arr
-   * @param {int} count
-   * @returns
-   */
-  const getRandomItems = (arr, count) => {
-    const resultArray = [...arr].sort(() => Math.random() - 0.5);
-    return resultArray.slice(0, count);
-  };
 
   return (
     <main>
-      <div className={styles.container}>
-        <h1>단어리스트</h1>
-
-        {wordList.map((item) => (
-          <div className={styles.wordWrapper} key={item.wordSeq}>
-            <div className={styles.wordName}>{item.wordName}</div>
-            <div className={styles.wordMean} style={{ wordWrap: "break-word" }}>
-              {item.wordMean}
-            </div>
-            <div>
-              <button
-                onClick={() => {
-                  if (
-                    typeof SpeechSynthesisUtterance === "undefined" ||
-                    typeof window.speechSynthesis === "undefined"
-                  ) {
-                    alert("이 브라우저는 음성 합성을 지원하지 않습니다.");
-                    return;
-                  }
-
-                  window.speechSynthesis.cancel(); // 현재 읽고있다면 초기화
-
-                  const speechMsg = new SpeechSynthesisUtterance();
-                  speechMsg.rate = 1; // 속도: 0.1 ~ 10
-                  speechMsg.pitch = 1.2; // 음높이: 0 ~ 2
-                  speechMsg.lang = "en-US";
-                  speechMsg.text = item.wordName;
-
-                  // SpeechSynthesisUtterance에 저장된 내용을 바탕으로 음성합성 실행
-                  window.speechSynthesis.speak(speechMsg);
-                }}
+      <section className={styles.cardPage}>
+        <ul
+          className={`${styles.cardList} ${
+            suffleStatus ? styles.transition : ""
+          }`}
+        >
+          {wordList.map((item, index) => (
+            <li
+              key={index}
+              className={styles.card}
+              onClick={() => filpCard(index)}
+            >
+              <div
+                className={`${styles.cardFilp} ${
+                  cntIndex === index ? styles.active : ""
+                }`}
               >
-                듣기
-              </button>
-            </div>
-          </div>
-        ))}
-      </div>
+                <div className={styles.frontCard}>
+                  <h3>{item.wordName}</h3>
+                  <button
+                    type="button"
+                    onClick={playWord(item.wordName)}
+                  ></button>
+                </div>
+                <div className={styles.backCard}>
+                  <h3>{item.wordMean}</h3>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+
+        <button
+          type="button"
+          className={styles.mixBtn}
+          onClick={() => suffleCard()}
+        >
+          석기시대
+        </button>
+      </section>
     </main>
   );
 }

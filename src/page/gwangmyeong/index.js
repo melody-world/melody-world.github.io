@@ -15,7 +15,7 @@ import IconApp from "assets/img/gwangmyeong/img_appIcon.png";
 import IconArrowDown from "assets/img/gwangmyeong/icon_arrowDown.png";
 import IconApple from "assets/img/gwangmyeong/icon_apple.png";
 import IconGoogle from "assets/img/gwangmyeong/icon_google.png";
-import IconArrow from "assets/svg/arrow.svg";
+import IconArrow from "assets/img/gwangmyeong/icon_arrow.svg";
 
 const Gwangmyeong = () => {
   const subRef = useRef(null);
