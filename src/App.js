@@ -10,6 +10,7 @@ import Onebiteword from "./page/onebiteword";
 import News from "./page/news";
 import Privacy from "./page/privacy";
 import Main from "page/main";
+import Blog from "page/blog";
 
 import PROJECT_LIST from "constants/projectData";
 
@@ -28,6 +29,7 @@ export default function App() {
         <Route path="/findgwangmyeong" exact element={<Gwangmyeong />} />
         <Route path="/onebiteword" exact element={<Onebiteword />} />
         <Route path="/news" element={<News />} />
+        <Route path="/blog" element={<Blog />} />
 
         {/*
          * 개인정보 처리방침 컴포넌트 연결
