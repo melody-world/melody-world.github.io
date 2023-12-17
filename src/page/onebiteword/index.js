@@ -29,17 +29,17 @@ export default function Onebiteword() {
     return result.slice(0, count);
   };
 
-  const playWord = (text) => {
-    window.speechSynthesis.cancel();
+  // const playWord = (text) => {
+  //   window.speechSynthesis.cancel();
 
-    const speechMsg = new SpeechSynthesisUtterance();
-    speechMsg.rate = 1;
-    speechMsg.pitch = 1.2;
-    speechMsg.lang = "en-US";
-    speechMsg.text = text;
+  //   const speechMsg = new SpeechSynthesisUtterance();
+  //   speechMsg.rate = 1;
+  //   speechMsg.pitch = 1.2;
+  //   speechMsg.lang = "en-US";
+  //   speechMsg.text = text;
 
-    window.speechSynthesis.speak(speechMsg);
-  };
+  //   window.speechSynthesis.speak(speechMsg);
+  // };
 
   const suffleCard = () => {
     if (!suffleStatus) getWordList();
@@ -84,10 +84,6 @@ export default function Onebiteword() {
               >
                 <div className={styles.frontCard}>
                   <h3>{item.wordName}</h3>
-                  <button
-                    type="button"
-                    onClick={playWord(item.wordName)}
-                  ></button>
                 </div>
                 <div className={styles.backCard}>
                   <h3>{item.wordMean}</h3>
