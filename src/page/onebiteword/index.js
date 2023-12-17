@@ -58,7 +58,7 @@ export default function Onebiteword() {
   };
 
   useEffect(() => {
-    window.speechSynthesis.getVoices();
+    //window.speechSynthesis.getVoices();
 
     getWordList();
   }, []);
