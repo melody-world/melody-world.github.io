@@ -12,7 +12,7 @@ const MENU_LIST = [
   {
     id: 2,
     title: "기술블로그",
-    url: "/blog",
+    url: "https://velog.io/@codedream",
   },
   {
     id: 3,
