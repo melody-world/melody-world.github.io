@@ -23,7 +23,7 @@ const PROJECT_LIST = [
     projectWebLink: "",
     projectAndLink: "",
     projectIosLink: "",
-    readMore: "",
+    readMore: "/onebiteword",
     shortName: "",
   },
   {

@@ -5,8 +5,8 @@ import CardSpeak from "./cardSpeak";
 
 import styles from "./onebiteword.module.scss";
 
-const CARD_OFFSET = 25;
-const SCALE_FACTOR = 0.055;
+const CARD_OFFSET = 30;
+const SCALE_FACTOR = 0.06;
 
 const CardSlider = (props) => {
   const word_list = props.data;
