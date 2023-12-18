@@ -1,12 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import Request from "services/Request";
+import CardSlider from "./cardSlider";
 
 import styles from "./onebiteword.module.scss";
 
 export default function Onebiteword() {
   const [wordList, setWordList] = useState([]);
-  const [cntIndex, setCntIndex] = useState();
-  const [suffleStatus, setSuffleStatus] = useState(false);
 
   const getWordList = async () => {
     try {
@@ -16,9 +15,8 @@ export default function Onebiteword() {
 
       if (data.length > 0) {
         list = getRandomWords(data, 5);
+        setWordList(list);
       }
-
-      setWordList(list);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -29,82 +27,28 @@ export default function Onebiteword() {
     return result.slice(0, count);
   };
 
-  const playWord = (text) => {
-    window.speechSynthesis.cancel();
-
-    const speechMsg = new SpeechSynthesisUtterance();
-    speechMsg.rate = 1;
-    speechMsg.pitch = 1.2;
-    speechMsg.lang = "en-US";
-    speechMsg.text = text;
-
-    window.speechSynthesis.speak(speechMsg);
-  };
-
   const suffleCard = () => {
-    if (!suffleStatus) getWordList();
-
-    setCntIndex();
-    setSuffleStatus((prev) => !prev);
-  };
-
-  const filpCard = (index) => {
-    if (index === cntIndex) {
-      setCntIndex();
-      return;
-    }
-
-    suffleStatus && setCntIndex(index);
+    getWordList();
   };
 
   useEffect(() => {
-    window.speechSynthesis.getVoices();
-
     getWordList();
   }, []);
 
   return (
-    <main>
-      <section className={styles.cardPage}>
-        <ul
-          className={`${styles.cardList} ${
-            suffleStatus ? styles.transition : ""
-          }`}
-        >
-          {wordList.map((item, index) => (
-            <li
-              key={index}
-              className={styles.card}
-              onClick={() => filpCard(index)}
-            >
-              <div
-                className={`${styles.cardFilp} ${
-                  cntIndex === index ? styles.active : ""
-                }`}
-              >
-                <div className={styles.frontCard}>
-                  <h3>{item.wordName}</h3>
-                  <button
-                    type="button"
-                    onClick={playWord(item.wordName)}
-                  ></button>
-                </div>
-                <div className={styles.backCard}>
-                  <h3>{item.wordMean}</h3>
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
+    <main className={styles.cardPage}>
+      <CardSlider data={wordList} />
 
+      <div className={styles.cardBtn}>
+        <button type="button">테스트</button>
         <button
           type="button"
-          className={styles.mixBtn}
+          className={styles.suffleBtn}
           onClick={() => suffleCard()}
         >
-          석기시대
+          단어 섞기
         </button>
-      </section>
+      </div>
     </main>
   );
 }
