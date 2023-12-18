@@ -12,8 +12,8 @@ export default function Privacy({ appName }) {
           <section>
             <strong>Privacy Policy</strong>
             <p>
-              MerryEddyHouse built the <span>{appName}</span> app as a Free app.
-              This service is provided by MerryEddyHouse at no cost and is
+              코드드림 built the <span>{appName}</span> app as a Free app.
+              This service is provided by 코드드림 at no cost and is
               intended for use as is.
             </p>
             <p>

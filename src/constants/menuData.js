@@ -1,20 +1,24 @@
-
 const MENU_LIST = [
-    {
-        id: 0,
-        title: '소개',
-        url: '/intro'
-    },
-    {
-        id: 1,
-        title: '프로젝트',
-        url: '/project'
-    },
-    {
-        id: 2,
-        title: '공지사항',
-        url: '/news'
-    },
-]
+  {
+    id: 0,
+    title: "소개",
+    url: "/intro",
+  },
+  {
+    id: 1,
+    title: "프로젝트",
+    url: "/project",
+  },
+  {
+    id: 2,
+    title: "기술블로그",
+    url: "https://code-dream.tistory.com",
+  },
+  {
+    id: 3,
+    title: "공지사항",
+    url: "/news",
+  },
+];
 
 export default MENU_LIST;
