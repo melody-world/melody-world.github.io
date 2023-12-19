@@ -11,7 +11,7 @@ const MENU_LIST = [
   },
   {
     id: 2,
-    title: "기술블로그",
+    title: "블로그",
     url: "https://code-dream.tistory.com",
   },
   {

@@ -16,10 +16,19 @@ const INTRO_LIST = [
     introName: "에디",
     introContent:
       "Spring Boot와 Java 개발 환경에 익숙합니다.\n" +
-      "현재는 B2C 솔루션을 개발하는 스타트업에 재직중입니다. 최근에는 앱 개발에 관심이 생겨 Flutter를 공부하고 있습니다.",
+      "B2C 솔루션을 개발하는 스타트업에 재직중입니다. 최근에는 앱 개발에 관심이 생겨 Flutter를 공부하고 있습니다.",
     devSide: "Back-end",
     githubUrl: "https://github.com/eeesnghyun",
     devStack: ["java", "spring", "database", "aws", "flutter"],
+  },
+  {
+    id: 3,
+    introImage: "/images/intro/img_ann.png",
+    introName: "앤",
+    introContent: "Flutter 개발자로 재직중입니다.\n" + "모바일앱 개발에 관심있습니다.",
+    devSide: "Mobile",
+    githubUrl: "https://github.com/LeeJiH-yun",
+    devStack: ["flutter", "database"],
   },
 ];
 
