@@ -4,13 +4,13 @@ const CardSpeak = (word) => {
   const itemWord = word;
 
   const playWord = () => {
-    if (
-      typeof SpeechSynthesisUtterance === "undefined" ||
-      typeof window.speechSynthesis === "undefined"
-    ) {
-      alert("이 브라우저는 음성 합성을 지원하지 않습니다.");
-      return;
-    }
+    // if (
+    //   typeof SpeechSynthesisUtterance === "undefined" ||
+    //   typeof window.speechSynthesis === "undefined"
+    // ) {
+    //   alert("이 브라우저는 음성 합성을 지원하지 않습니다.");
+    //   return;
+    // }
 
     // 현재 읽고있다면 초기화
     window.speechSynthesis.cancel();
