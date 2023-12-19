@@ -1,11 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import Request from "services/Request";
 import CardSlider from "./cardSlider";
+import CardOverlay from "./cardOverlay";
+import cookie from "react-cookies";
 
 import styles from "./onebiteword.module.scss";
 
 export default function Onebiteword() {
   const [wordList, setWordList] = useState([]);
+  const [visit, setVisit] = useState();
 
   const getWordList = async () => {
     try {
@@ -31,12 +34,15 @@ export default function Onebiteword() {
     getWordList();
   };
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     getWordList();
+    setVisit(cookie.load("visit"));
   }, []);
 
   return (
     <main className={styles.cardPage}>
+      {visit !== "N" ? <CardOverlay /> : ""}
+
       <CardSlider data={wordList} />
 
       <div className={styles.cardBtn}>
