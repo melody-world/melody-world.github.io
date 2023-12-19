@@ -164,8 +164,13 @@
     height: 50px;
 
     cursor: pointer;
-    background: url(../../assets/img/onebiteword/icon_close.svg) no-repeat;
+    background: url(../../assets/img/onebiteword/icon_close.svg) no-repeat
+      center center;
     background-size: contain;
+
+    @include mobile {
+      top: 60px;
+    }
   }
 
   p {
