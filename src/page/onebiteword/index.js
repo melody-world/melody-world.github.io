@@ -30,8 +30,9 @@ export default function Onebiteword() {
     return result.slice(0, count);
   };
 
-  const suffleCard = () => {
+  const shuffleCard = () => {
     getWordList();
+    addChannel(true);
   };
 
   useLayoutEffect(() => {
@@ -50,7 +51,7 @@ export default function Onebiteword() {
         <button
           type="button"
           className={styles.suffleBtn}
-          onClick={() => suffleCard()}
+          onClick={() => shuffleCard()}
         >
           단어 섞기
         </button>
@@ -58,3 +59,15 @@ export default function Onebiteword() {
     </main>
   );
 }
+
+const addChannel = (isShuffled) => {
+  const { todayChannel } = window;
+
+  if (todayChannel) {
+    todayChannel.postMessage(
+      JSON.stringify({
+        isShuffled: isShuffled,
+      })
+    );
+  }
+};
