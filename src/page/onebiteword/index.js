@@ -47,7 +47,7 @@ export default function Onebiteword() {
       <CardSlider data={wordList} />
 
       <div className={styles.cardBtn}>
-        <button type="button">테스트</button>
+        {/* <button type="button">테스트</button> */}
         <button
           type="button"
           className={styles.suffleBtn}
