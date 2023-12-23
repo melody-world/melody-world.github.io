@@ -16,7 +16,7 @@ const PROJECT_LIST = [
   },
   {
     id: 2,
-    projectName: "한입단어",
+    projectName: "하루단어",
     projectContent: "해당 페이지는 준비중입니다.",
     projectMainImage: "/images/main/img_ready.jpg",
     projectType: ["APP", "WEB"],

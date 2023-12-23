@@ -10,7 +10,9 @@ export default function Privacy({ appName }) {
 
         <div className={styles.contentWrapper}>
           <section>
-            <strong>Privacy Policy</strong>
+            <p><strong>본 앱(<span>{appName}</span>)은 개인정보를 수집하지 않습니다.</strong></p>
+            <hr></hr>
+            <strong>Privacy Policy</strong>        
             <p>
               코드드림 built the <span>{appName}</span> app as a Free app.
               This service is provided by 코드드림 at no cost and is

@@ -5,6 +5,7 @@
   @include fontSize(20px);
   font-weight: 600;
   line-height: 1.5;
+  margin-top: 160px;
 
   h3 {
     @include fontSize(45px);
