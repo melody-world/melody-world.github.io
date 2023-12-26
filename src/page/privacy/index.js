@@ -14,11 +14,12 @@ export default function Privacy({ appName }) {
       <div className={styles.container}>
         <h3>🔒 개인정보처리방침</h3>
 
-        <p>
+        <h5>
           <strong>
             본 앱(<span>{appName}</span>)은 개인정보를 수집하지 않습니다.
           </strong>
-        </p>
+        </h5>
+
         <hr></hr>
 
         <section className={active ? styles.open : ""}>
