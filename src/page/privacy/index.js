@@ -16,7 +16,7 @@ export default function Privacy({ appName }) {
 
         <h5>
           <strong>
-            본 앱(<span>{appName}</span>)은 개인정보를 수집하지 않습니다.
+            본 앱, <span>{appName}</span>는(은) 개인정보를 수집하지 않습니다.
           </strong>
         </h5>
 
