@@ -1,9 +1,5 @@
 @import "../../utils";
 
-header {
-  display: none;
-}
-
 .container {
   @include container;
   padding: 80px 0 20px;

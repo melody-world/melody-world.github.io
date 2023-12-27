@@ -14,9 +14,11 @@ import Main from "page/main";
 import PROJECT_LIST from "constants/projectData";
 
 export default function App() {
-  const hideHeader = PROJECT_LIST.some(
+  let hideHeader = PROJECT_LIST.some(
     (item) => window.location.pathname === item.readMore
   );
+
+  hideHeader = window.location.pathname.includes("privacy");
 
   return (
     <>
