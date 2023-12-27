@@ -11,7 +11,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    background: url("../../../public/images/main/img_contact.jpg");
+    background: $beige;
 
     @include mobile {
       width: calc(100% - 64px);
