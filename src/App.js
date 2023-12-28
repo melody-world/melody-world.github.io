@@ -18,8 +18,6 @@ export default function App() {
     (item) => window.location.pathname === item.readMore
   );
 
-  hideHeader = window.location.pathname.includes("privacy");
-
   return (
     <>
       {!hideHeader && <Header />}
