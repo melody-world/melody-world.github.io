@@ -37,9 +37,10 @@ export default function Intro() {
           </h2>
 
           <ul>
-            {INTRO_LIST.map((el) => {
+            {INTRO_LIST.map((el, index) => {
               return (
                 <li
+                  key={index}
                   data-aos="fade-up"
                   data-aos-anchor-placement="center-bottom"
                   className={styles.memberInfo}
@@ -58,7 +59,7 @@ export default function Intro() {
 
                   <Swiper {...params} modules={[Autoplay]}>
                     {el.devStack.map((item, index) => (
-                      <SwiperSlide className={styles.stackSlide}>
+                      <SwiperSlide key={index} className={styles.stackSlide}>
                         <figure>
                           <img
                             src={`/images/intro/icon_${item}.png`}

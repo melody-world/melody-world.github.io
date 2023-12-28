@@ -6,7 +6,7 @@ const PROJECT_LIST = [
       "국토교통부 데이터를 기반으로\n전국 아파트 실거래가를 제공합니다",
     projectMainImage: "/images/main/img_gwangmyeong.jpg",
     projectType: ["APP", "WEB"],
-    projectWebLink: "",
+    projectWebLink: "/findgwangmyeong",
     projectAndLink:
       "https://play.google.com/store/apps/details?id=com.app.findgwangmyeong",
     projectIosLink:
