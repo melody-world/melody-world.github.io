@@ -4,13 +4,15 @@ const CardSpeak = (word) => {
   const itemWord = word;
 
   const playWord = () => {
-    // if (
-    //   typeof SpeechSynthesisUtterance === "undefined" ||
-    //   typeof window.speechSynthesis === "undefined"
-    // ) {
-    //   alert("이 브라우저는 음성 합성을 지원하지 않습니다.");
-    //   return;
-    // }
+    /**
+     * 안드로이드 webview에서는 speechSynthesis를 지원하지 않는다.
+     * 디바이스에 따라 androidChannel / iosChannel을 분리시키고 androidChannel이 있는 경우에는 flutter 라이브러리를 이용해 단어를 읽을 수 있도록 개선했다.
+     */
+    const { androidChannel } = window;
+
+    if (androidChannel) {
+      androidChannel.postMessage("TEST");
+    }
 
     // 현재 읽고있다면 초기화
     window.speechSynthesis.cancel();
