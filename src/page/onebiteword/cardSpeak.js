@@ -11,20 +11,20 @@ const CardSpeak = (word) => {
     const { androidChannel } = window;
 
     if (androidChannel) {
-      androidChannel.postMessage("TEST");
+      androidChannel.postMessage(itemWord.word);
+    } else {
+      // 현재 읽고있다면 초기화
+      window.speechSynthesis.cancel();
+
+      const speechMsg = new SpeechSynthesisUtterance();
+      speechMsg.rate = 1;
+      speechMsg.pitch = 1.2;
+      speechMsg.lang = "en-US";
+      speechMsg.text = itemWord.word;
+
+      // SpeechSynthesisUtterance에 저장된 내용을 바탕으로 음성합성 실행
+      window.speechSynthesis.speak(speechMsg);
     }
-
-    // 현재 읽고있다면 초기화
-    window.speechSynthesis.cancel();
-
-    const speechMsg = new SpeechSynthesisUtterance();
-    speechMsg.rate = 1;
-    speechMsg.pitch = 1.2;
-    speechMsg.lang = "en-US";
-    speechMsg.text = itemWord.word;
-
-    // SpeechSynthesisUtterance에 저장된 내용을 바탕으로 음성합성 실행
-    window.speechSynthesis.speak(speechMsg);
   };
 
   return (
