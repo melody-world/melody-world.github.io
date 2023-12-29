@@ -22,14 +22,14 @@ export default function CommonRouter() {
         <Route path="/intro" element={<Intro />} />
         <Route path="/project" element={<Project />} />
         <Route path="/news" element={<News />} />
+        <Route path="/*" element={<NotFound />} />
       </Route>
+
       <Route element={<SubLayout />}>
         <Route path="/:path/privacy" element={<Privacy />} />
         <Route path="/findgwangmyeong" exact element={<Gwangmyeong />} />
         <Route path="/onebiteword" exact element={<Onebiteword />} />
       </Route>
-
-      <Route path="/*" element={<NotFound />} />
     </Routes>
   );
 }
