@@ -2,8 +2,7 @@ const PROJECT_LIST = [
   {
     id: 1,
     projectName: "광명찾자 - 아파트 실거래가 조회",
-    projectContent:
-      "국토교통부 데이터를 기반으로\n전국 아파트 실거래가를 제공합니다",
+    projectContent: "국토교통부 데이터를 기반으로\n전국 아파트 실거래가를 제공합니다",
     projectMainImage: "/images/main/img_gwangmyeong.jpg",
     projectType: ["APP", "WEB"],
     projectWebLink: "/findgwangmyeong",
@@ -17,7 +16,7 @@ const PROJECT_LIST = [
   {
     id: 2,
     projectName: "하루단어",
-    projectContent: "해당 페이지는 준비중입니다.",
+    projectContent: "하루에 한번, 오늘의 단어를 확인해보세요!",
     projectMainImage: "/images/main/img_ready.jpg",
     projectType: ["APP", "WEB"],
     projectWebLink: "",
