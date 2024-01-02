@@ -42,43 +42,43 @@ export default function Project() {
 
                   <div className={styles.projectInfo}>
                     <div className={styles.projectType}>
-                      {item.projectType.map((type) => {
-                        return <small>{type}</small>;
+                      {item.projectType.map((type, index) => {
+                        return <small key={index}>{type}</small>;
                       })}
                     </div>
                     <h5>{item.projectName}</h5>
                     <p>{item.projectContent}</p>
                     <div className={styles.projectDirect}>
                       {item.projectWebLink != null ? (
-                        <a
+                        <Link
                           href={item.projectWebLink}
                           target="_blank"
                           rel="noreferrer"
                         >
                           Website
-                        </a>
+                        </Link>
                       ) : (
                         ""
                       )}
                       {item.projectIosLink != null ? (
-                        <a
+                        <Link
                           href={item.projectIosLink}
                           target="_blank"
                           rel="noreferrer"
                         >
                           Apple
-                        </a>
+                        </Link>
                       ) : (
                         ""
                       )}
                       {item.projectAndLink != null ? (
-                        <a
+                        <Link
                           href={item.projectAndLink}
                           target="_blank"
                           rel="noreferrer"
                         >
                           Android
-                        </a>
+                        </Link>
                       ) : (
                         ""
                       )}
