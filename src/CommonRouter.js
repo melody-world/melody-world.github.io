@@ -26,7 +26,7 @@ export default function CommonRouter() {
       </Route>
 
       <Route element={<SubLayout />}>
-        <Route path="/:path/privacy" element={<Privacy />} />
+        <Route path="/privacy" element={<Privacy />} />
         <Route path="/findgwangmyeong" exact element={<Gwangmyeong />} />
         <Route path="/onebiteword" exact element={<Onebiteword />} />
       </Route>
