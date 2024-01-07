@@ -8,9 +8,12 @@ const CardOverlay = () => {
 
   const handleClose = () => {
     setClose(!close);
+    const expires = new Date();
+    expires.setFullYear(expires.getFullYear() + 1);
 
     cookie.save("visit", "N", {
       path: "/",
+      expires: expiration,
     });
   };
 
