@@ -9,9 +9,11 @@ const CardOverlay = () => {
   const handleClose = () => {
     setClose(!close);
 
-    cookie.save("visit", "N", {
-      path: "/",
-    });
+    window.sessionStorage.setItem("isVisit", true);
+
+    // cookie.save("visit", "N", {
+    //   path: "/",
+    // });
   };
 
   return (

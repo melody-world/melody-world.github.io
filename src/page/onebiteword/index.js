@@ -37,12 +37,14 @@ export default function Onebiteword() {
 
   useLayoutEffect(() => {
     getWordList();
-    setVisit(cookie.load("visit"));
+
+    const isVisit = window.sessionStorage.getItem("isVisit");
+    setVisit(isVisit);
   }, []);
 
   return (
     <main className={styles.cardPage}>
-      {visit !== "N" ? <CardOverlay /> : ""}
+      {visit === "true" ? "" : <CardOverlay />}
 
       <CardSlider data={wordList} />
 
