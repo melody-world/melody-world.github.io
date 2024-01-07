@@ -10,7 +10,7 @@ const CardOverlay = () => {
     setClose(!close);
 
     cookie.save("visit", "N", {
-      path: "/onebiteword",
+      path: "/",
     });
   };
 
