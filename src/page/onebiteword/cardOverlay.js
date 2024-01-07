@@ -8,12 +8,9 @@ const CardOverlay = () => {
 
   const handleClose = () => {
     setClose(!close);
-    const time = 3600; //1시간
-    const expiration = new Date(Date.now() + time * 1000);
 
     cookie.save("visit", "N", {
       path: "/",
-      expires: expiration,
     });
   };
 
