@@ -8,12 +8,13 @@ const CardOverlay = () => {
 
   const handleClose = () => {
     setClose(!close);
+    const time = 3600; //1시간
+    const expiration = new Date(Date.now() + time * 1000);
 
-    window.sessionStorage.setItem("isVisit", true);
-
-    // cookie.save("visit", "N", {
-    //   path: "/",
-    // });
+    cookie.save("visit", "N", {
+      path: "/",
+      expires: expiration,
+    });
   };
 
   return (
