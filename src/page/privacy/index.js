@@ -114,7 +114,9 @@ export default function Privacy() {
           </p>
           <p>
             코드드림 :{" "}
-            <a href="mailto:szhyun2002@gmail.com">szhyun2002@gmail.com</a>
+            <a href="mailto:codedream.contact@gmail.com">
+              codedream.contact@gmail.com
+            </a>
           </p>
         </div>
 
@@ -129,7 +131,9 @@ export default function Privacy() {
               <li>소속 : 코드드림</li>
               <li>
                 메일주소 :{" "}
-                <a href="mailto:szhyun2002@gmail.com">szhyun2002@gmail.com</a>
+                <a href="mailto:codedream.contact@gmail.com">
+                  codedream.contact@gmail.com
+                </a>
               </li>
             </ul>
           </p>
