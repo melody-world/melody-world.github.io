@@ -49,36 +49,24 @@ export default function Project() {
                     <h5>{item.projectName}</h5>
                     <p>{item.projectContent}</p>
                     <div className={styles.projectDirect}>
-                      {item.projectWebLink != null ? (
-                        <Link
-                          href={item.projectWebLink}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
+                      {item.projectWebLink !== "" ? (
+                        <a href={item.projectWebLink} target="blank">
                           Website
-                        </Link>
+                        </a>
                       ) : (
                         ""
                       )}
-                      {item.projectIosLink != null ? (
-                        <Link
-                          href={item.projectIosLink}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
+                      {item.projectIosLink !== "" ? (
+                        <a href={item.projectIosLink} target="blank">
                           Apple
-                        </Link>
+                        </a>
                       ) : (
                         ""
                       )}
-                      {item.projectAndLink != null ? (
-                        <Link
-                          href={item.projectAndLink}
-                          target="_blank"
-                          rel="noreferrer"
-                        >
+                      {item.projectAndLink !== "" ? (
+                        <a href={item.projectAndLink} target="blank">
                           Android
-                        </Link>
+                        </a>
                       ) : (
                         ""
                       )}
