@@ -11,7 +11,7 @@ import "swiper/css";
 import styles from "./main.module.scss";
 
 export const getProjectList = async () => {
-  const data = await fetch("/api/project", {
+  const data = await fetch(process.env.BASE_URL + "/api/project", {
     method: "GET",
     cache: "no-store",
     headers: {
