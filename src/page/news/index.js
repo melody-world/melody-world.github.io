@@ -7,46 +7,38 @@ import {
   AccordionItem,
 } from "react-headless-accordion";
 import { VscChevronDown, VscChevronUp } from "react-icons/vsc";
-import Request from "services/Request";
-import PROJECT_LIST from "constants/projectData";
 
+import Loading from "component/loading";
 import styles from "./news.module.scss";
 
 export default function News() {
   const [newList, setNewsList] = useState([]);
-  async function fetchData() {
-    // 프로젝트 단위로 공지사항을 조회한다.
-    const porjectList = PROJECT_LIST.filter(
-      (project) => project.shortName !== ""
-    );
-    const getDataList = porjectList.map(async (item) => {
-      try {
-        const response = await Request.get(`/${item.shortName}/notice.json`);
-        const dataList = response.data.data.map((data) => ({
-          ...data,
-          projectName: item.projectName,
-        }));
-
-        return dataList;
-      } catch (err) {
-        console.log(err);
-        return [];
-      }
-    });
-
-    try {
-      const results = await Promise.all(getDataList);
-      const flattenedNewsList = results.flat();
-
-      setNewsList(flattenedNewsList);
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
+    async function fetchData() {
+      setIsLoading(true);
+
+      const data = await fetch("/api/notice", {
+        method: "GET",
+        cache: "no-store",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }).then((res) => res.json());
+
+      if (data.message === "OK") {
+        setIsLoading(false);
+        return setNewsList(data.resultList);
+      }
+    }
+
     fetchData();
   }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <main>
@@ -66,9 +58,7 @@ export default function News() {
                         }`}
                       >
                         <div>
-                          <h4>
-                            [{item.projectName}] {item.title}
-                          </h4>
+                          <h4>{item.noticeTitle}</h4>
                           <span>
                             {moment(item.createDate, "YYYYMMDD").format(
                               "YYYY.MM.DD"
@@ -90,7 +80,7 @@ export default function News() {
 
                     <AccordionBody>
                       <div className={styles.contentWrap}>
-                        <p>{item.content}</p>
+                        <p>{item.noticeContent}</p>
                       </div>
                     </AccordionBody>
                   </>

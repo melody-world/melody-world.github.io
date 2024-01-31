@@ -1,14 +1,32 @@
 import React, { useEffect } from "react";
+import { useQuery } from "react-query";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import PROJECT_LIST from "constants/projectData";
-import Contact from "component/contact";
 import AOS from "aos";
+
+import Contact from "component/contact";
+import Loading from "component/loading";
 
 import "swiper/css";
 import styles from "./main.module.scss";
 
+export const getProjectList = async () => {
+  const data = await fetch("/api/project", {
+    method: "GET",
+    cache: "no-store",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  }).then((res) => res.json());
+
+  if (data.message === "OK") {
+    return data.resultList;
+  }
+};
+
 export default function Main() {
+  const { data, isLoading } = useQuery("project", getProjectList);
+
   useEffect(() => {
     /// AOS 초기화
     AOS.init();
@@ -32,6 +50,10 @@ export default function Main() {
       },
     },
   };
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <main>
@@ -61,20 +83,19 @@ export default function Main() {
       <section>
         {/* 메인 스와이퍼 영역 */}
         <Swiper {...params} modules={[Autoplay]}>
-          {PROJECT_LIST.map((item, index) => (
-            <SwiperSlide key={index} className={styles.mainSlide}>
-              <a href={item.readMore}>
-                <img src={item.projectMainImage} alt="프로젝트 메인 이미지" />
-                <div className={styles.projectInfo}>
-                  <h3>{item.projectName}</h3>
-                  <p>{item.projectContent} </p>
-                  {item.projectType.map((type, index) => {
-                    return <span key={index}>{type}</span>;
-                  })}
-                </div>
-              </a>
-            </SwiperSlide>
-          ))}
+          {data &&
+            data.map((item, index) => (
+              <SwiperSlide key={index} className={styles.mainSlide}>
+                <a href={item.readMore}>
+                  <img src={item.projectMainImage} alt="프로젝트 메인 이미지" />
+                  <div className={styles.projectInfo}>
+                    <h3>{item.projectName}</h3>
+                    <p>{item.projectContent} </p>
+                    <span>{item.projectType}</span>
+                  </div>
+                </a>
+              </SwiperSlide>
+            ))}
         </Swiper>
       </section>
 

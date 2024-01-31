@@ -1,0 +1,19 @@
+.loadingPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .loading {
+    height: 400px;
+    width: 400px;
+    background: url("../../../public/images/loading.webp") center center
+      no-repeat;
+    background-size: contain;
+  }
+
+  span {
+  }
+}
