@@ -25,6 +25,10 @@ jobs:
         with:
           node-version: 18
 
+      - name: Setting .env
+        run: |
+          echo "REACT_APP_BASE_URL=${{ secrets.REACT_APP_BASE_URL }}" >> .env
+
       - name: Cache node_modules
         id: cache
         uses: actions/cache@v3
