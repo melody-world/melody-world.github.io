@@ -11,7 +11,7 @@ import "swiper/css";
 import styles from "./main.module.scss";
 
 export const getProjectList = async () => {
-  const data = await fetch("https://admin.codedream.co.kr/api/project/", {
+  const data = await fetch("https://admin.codedream.co.kr/api/project", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
