@@ -25,9 +25,9 @@ jobs:
         with:
           node-version: 18
 
-      - name: Setting .env
-        run: |
-          echo "Secrets : ${{secrets.REACT_APP_BASE_URL}}"
+      # - name: Setting .env
+      #   run: |
+      #     echo "Secrets : ${{secrets.REACT_APP_BASE_URL}}"
 
       - name: Cache node_modules
         id: cache
