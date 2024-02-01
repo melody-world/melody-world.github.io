@@ -19,9 +19,9 @@ export default function News() {
     async function fetchData() {
       setIsLoading(true);
 
-      const data = await fetch("/api/notice", {
+      const baseUrl = process.env.REACT_APP_BASE_URL;
+      const data = await fetch(baseUrl + "/api/notice", {
         method: "GET",
-        cache: "no-store",
         headers: {
           "Content-Type": "application/json",
         },

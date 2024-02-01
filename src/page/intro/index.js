@@ -17,9 +17,9 @@ export default function Intro() {
     async function fetchData() {
       setIsLoading(true);
 
-      const data = await fetch("/api/members", {
+      const baseUrl = process.env.REACT_APP_BASE_URL;
+      const data = await fetch(baseUrl + "/api/members", {
         method: "GET",
-        cache: "no-store",
         headers: {
           "Content-Type": "application/json",
         },

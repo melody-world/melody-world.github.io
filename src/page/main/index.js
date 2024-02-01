@@ -11,14 +11,14 @@ import "swiper/css";
 import styles from "./main.module.scss";
 
 export const getProjectList = async () => {
-  const data = await fetch("https://admin.codedream.co.kr/api/project", {
+  const baseUrl = process.env.REACT_APP_BASE_URL;
+  const data = await fetch(baseUrl + "/api/project", {
     method: "GET",
-    mode: "cors",
     headers: {
       "Content-Type": "application/json",
     },
   }).then((res) => res.json());
- 
+
   if (data.message === "OK") {
     return data.resultList;
   }
