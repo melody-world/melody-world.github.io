@@ -11,10 +11,13 @@ import "swiper/css";
 import styles from "./main.module.scss";
 
 export const getProjectList = async () => {
-  const data = await fetch("http://admin.codedream.co.kr/api/project", {
+  const data = await fetch("https://admin.codedream.co.kr/api/project", {
     method: "GET",
     cache: "no-store",
     headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, Authorization",
       "Content-Type": "application/json",
     },
   }).then((res) => res.json());
