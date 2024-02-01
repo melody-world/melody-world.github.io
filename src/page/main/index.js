@@ -18,7 +18,7 @@ export const getProjectList = async () => {
       "Content-Type": "application/json",
     },
   }).then((res) => res.json());
-
+ 
   if (data.message === "OK") {
     return data.resultList;
   }
