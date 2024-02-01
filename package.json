@@ -53,5 +53,6 @@
   },
   "devDependencies": {
     "react-app-rewired": "^2.2.1"
-  }
+  },
+  "proxy": "https://admin.codedream.co.kr"
 }
