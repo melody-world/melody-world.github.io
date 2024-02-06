@@ -17,8 +17,7 @@ export default function Intro() {
     async function fetchData() {
       setIsLoading(true);
 
-      const baseUrl = process.env.REACT_APP_BASE_URL;
-      const data = await fetch(baseUrl + "/api/members", {
+      const data = await fetch("https://admin.codedream.co.kr/api/members", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
