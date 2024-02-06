@@ -11,8 +11,7 @@ import "swiper/css";
 import styles from "./main.module.scss";
 
 export const getProjectList = async () => {
-  const baseUrl = process.env.REACT_APP_BASE_URL;
-  const data = await fetch(baseUrl + "/api/project", {
+  const data = await fetch("https://admin.codedream.co.kr/api/project", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
