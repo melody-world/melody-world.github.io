@@ -76,7 +76,7 @@ export default function Intro() {
                     </figure>
 
                     <div className={styles.memberName}>
-                      <h3>{el.introName}</h3>
+                      <h3>{el.name}</h3>
                       <small>{el.devSide}</small>
                       {el.githubUrl && <Link to={el.githubUrl}>GITHUB</Link>}
                     </div>
