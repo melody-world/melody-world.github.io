@@ -1,5 +1,4 @@
 import React, { useState, useLayoutEffect } from "react";
-import Request from "services/Request";
 import CardSlider from "./cardSlider";
 import CardOverlay from "./cardOverlay";
 import cookie from "react-cookies";
@@ -12,12 +11,20 @@ export default function Onebiteword() {
 
   const getWordList = async () => {
     try {
-      const res = await Request.get(`/obw/1.json`);
-      const data = res.data.data;
-      let list;
+      const res = await fetch(`https://onebiteword.codedream.co.kr/api/words`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "9e1736c43d19118e6ce4302118af337109491ecc52757dfb949bad6a7940b0c2",
+        },
+        cache: "no-store",
+      });
 
-      if (data.length > 0) {
-        list = getRandomWords(data, 5);
+      const data = await res.json();
+      const result = data.result;
+
+      if (result > 0) {
+        const list = getRandomWords(result, 5);
         setWordList(list);
       }
     } catch (error) {
@@ -47,12 +54,7 @@ export default function Onebiteword() {
       <CardSlider data={wordList} />
 
       <div className={styles.cardBtn}>
-        {/* <button type="button">테스트</button> */}
-        <button
-          type="button"
-          className={styles.suffleBtn}
-          onClick={() => shuffleCard()}
-        >
+        <button type="button" className={styles.suffleBtn} onClick={() => shuffleCard()}>
           단어 섞기
         </button>
       </div>
