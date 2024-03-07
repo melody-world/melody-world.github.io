@@ -38,7 +38,7 @@ export default function Project() {
                   >
                     <div className={styles.projectImg}>
                       <img
-                        src={item.projectMainImage}
+                        src={`https://s3.ap-northeast-2.amazonaws.com/cd.admin-bucket/${item.projectMainImage}`}
                         alt="프로젝트 메인 이미지"
                       />
                     </div>

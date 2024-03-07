@@ -72,7 +72,10 @@ export default function Intro() {
                     className={styles.memberInfo}
                   >
                     <figure className={styles.memberImg}>
-                      <img src={el.userImage} alt="멤버 아이콘" />
+                      <img
+                        src={`https://s3.ap-northeast-2.amazonaws.com/cd.admin-bucket/${el.userImage}`}
+                        alt="멤버 아이콘"
+                      />
                     </figure>
 
                     <div className={styles.memberName}>

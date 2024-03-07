@@ -86,7 +86,10 @@ export default function Main() {
             data.map((item, index) => (
               <SwiperSlide key={index} className={styles.mainSlide}>
                 <a href={item.readMore}>
-                  <img src={item.projectMainImage} alt="프로젝트 메인 이미지" />
+                  <img
+                    src={`https://s3.ap-northeast-2.amazonaws.com/cd.admin-bucket/${item.projectMainImage}`}
+                    alt="프로젝트 메인 이미지"
+                  />
                   <div className={styles.projectInfo}>
                     <h3>{item.projectName}</h3>
                     <p>{item.projectContent} </p>
