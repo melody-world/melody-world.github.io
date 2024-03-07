@@ -70,6 +70,10 @@
     width: 400px;
     height: 400px;
 
+    img {
+      object-fit: none;
+    }
+
     @include tablet {
       width: 350px;
       height: 350px;
