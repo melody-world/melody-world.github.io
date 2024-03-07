@@ -1,13 +1,5 @@
 import { useEffect, useRef } from "react";
-import Matter, {
-  World,
-  Engine,
-  Render,
-  Bodies,
-  Composites,
-  Mouse,
-  MouseConstraint,
-} from "matter-js";
+import Matter, { World, Engine, Render, Bodies, Composites, Mouse, MouseConstraint } from "matter-js";
 
 import styles from "./project.module.scss";
 

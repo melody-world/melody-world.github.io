@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
 import moment from "moment";
-import {
-  Accordion,
-  AccordionBody,
-  AccordionHeader,
-  AccordionItem,
-} from "react-headless-accordion";
+import { Accordion, AccordionBody, AccordionHeader, AccordionItem } from "react-headless-accordion";
 import { VscChevronDown, VscChevronUp } from "react-icons/vsc";
 
 import Loading from "component/loading";
@@ -51,18 +46,12 @@ export default function News() {
                 {({ open }) => (
                   <>
                     <AccordionHeader as={"div"}>
-                      <div
-                        className={`${styles.titleWrap} ${
-                          open ? "accordion-active" : ""
-                        }`}
-                      >
+                      <div className={`${styles.titleWrap} ${open ? "accordion-active" : ""}`}>
                         <div>
-                          <h4>{item.noticeTitle}</h4>
-                          <span>
-                            {moment(item.createDate, "YYYYMMDD").format(
-                              "YYYY.MM.DD"
-                            )}
-                          </span>
+                          <h4>
+                            [{item.projectId}] {item.noticeTitle}
+                          </h4>
+                          <span>{moment(item.createDate, "YYYYMMDD").format("YYYY.MM.DD")}</span>
                         </div>
 
                         {open ? (
