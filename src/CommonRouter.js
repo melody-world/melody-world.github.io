@@ -11,9 +11,7 @@ import News from "./page/news";
 import Main from "page/main";
 
 import SubLayout from "layout/subLayout";
-import Privacy from "./page/privacy";
 import Gwangmyeong from "./page/gwangmyeong";
-import Onebiteword from "./page/onebiteword";
 
 export default function CommonRouter() {
   const queryClient = new QueryClient();
@@ -30,9 +28,7 @@ export default function CommonRouter() {
         </Route>
 
         <Route element={<SubLayout />}>
-          <Route path="/privacy" element={<Privacy />} />
           <Route path="/findgwangmyeong" exact element={<Gwangmyeong />} />
-          <Route path="/onebiteword" exact element={<Onebiteword />} />
         </Route>
       </Routes>
     </QueryClientProvider>
