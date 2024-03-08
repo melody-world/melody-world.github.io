@@ -92,8 +92,6 @@ export default function Gravity() {
 
   return (
     <section className={styles.projectHead} ref={containerRef}>
-      <p>코드드림</p>
-      <h2>프로젝트</h2>
       <canvas ref={canvasRef} />
     </section>
   );
