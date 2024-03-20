@@ -39,6 +39,7 @@
 
   a {
     @include button($green, $darkgreen, #fff);
+    cursor: pointer;
   }
 
   @include mobile {

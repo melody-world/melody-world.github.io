@@ -71,7 +71,7 @@
     height: 400px;
 
     img {
-      object-fit: none;
+      object-fit: contain;
     }
 
     @include tablet {
