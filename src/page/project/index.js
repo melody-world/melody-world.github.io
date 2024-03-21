@@ -59,7 +59,7 @@ export default function Project() {
                         )}
                         {item.projectIosLink !== "" ? (
                           <a href={item.projectIosLink} target="blank">
-                            Apple
+                            iOS
                           </a>
                         ) : (
                           ""
