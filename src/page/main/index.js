@@ -6,6 +6,7 @@ import AOS from "aos";
 
 import Contact from "component/contact";
 import Loading from "component/loading";
+import isEmpty from "utils/commonUtil";
 
 import "swiper/css";
 import styles from "./main.module.scss";
@@ -64,14 +65,9 @@ export default function Main() {
             <p data-aos="fade-up" data-aos-delay="100">
               우리의 프로젝트는 일상의 사소한 아이디어로부터 시작됩니다
               <br />
-              사용자 중심 인터페이스와 안정적인 기능을 더한 다양한 프로덕트를
-              소개합니다
+              사용자 중심 인터페이스와 안정적인 기능을 더한 다양한 프로덕트를 소개합니다
             </p>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              className={styles.btnArea}
-            >
+            <div data-aos="fade-up" data-aos-delay="200" className={styles.btnArea}>
               <a href="/project">프로젝트 전체보기</a>
               <a href="/intro">멤버소개</a>
             </div>
@@ -86,10 +82,15 @@ export default function Main() {
             data.map((item, index) => (
               <SwiperSlide key={index} className={styles.mainSlide}>
                 <a href={item.readMore}>
-                  <img
-                    src={`https://s3.ap-northeast-2.amazonaws.com/cd.admin-bucket/${item.projectMainImage}`}
-                    alt="프로젝트 메인 이미지"
-                  />
+                  {isEmpty(item.projectMainImage) ? (
+                    <img src={process.env.PUBLIC_URL + "/images/main/img_ready.jpg"} alt="프로젝트 메인 이미지" />
+                  ) : (
+                    <img
+                      src={`https://s3.ap-northeast-2.amazonaws.com/cd.admin-bucket/${item.projectMainImage}`}
+                      alt="프로젝트 메인 이미지"
+                    />
+                  )}
+
                   <div className={styles.projectInfo}>
                     <h3>{item.projectName}</h3>
                     <p>{item.projectContent} </p>
