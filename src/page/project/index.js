@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 
 import Gravity from "./matter";
+import isEmpty from "utils/commonUtil";
 
 import { getProjectList } from "page/main";
 import styles from "./project.module.scss";
@@ -37,10 +38,14 @@ export default function Project() {
                     target="_blank"
                   >
                     <div className={styles.projectImg}>
-                      <img
-                        src={`https://s3.ap-northeast-2.amazonaws.com/cd.admin-bucket/${item.projectMainImage}`}
-                        alt="프로젝트 메인 이미지"
-                      />
+                      {isEmpty(item.projectMainImage) ? (
+                        <img src={process.env.PUBLIC_URL + "/images/main/img_ready.jpg"} alt="프로젝트 메인 이미지" />
+                      ) : (
+                        <img
+                          src={`https://s3.ap-northeast-2.amazonaws.com/cd.admin-bucket/${item.projectMainImage}`}
+                          alt="프로젝트 메인 이미지"
+                        />
+                      )}
                     </div>
 
                     <div className={styles.projectInfo}>
